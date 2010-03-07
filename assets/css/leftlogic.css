@@ -126,6 +126,7 @@ nav {
 }
 
 aside {
+  position: relative;
   float: right;
   width: 280px;
   margin-right: 30px;
@@ -177,6 +178,18 @@ nav ul li a.selected {
 }
 
 /** Sidebar **/
+#home aside{
+  padding-bottom: 231px;
+}
+#motif{
+  position: absolute;
+  background-image: url('../images/motif.png');
+  background-repeat: no-repeat;
+  right: -30px;
+  bottom: -45px;
+  width: 268px;
+  height: 281px;
+}
 aside section {
   margin: 25px;
   border: 1px dotted #FFF;
@@ -185,7 +198,10 @@ aside section div {
   position: relative;
   background-color: #FFF;
 }
-aside section div div{
+aside section .block-link,
+aside section .block-link:link,
+aside section .block-link:visited {
+  display: block;
   padding: 10px 0;
   font-family: "Dierama", Georgia, "Time New Roman", serif;
   font-size: 1.1428em;      /* 16px */
@@ -193,6 +209,12 @@ aside section div div{
   background-color: #008F69;
   color: #FFF;
   text-align: center;
+  text-decoration: none;
+}
+aside section .block-link:hover,
+aside section .block-link:focus,
+aside section .block-link:active {
+  background-color: #FF4D00;
 }
 aside section h1 {
   padding: 10px 0;
@@ -202,13 +224,23 @@ aside section h1 {
   text-align: center;
   border-bottom: 1px dotted #F24D00;
 }
+aside section ul {
+  padding: 0 25px;
+}
+aside section ul li {
+  border-top: 1px dotted #F24D00;
+  line-height: 2.8;       /* ~ 40px */
+  text-align: center;
+}
+aside section ul li:first-child {
+  border-top: none;
+}
 
 /** Footer **/
 .fat-footer section {
   width: 170px;
   float: left;
   padding: 0;
-
 }
 .fat-footer .vcard,
 .legal .aside {
@@ -262,7 +294,15 @@ aside section h1 {
   font-size: 0.8571em;      /* 12px */
 }
 
-
+/** Main **/
+.main h1{
+  font-size: 2.2857em;      /* 32px */
+  margin-bottom: 0.65625em; /* 21px */
+}
+.main p{
+  margin-top: 0.5em;        /* 7px  */
+  margin-bottom: 1em;       /* 14px */
+}
 
 
 
