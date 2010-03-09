@@ -37,7 +37,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-section, aside, header, footer, nav{
+/* HTML5 Defaults */
+section, aside, header, footer, nav {
   display: block;
 }
 
@@ -90,6 +91,9 @@ strong{
 }
 
 /** Helpers **/
+.lede { 
+  color: #FF4D00
+}
 .alt {
   color: #008F69;
 }
@@ -103,6 +107,7 @@ strong{
   background-image: url("/assets/images/bg-texture.jpg");
   background-position: 0 50%;
   background-repeat: repeat-y;
+  background-color: #EE6702;
   overflow: hidden;
 }
 
@@ -111,8 +116,6 @@ strong{
   float: left;
   width: 590px;
   margin-left: 30px;
-  border: 1px dotted #FFF;
-  border-top: none;
 }
 nav {
   padding: 0 30px;
@@ -120,16 +123,18 @@ nav {
   border-bottom: 1px dotted #F24D00;
   overflow: hidden;
 }
-.main section {
-  padding: 40px 30px;
-  background-color: #FFF;
+.main .content {
+  margin-top: 25px;
+  border: 1px dotted #FFF;
 }
 
 aside {
-  position: relative;
   float: right;
   width: 280px;
   margin-right: 30px;
+}
+.motif aside{ /* For pages on which the motif appears */
+  padding-bottom: 236px;
 }
 aside header {
   padding-top: 3.5714em;    /* 50px */
@@ -137,10 +142,11 @@ aside header {
 }
 
 footer {
+  position: relative;
   padding-top: 45px;
   clear: both;
 }
-footer section {
+footer div {
   padding: 30px 0 30px 60px;
 }
 footer .fat-footer {
@@ -151,6 +157,16 @@ footer .fat-footer {
 footer .legal {
   padding-top: 20px;
   color: #FFF;
+}
+
+#motif{
+  position: absolute;
+  background-image: url('../images/motif.png');
+  background-repeat: no-repeat;
+  top: -236px;
+  right: -30px;
+  width: 268px;
+  height: 281px;
 }
 
 /** Navigation **/
@@ -178,18 +194,6 @@ nav ul li a.selected {
 }
 
 /** Sidebar **/
-#home aside{
-  padding-bottom: 231px;
-}
-#motif{
-  position: absolute;
-  background-image: url('../images/motif.png');
-  background-repeat: no-repeat;
-  right: -30px;
-  bottom: -45px;
-  width: 268px;
-  height: 281px;
-}
 aside section {
   margin: 25px;
   border: 1px dotted #FFF;
@@ -280,14 +284,16 @@ aside section ul li:first-child {
 }
 .fat-footer .vcard a:hover,
 .fat-footer .vcard a:focus,
-.fat-footer .vcard a:active {
-  color: #008F69;
-}
+.fat-footer .vcard a:active,
+.fat-footer .vcard a.alt,
+.fat-footer .vcard a.alt:link,
 .fat-footer .vcard a.alt:visited {
   color: #008F69;
 }
+.fat-footer .vcard a.alt:hover,
+.fat-footer .vcard a.alt:focus,
 .fat-footer .vcard a.alt:active {
-  color: #008F69;
+  color: #FF4D00;
 }
 .legal p {
   float: left;
@@ -295,13 +301,22 @@ aside section ul li:first-child {
 }
 
 /** Main **/
-.main h1{
+.main h1 {
   font-size: 2.2857em;      /* 32px */
   margin-bottom: 0.65625em; /* 21px */
 }
-.main p{
+.main p {
   margin-top: 0.5em;        /* 7px  */
   margin-bottom: 1em;       /* 14px */
+}
+.main header{
+  padding: 40px 30px;
+  background-color: #FFF;
+}
+.main section{
+  padding: 40px 30px;
+  background-image: url('../images/gradient.png');
+  background-repeat: repeat-x;
 }
 
 
