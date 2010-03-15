@@ -62,7 +62,7 @@ body {
 
 h1, h2, h3 {
   font-family: "Dierama", Georgia, "Time New Roman", serif;
-  color: #FF4D00;
+  color: #008F69;
 }
 
 a,
@@ -90,12 +90,17 @@ strong{
   font-weight: bold;
 }
 
+.main p:first-child,
+.main h2 + p {
+  margin-top: 0;
+}
+
 /** Helpers **/
 .lede { 
   color: #FF4D00
 }
 .alt {
-  color: #008F69;
+  color: #FF4D00;
 }
 
 /** Structure & General **/
@@ -259,7 +264,6 @@ aside section ul li:first-child {
 }
 .fat-footer h1 strong {
   letter-spacing: -0.1em;
-  color: #FF5F00;
 }
 .fat-footer a,
 .fat-footer a:link,
@@ -301,23 +305,101 @@ aside section ul li:first-child {
 }
 
 /** Main **/
+.sub-section,
+.sub-section-alt,
+.portfolio,
+.workshop {
+  background-image: url('../images/bg-gradient.png');
+  background-repeat: repeat-x;
+  background-color: #FFF;
+}
+.sub-section,
+.sub-section-alt {
+  padding: 40px 30px; 
+}
+.portfolio,
+.workshop {
+  padding: 40px 0;
+  overflow: hidden;
+}
+.sub-section-alt {
+  background-image: none;
+}
+
+/* Main Typhography & Details */
 .main h1 {
   font-size: 2.2857em;      /* 32px */
   margin-bottom: 0.65625em; /* 21px */
+}
+.main h2 {
+  font-family: Georgia, "Time New Roman", serif;
+  font-size: 1em;      /* 14px */
+  margin: 0;
 }
 .main p {
   margin-top: 0.5em;        /* 7px  */
   margin-bottom: 1em;       /* 14px */
 }
-.main header{
-  padding: 40px 30px;
-  background-color: #FFF;
+.main img {
+  border: 1px dotted #FF4D00;
 }
-.main section{
-  padding: 40px 30px;
-  background-image: url('../images/gradient.png');
-  background-repeat: repeat-x;
+
+/** Portfolio Sections **/
+.portfolio .large,
+.portfolio .medium,
+.portfolio .small {
+  clear: both;
 }
+
+/* Portfolio - Large */
+.portfolio .large section {
+  margin: 0 30px;
+}
+.portfolio .large header {
+  width: 160px;
+  float: left;
+  padding: 30px 0;
+}
+.portfolio .large div {
+  width: 360px;
+  float: right;
+  padding: 30px 0;
+}
+
+/* Portfolio - Medium */
+.portfolio .medium section {
+  width: 188px;
+  float: left;
+  margin-left: 12px;
+}
+.portfolio .medium section:first-child {
+  margin-left: 0;
+}
+.portfolio .medium div {
+  padding: 30px;
+}
+
+/* Portfolio - Small */
+.portfolio .small section {
+  width: 108px;
+  float: left;
+  margin-left: 12px;
+}
+.portfolio .small section:first-child {
+  margin-left: 0;
+}
+.portfolio .small div {
+  padding: 10px;
+}
+
+/** Workshop Section **/
+.workshop section{
+  width: 410px;
+  float: right;
+  padding-right: 30px;
+}
+
+
 
 
 
