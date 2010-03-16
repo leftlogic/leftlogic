@@ -107,8 +107,8 @@ strong{
 .wrapper {
   width: 960px;
   margin: 0 auto;
-  border-left: 20px solid #FFF8EC;
-  border-right: 20px solid #FFF8EC;
+  border-left: 20px solid #FFF1DA;
+  border-right: 20px solid #FFF1DA;
   background-image: url("/assets/images/bg-texture.jpg");
   background-position: 0 50%;
   background-repeat: repeat-y;
@@ -155,7 +155,7 @@ footer div {
   padding: 30px 0 30px 60px;
 }
 footer .fat-footer {
-  background-color: #FFF8EC;
+  background-color: #FFF1DA;
   border: 1px dotted #FF4D00;
   overflow: hidden;
 }
@@ -169,7 +169,7 @@ footer .legal {
   background-image: url('../images/motif.png');
   background-repeat: no-repeat;
   top: -236px;
-  right: -30px;
+  right: -60px;
   width: 268px;
   height: 281px;
 }
@@ -225,7 +225,7 @@ aside section .block-link:focus,
 aside section .block-link:active {
   background-color: #FF4D00;
 }
-aside section h1 {
+aside section h2 {
   padding: 10px 0;
   font-size: 1.1428em;      /* 16px */
   background-color: #FFF1DA;
@@ -244,7 +244,12 @@ aside section ul li {
 aside section ul li:first-child {
   border-top: none;
 }
-
+aside section .big-grey-box-of-greyness {
+  border: 1px solid #FFF;
+  width: 226px;
+  height: 191px;
+  background-color: #EAEAE9;
+}
 /** Footer **/
 .fat-footer section {
   width: 170px;
@@ -258,11 +263,11 @@ aside section ul li:first-child {
   margin-right: 30px;
   padding-left: 20px;
 }
-.fat-footer h1 {
+.fat-footer h2 {
   font-size: 1.1428em;      /* 16px */
   margin-bottom: 25px;
 }
-.fat-footer h1 strong {
+.fat-footer h2 strong {
   letter-spacing: -0.1em;
 }
 .fat-footer a,
