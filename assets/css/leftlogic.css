@@ -60,9 +60,12 @@ body {
   color: #646567;
 }
 
-h1, h2, h3 {
+h1{
   font-family: "Dierama", Georgia, "Time New Roman", serif;
-  color: #008F69;
+  color: #FF4D00;
+}
+h1 .alt, h2, h3, h4, h5, h6 {
+  color: #008F69;  
 }
 
 a,
@@ -77,22 +80,99 @@ a:active {
 }
 a.alt,
 a.alt:link,
-a.alt:visited {
+a.alt:visited,
+.lede a,
+.lede a:link,
+.lede a:visited {
   color: #008F69;
 }
 a.alt:hover,
 a.alt:focus,
-a.alt:active {
+a.alt:active 
+.lede a:hover,
+.lede a:focus,
+.lede a:active {
   color: #FF4D00;
 }
 
-strong{
+strong {
   font-weight: bold;
 }
+em {
+  color: #FF4D00;
+  font-style: normal;
+}
+code {
+  font-size: 14px; /* sizing text is <code> spans is weird */
+  color: #FF4D00;
+}
 
-.main p:first-child,
-.main h2 + p {
-  margin-top: 0;
+blockquote {
+  font-family: "Helvetica Neu", Arial, Helvetica, sans-serif;
+  margin: 0.5em;              /* 7px */
+  padding: 0.5em;             /* 7px */
+  border: 1px dotted #DEDEDE;
+}
+
+/* Code block styles */
+/* Based on - http://paulrobertlloyd.com/colophon/markup */
+/* TODO: This could probably be styled better */
+ol.code {
+  margin: 1.5em 0 1.5em 3em;
+  list-style-position: outside;
+  list-style-type: decimal-leading-zero;
+  font-family: Monaco, "Courier New", Courier, monospace;
+  color: #E5E5E5;
+}
+ol.code li {
+  background-color: #FFFAF1;
+  border-top: 1px solid #FFF;
+  padding: 0.1em 0.5em;
+}
+
+/** Forms **/
+form div { 
+  margin-top: 0.5em;        /* 7px  */
+  margin-bottom: 1em;       /* 14px */
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 7px;
+  color: #008F69;
+}
+input,
+textarea {
+  padding: 0.195em;        /* 3.5px i.e. 7px total across top and side */
+  font-family: Georgia, "Time New Roman", serif;
+  font-size: 1.2858em;    /* 18px */
+  line-height: 1;         /* 18px */
+  color: #646567;
+  border: 1px dotted #FF4D00;
+}
+input {
+  width: 50%;
+}
+textarea {
+  width: 520px;
+}
+.submit,
+.submit:link,
+.submit:visited {
+  display: block;
+  padding: 10px 0;
+  font-family: "Dierama", Georgia, "Time New Roman", serif;
+  font-size: 1.1428em;      /* 16px */
+  border: 1px dotted #FFF;
+  background-color: #008F69;
+  color: #FFF;
+  text-align: center;
+  text-decoration: none;
+}
+.submit:hover,
+.submit:focus,
+.submit:active {
+  background-color: #FF4D00;
 }
 
 /** Helpers **/
@@ -244,7 +324,7 @@ aside section ul li {
 aside section ul li:first-child {
   border-top: none;
 }
-aside section .big-grey-box-of-greyness {
+aside section .big-grey-box-of-greyness { /* TODO: This needs a better name */
   border: 1px solid #FFF;
   width: 226px;
   height: 191px;
@@ -313,7 +393,8 @@ aside section .big-grey-box-of-greyness {
 .sub-section,
 .sub-section-alt,
 .portfolio,
-.workshop {
+.workshop,
+.profile {
   background-image: url('../images/bg-gradient.png');
   background-repeat: repeat-x;
   background-color: #FFF;
@@ -347,6 +428,11 @@ aside section .big-grey-box-of-greyness {
 }
 .main img {
   border: 1px dotted #FF4D00;
+}
+.main .logos img{
+  border: none;
+  padding-left: 12px;
+  padding-bottom: 12px;
 }
 
 /** Portfolio Sections **/
@@ -398,32 +484,35 @@ aside section .big-grey-box-of-greyness {
 }
 
 /** Workshop Section **/
-.workshop section{
+.workshop section {
   width: 410px;
   float: right;
   padding-right: 30px;
 }
 
+/** Profile Section **/
+.profile img {
+  float: right;
+}
+.profile section {
+  width: 340px;
+  padding: 40px 30px;
+}
 
 
 
+/** CSS3 Selectors Crazyness **/
+/* TODO: need to find a better way of doing this as they aren't very consistant */
+/* TODO: make sure there are alternative/workaround for non-supporting user-agents */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+form div:first-child,
+.main p:first-child,
+.main h2 + p {
+  margin-top: 0;
+}
+.main .logos img:nth-of-type(4n-3){
+  padding-left: 0px;
+}
+abbr[title] {
+  border-bottom: 1px dotted #646567;
+}
