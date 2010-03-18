@@ -4,11 +4,15 @@
   <meta charset="utf-8">
   <title>Left Logic</title>
   
+  <!--[if IE]><script>/*@cc_on'abbr article aside audio canvas details figcaption figure footer header hgroup mark menu meter nav output progress section summary time video'.replace(/\w+/g,function(n){document.createElement(n)})@*/</script><![endif]-->
+
   <link rel="stylesheet" href="/assets/css/leftlogic.css">
+  <!--[if IE 6]><link rel="stylesheet" href="/assets/css/ie6.css"><![endif]-->
   
 </head>
 <body class="motif">
-<div class="wrapper">
+<div id="wrapper">
+<!-- <div id="wrapper" class="green"> -->
 
   <div class="main">
     <nav>
@@ -38,13 +42,13 @@
       <div class="portfolio">
         <div class="large">
           <section>
-            <img src="images/example-5.jpg" width="527" height="184" alt="Example 5">
+            <img src="/images/example-5.jpg" width="527" height="184" alt="Example 5">
             <header>
               <h2>Project Large</h2>
-              <p>Client / Agency</p>
+              <h3>Client / Agency</h3>
             </header>
             <div>
-              <p>Aquaspe rspeliquunt et officia expliquaspe comniet odit la volla qui ut ad millecu llent. Sanditas acea ist, optatem eum resequas eratiatem voluptasit asit verro omnihillo illab idemporessin eium inum venisquam, occulparum aciendis dolo volor at hit ommoluptatur aborpor ruptate ped maxim venihil explitius aut et resti dit, inctotas enem esedis qui conserspe resedia ssitat asit ea si que reicatiat.</p>  
+              <p class="first">Aquaspe rspeliquunt et officia expliquaspe comniet odit la volla qui ut ad millecu llent. Sanditas acea ist, optatem eum resequas eratiatem voluptasit asit verro omnihillo illab idemporessin eium inum venisquam, occulparum aciendis dolo volor at hit ommoluptatur aborpor ruptate ped maxim venihil explitius aut et resti dit, inctotas enem esedis qui conserspe resedia ssitat asit ea si que reicatiat.</p>  
             </div>
           </section>
         </div>
@@ -54,7 +58,7 @@
             <img src="/images/example-1.jpg" width="186" height="186" alt="Example 1">
             <div>
               <h2>Project Medium</h2>
-              <p>Client / Agency</p>          
+              <h3>Client / Agency</h3>          
             </div>
           </section>
       
@@ -62,7 +66,7 @@
             <img src="/images/example-2.jpg" width="186" height="186" alt="Example 2">
             <div>
               <h2>Project Medium</h2>
-              <p>Client / Agency</p>          
+              <h3>Client / Agency</h3>          
             </div>
           </section>
       
@@ -70,56 +74,36 @@
             <img src="/images/example-3.jpg" width="186" height="186" alt="Example 3">
             <div>
               <h2>Project Medium</h2>
-              <p>Client / Agency</p>          
+              <h3>Client / Agency</h3>          
             </div>
           </section>
         </div><!-- /portfolio-three -->
       
         <div class="small">
           <section>
-            <img src="images/example-4.jpg" width="106" height="106" alt="Example 4">
-            <div>
-              <h2>Project Small</h2>
-              <p>Client</p>         
-            </div>
+            <img src="/images/example-4.jpg" width="106" height="106" alt="Example 4">
           </section>
       
           <section>
-            <img src="images/example-4.jpg" width="106" height="106" alt="Example 4">
-            <div>
-              <h2>Project Small</h2>
-              <p>Client</p>        
-            </div>
+            <img src="/images/example-4.jpg" width="106" height="106" alt="Example 4">
           </section>
       
           <section>
-            <img src="images/example-4.jpg" width="106" height="106" alt="Example 4">
-            <div>
-              <h2>Project Small</h2>
-              <p>Client</p>         
-            </div>
+            <img src="/images/example-4.jpg" width="106" height="106" alt="Example 4">
           </section>
         
           <section>
-            <img src="images/example-4.jpg" width="106" height="106" alt="Example 4">
-            <div>
-              <h2>Project Small</h2>
-              <p>Client</p>         
-            </div>
+            <img src="/images/example-4.jpg" width="106" height="106" alt="Example 4">
           </section>
         
           <section>
-            <img src="images/example-4.jpg" width="106" height="106" alt="Example 4">
-            <div>
-              <h2>Project Small</h2>
-              <p>Client</p>           
-            </div>
+            <img src="/images/example-4.jpg" width="106" height="106" alt="Example 4">
           </section>
         </div><!-- /portfolio-five -->
       </div><!-- /portfolio -->
 
       <div class="workshop">
-        <img src="images/example-4.jpg" width="106" height="106" alt="Example 4">
+        <img src="/images/example-4.jpg" width="106" height="106" alt="Example 4">
         <section>
           <h2>Workshop Title</h2>
           <span class="cost">&pound;399+<abbr>VAT</abbr></span>
@@ -128,7 +112,7 @@
       </div>
       
       <div class="profile">
-        <img src="images/example-3.jpg" width="186" height="185" alt="Example 3">
+        <img src="/images/example-3.jpg" width="186" height="185" alt="Example 3">
         <section>
           <p>
             <em>Remy Sharp</em> is a developer, speaker, blogger, author of upcoming <a class="alt" href="">jQuery for Designers</a> (Manning)
@@ -150,15 +134,14 @@
       <div class="sub-section">
         <!-- Form HTML copied from current Left Logic website -->
         <form action="">
-          <fieldset>
-            <div>
+            <div class="first">
               <label for="ctlName">Name:</label>
-              <input class="wide" type="text" name="name" value="" id="ctlName">
+              <input class="text-input" type="text" name="name" value="" id="ctlName">
             </div>
 
             <div>
               <label for="ctlEmail">Email:</label>
-              <input class="wide" type="text" name="email" value="" id="ctlEmail">
+              <input class="text-input" type="text" name="email" value="" id="ctlEmail">
             </div>
 
             <div>
@@ -167,27 +150,42 @@
             </div>
             
             <div>
-              <input class="submit" type="submit" value="Send">
+              <input class="button" type="submit" value="Send">
+              <input type="hidden" name="send_message" value="1">
             </div>
-
-            <input type="hidden" name="send_message" value="1">
-          </fieldset>
         </form>
       </div><!-- /sub-section-alt -->
                 
     </div><!-- /content -->
 
+    <div class="content">   
+      <div class="sub-section-alt">
+        <h1 class="blog-heading">Blog Title</h1>  
+      </div><!-- /sub-section-alt -->
 
+      <div class="sub-section">
+        <h2>Sub Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div><!-- /sub-section-alt -->   
+    </div><!-- /content -->
+    <div class="comments">
+      <section class="alt">
+        <img src="images/avatar-1.png" width="70" height="70" alt="Avatar">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+    </div><!-- /comments -->
+    <div class="blog-motif"></div>
+      
     <div class="content">
       
       <div class="sub-section-alt">
         <p class="lede">We work directly for organisations or on behalf of other digital agencies, our clients include:</p>
         <p class="logos">
-         <img src="images/client-logos/bbc.png" width="120" height="60" alt="Bbc">
+         <img class="fournminusthree" src="images/client-logos/bbc.png" width="120" height="60" alt="Bbc">
          <img src="images/client-logos/dharmafly.png" width="120" height="60" alt="Dharmafly">
          <img src="images/client-logos/fellow.png" width="120" height="60" alt="Fellow">
          <img src="images/client-logos/formula.png" width="120" height="60" alt="Formula">
-         <img src="images/client-logos/milo-2.png" width="120" height="60" alt="Milo 2">
+         <img class="fournminusthree" src="images/client-logos/milo-2.png" width="120" height="60" alt="Milo 2">
          <img src="images/client-logos/molecular.png" width="120" height="60" alt="Molecular">
          <img src="images/client-logos/steel.png" width="120" height="60" alt="Steel">
          <img src="images/client-logos/torchbox.png" width="120" height="60" alt="Torchbox"> 
@@ -262,19 +260,19 @@
                         <dd>Used for defining a citation or reference to other information sources. Example cited text and usage: More information can be found in <cite>[ISO-0000]</cite></dd>
                         
                         <dt><dfn>dfn</dfn></dt>
-                        <dd>Used to highlight the first use of a term. Like <code>abbr</code> and <code>acronym</code>, the <code>title</code> attribute can be used to describe the term.</p>
+                        <dd>Used to highlight the first use of a term. Like <code>abbr</code> and <code>acronym</code>, the <code>title</code> attribute can be used to describe the term.</dd>
                         <dd>
                             <p>Bob&#8217;s <dfn title="Dog">canine</dfn> mother and <dfn title="Horse">equine</dfn> father sat him down and carefully explained that he was an <dfn title="A mutation that combines two or more sets of chromosomes from different species">allopolyploid</dfn> organism.</p>
                         </dd>
 
-                        <dt><del datetime="2005-05-30T13:00:00">del</del></dt>
-                        <dd>Used for deleted or retracted text which still must remain on the page for some reason. Since the default style includes a strikethrough line, it&#8217;s preferable to the <code>s</code> element. The <code>del</code> element also has a <code>datetime</code> attribute which allows you to include a timestamp directly in the element. Example deleted text and usage: She bought <del datetime="2005-05-30T13:00:00">two</del> <ins datetime="2005-05-30T13:00:00">five</ins> pairs of shoes.</dd>
+                        <dt><del datetime="2010-01-18T19:29:00">del</del></dt>
+                        <dd>Used for deleted or retracted text which still must remain on the page for some reason. Since the default style includes a strikethrough line, it&#8217;s preferable to the <code>s</code> element. The <code>del</code> element also has a <code>datetime</code> attribute which allows you to include a timestamp directly in the element. Example deleted text and usage: She bought <del datetime="2010-01-18T19:29:00">two</del> <ins datetime="2010-01-18T19:29:00">five</ins> pairs of shoes.</dd>
 
                         <dt><em>em</em></dt>
                         <dd>Used for denoting emphasized text. In most instances where you&#8217;d want to italicize text (using the <abbr title="HyperText Markup Language">HTML</abbr> element <code>i</code> or otherwise) you should use the <code>em</code> element instead. Notable exceptions are stylistic italicizing of proper titles, foreign languages, etc. where italicizing is used for differentiation instead of emphasis. In those cases, no proper <abbr title="HyperText Markup Language">HTML</abbr> elements exist, so an <code>i</code> element or a <code>span</code> element with a custom class may be preferable. Example emphasized text and usage: You simply <em>must</em> try the negitoro maki!</dd>
 
-                        <dt><ins datetime="2005-05-30T13:00:00">ins</ins></dt>
-                        <dd>Used for inserted text and counterpart to the <code>del</code> element. Like <code>del</code>, <code>ins</code> has a <code>datetime</code> attribute which allows you to include a timestamp directly in the element. Example inserted text and usage: She bought <del datetime="2005-05-30T13:00:00">two</del> <ins datetime="2005-05-30T13:00:00">five</ins> pairs of shoes.</dd>
+                        <dt><ins datetime="2010-01-18T19:29:00">ins</ins></dt>
+                        <dd>Used for inserted text and counterpart to the <code>del</code> element. Like <code>del</code>, <code>ins</code> has a <code>datetime</code> attribute which allows you to include a timestamp directly in the element. Example inserted text and usage: She bought <del datetime="2010-01-18T19:29:00">two</del> <ins datetime="2010-01-18T19:29:00">five</ins> pairs of shoes.</dd>
 
                         <dt><kbd>kbd</kbd></dt>
                         <dd>Used for text which should be typed by the user. Mainly useful for computer instructions. Example keyboard text and usage: Please press <kbd>Enter</kbd> to continue.</dd>
@@ -282,7 +280,6 @@
                         <dt><q>q</q></dt>
                         <dd>
                             <p>Used for quoting inline. Example usage illustrating nested quotations:</p>
-
                             <p>John said, <q>I saw Lucy at lunch, she told me <q>Mary wants you to get some ice cream on your way home</q>. I think I will get some at Ben and Jerry&#8217;s, on Gloucester Road.</q></p>
                         </dd>
                         
@@ -429,15 +426,12 @@
                             </div>
                             <div>
                                 <label for="password">Password</label>
-
                                 <input id="password" type="text" class="text" />
                                 <em>Note about this field.</em>
                             </div>
                             <div>
                                 <label for="textarea">Textarea</label>
-                                <textarea id="textarea" rows="8" cols="48"></textarea>
-                                <em class="clear">Note about this field.</em>
-
+                                <textarea id="textarea" rows="8" cols="40"></textarea>
                             </div>
                             <div>
                                 <label for="checkbox">Single Checkbox</label>
@@ -445,7 +439,6 @@
                             </div>
                             <div>
                                 <label for="select">Select</label>
-
                                 <select id="select">
                                     <optgroup label="Option Group">
                                         <option>Option One</option>
@@ -453,8 +446,6 @@
                                         <option>Option Three</option>
                                     </optgroup>
                                 </select>
-
-                                <em>Note about this selection.</em>
                             </div>
                             <fieldset class="options">
                                 <legend><span>Checkbox <abbr title="Required">*</abbr></span></legend>
@@ -467,23 +458,21 @@
                             </fieldset>
                             <fieldset class="options">
                                 <legend><span>Radio</span></legend>
-
                                 <ul>
                                     <li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked" /> Option 1</label></li>
                                     <li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio" /> Option 2</label></li>
                                 </ul>
                             </fieldset>
                             <div>
-                                <input  class="submit" id="remark-preview" type="submit" class="button submit" value="Post Comment" />
+                                <input  class="button" id="remark-preview" type="submit" value="Post Comment" />
 
-                                <input  class="submit" id="remark-submit" type="submit" class="button" value="Preview" />
+                                <input  class="button" id="remark-submit" type="submit" value="Preview" />
                                 <a href="#">Cancel</a>
                             </div>
                         </fieldset>
                     </form>
 
-                    <p class="caption">Parts of this markup guide attributable to <a href="http://www.mezzoblue.com/">Dave Shea</a>, and licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/uk/">Creative Commons License</a>.
-                    </p>
+                    <p class="caption">Parts of this markup guide attributable to <a href="http://www.mezzoblue.com/">Dave Shea</a>, and licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/uk/">Creative Commons License</a>.</p>
       <!-- End of Markup Guide -->
       </div><!-- /sub-section -->
     </div><!-- /content -->
