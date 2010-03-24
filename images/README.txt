@@ -1,0 +1,1 @@
+This folder contains images that would be content managed.
