@@ -636,3 +636,8 @@ section p:last-child {
 h1+p {
   font-size: 18px;
 }
+
+:invalid {
+  background: rgba(218, 0, 0, .1);
+  border-style: solid;
+}
