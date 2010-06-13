@@ -641,3 +641,17 @@ h1+p {
   background: rgba(218, 0, 0, .1);
   border-style: solid;
 }
+
+canvas.game {
+  position: absolute;
+  top: 0;
+  left: 0;
+/*  z-index: -1;
+  height: 100%;
+  width: 100%;
+*/}
+
+#wrapper {
+  z-index: 1;
+  position: relative;
+}
