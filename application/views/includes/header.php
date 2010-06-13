@@ -16,12 +16,12 @@
   <div class="main">
     <nav>
       <ul>
-        <li><a href="<?php echo base_url(); ?>"<?php echo $page == 'home' ? ' class="selected"' : ''; ?>>Home</a></li>
+        <li><a href="<?php echo base_url(); ?>/"<?php echo $page == 'home' ? ' class="selected"' : ''; ?>>Home</a></li>
         <?php /* <li><a href="">Portfolio</a></li>
         <li><a href="">R&amp;D Lab</a></li>
         <li><a href="">Training</a></li>
         <li><a href="">Consultancy</a></li> */ ?>
-        <li><a href="<?php echo site_url("hire"); ?>"<?php echo $page == 'hire' ? ' class="selected"' : ''; ?>>Hire Us</a></li>
+        <li><a href="/<?php echo site_url("hire"); ?>"<?php echo $page == 'hire' ? ' class="selected"' : ''; ?>>Hire Us</a></li>
       </ul>
     </nav>
     

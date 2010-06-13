@@ -1,7 +1,7 @@
 <div class="content">   
-  <div class="sub-section-alt">
+  <section class="sub-section-alt">
     <h1>Hire Us</h1>  
-    <p>Left Logic thrives on new challenges, meeting new people and delivering great websites. Regardless of whether your project is big or small, if you want your website to feature the most sublime user experience possible then drop us a line.</p>   
+    <p>Regardless of whether your project is big or small, if you want your website to feature the most sublime user experience possible then drop us a line.</p>   
   </div><!-- /sub-section-alt -->
 
   <div class="sub-section">
@@ -25,6 +25,7 @@
         <div>
           <label for="fHeard">How did you hear about Left Logic?</label>
           <select id="fHeard" name="fHeard">
+            <option class="unknown">-- Please let us know --</option>
             <optgroup label="Our Projects">
               <option>jQuery For Designers</option>
               <option>Snap Bird</option>
@@ -41,7 +42,7 @@
         </div>
 
         <div>
-          <label for="fMessage">Message:</label>
+          <label for="fMessage">Your message:</label>
           <textarea id="fMessage" name="fMessage" rows="8" cols="40" class="wide"><?php echo set_value('fMessage'); ?></textarea>
         </div>
         
@@ -50,12 +51,13 @@
           <input type="hidden" name="action" value="send">
         </div>
     </form>
-  </div><!-- /sub-section -->
+  </section><!-- /sub-section -->
 </div><!-- /content -->
 
 <div class="content">  
-  <div class="sub-section-alt">
-    <p class="lede">We work directly for organisations or on behalf of other digital agencies, our clients include:</p>
+  <section class="sub-section-alt">
+    <!-- <p class="lede">We work directly for organisations or on behalf of other digital agencies, our clients include:</p> -->
+    <h1>Some of our clients</h1>
     <p class="logos">
      <img class="fournminusthree" src="/images/client-logos/bbc.png" width="120" height="60" alt="BBC">
      <img src="/images/client-logos/dharmafly.png" width="120" height="60" alt="Dharmafly">
@@ -66,5 +68,5 @@
      <img src="/images/client-logos/steel.png" width="120" height="60" alt="Steel">
      <img src="/images/client-logos/torchbox.png" width="120" height="60" alt="Torchbox"> 
     </p>
-  </div><!-- /sub-section-alt -->
+  </section><!-- /sub-section-alt -->
 </div><!-- /content -->
