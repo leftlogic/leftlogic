@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Left Logic - Specialist Web Development</title>
-  <link rel="icon" type="image/png" href="/image/favicon.png" />
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
   <!--[if lte IE 8]><script>/*@cc_on'abbr article aside audio canvas details figcaption figure footer header hgroup mark menu meter nav output progress section summary time video'.replace(/\w+/g,function(n){document.createElement(n)})@*/</script><![endif]-->
   <link rel="stylesheet" href="/assets/css/leftlogic.css" />
   <!--[if IE 6]><link rel="stylesheet" href="/assets/css/ie6.css" /><![endif]-->

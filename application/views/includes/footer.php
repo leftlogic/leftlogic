@@ -51,5 +51,6 @@
   </footer>
   
 </div><!-- /wrapper -->
+<script src="/js/leftlogic.js"></script>
 </body>
 </html>
