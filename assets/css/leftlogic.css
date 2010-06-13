@@ -275,16 +275,19 @@ nav ul li a:visited {
   font-size: 1.1428em;      /* 16px */
   text-decoration: none;
 }
+
 nav ul li a.selected,
 nav ul li a:hover,
 nav ul li a:focus,
 nav ul li a:active {
   text-decoration: underline;
 }
-nav ul li a.selected {
+
+/* RS: changed whilst there's not a lot of nav */
+/*nav ul li a.selected {
   color: #008F69;
 }
-
+*/
 /** Sidebar **/
 aside section {
   margin: 25px;
@@ -408,7 +411,8 @@ aside section .big-grey-box-of-greyness { /* TODO: This needs a better name */
 }
 .sub-section,
 .sub-section-alt {
-  padding: 40px 30px; 
+/*  padding: 40px 30px; */
+  padding: 30px; /* RS: change */
 }
 .portfolio,
 .workshop {
@@ -619,4 +623,16 @@ th {
 }
 abbr[title] {
   border-bottom: 1px dotted #646567;
+}
+
+select {
+  font-size: 16px;
+}
+
+section p:last-child {
+  margin-bottom: 0;
+}
+
+h1+p {
+  font-size: 18px;
 }
