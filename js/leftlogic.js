@@ -1,4 +1,42 @@
-if (document.createElement('canvas').getContext('2d')) (function () {
+if (document.createElement('canvas').getContext('2d')) (function (window, document, undefined) {
+
+var dots = {};
+
+function Dot(x, y) {
+  var dot = this,
+      color = colors[~~(Math.random()*colors.length)];
+  
+  function animate() {
+    ctx.save();
+    dot.level += 0.1 * direction;
+    if (dot.level < 0.01) dot.level = 0;
+    ctx.fillStyle = 'rgba(' + color + ', ' + dot.level + ')';
+    ctx.clearRect(~~(x / 10) * 10, ~~(y / 10) * 10, 9, 9); // because we're using opacity
+    ctx.fillRect(~~(x / 10) * 10, ~~(y / 10) * 10, 9, 9);
+    ctx.restore();
+    if (0 < dot.level && dot.level < 1) {
+      dot.timer = setTimeout(animate, 50);
+    } else if (dot.level > 1) {
+      direction = -1;
+      dot.timer = setTimeout(animate, 500);
+    } 
+  }
+  
+  dot.level = 0;
+  direction = 1;
+  
+  if (dots[x+':'+y] !== undefined) {
+    dot.level = dots[x+':'+y].level;
+    dots[x+':'+y].clear();
+  }
+  
+  dots[x+':'+y] = dot;
+  dot.timer = setTimeout(animate, 50);
+}
+
+Dot.prototype.clear = function () {
+  clearTimeout(this.timer);
+};
 
 var canvas = document.createElement('canvas'),
     ctx = canvas.getContext('2d'),
@@ -6,7 +44,8 @@ var canvas = document.createElement('canvas'),
     ctxcopy = copy.getContext('2d'),
     body = document.body,
     drawing = false,
-    resizeTimer = null;
+    resizeTimer = null,
+    colors = ['234,109,0', '219,64,0', '224,73,0', '224,78,0', '229,95,0', '228,100,0', '229,101,0'];
 
 // setup the style
 canvas.className = 'game';
@@ -23,20 +62,19 @@ canvas.addEventListener('mousemove', function (event) {
   if (drawing) {
     x = event.clientX + document.body.scrollLeft;
     y = event.clientY + document.body.scrollTop;
-    ctx.fillRect(~~(x / 10) * 10, ~~(y / 10) * 10, 9, 9);
+    new Dot(x, y);
   }
 }, false);
 
 canvas.addEventListener('mousedown', function (event) {
   drawing = true;
-  // ctx.fillStyle = '#' + (~~(Math.random() * 16777215)).toString(16);
   event.preventDefault();
 }, false);
 
 body.addEventListener('mouseup', function () {
   x = event.clientX + document.body.scrollLeft;
   y = event.clientY + document.body.scrollTop;
-  ctx.fillRect(~~(x / 10) * 10, ~~(y / 10) * 10, 9, 9);
+  new Dot(x, y);
   drawing = false;
 }, false);
 
@@ -60,4 +98,4 @@ window.addEventListener('resize', function (event) {
 body.insertBefore(canvas, body.firstChild);
 
 
-})();
+})(this, document);
