@@ -8,7 +8,7 @@ function Dot(x, y) {
   
   function animate() {
     ctx.save();
-    dot.level += 0.1 * direction;
+    dot.level += 0.1 * dot.direction;
     if (dot.level < 0.01) dot.level = 0;
     ctx.fillStyle = 'rgba(' + color + ', ' + dot.level + ')';
     ctx.clearRect(~~(x / 10) * 10, ~~(y / 10) * 10, 9, 9); // because we're using opacity
@@ -17,13 +17,13 @@ function Dot(x, y) {
     if (0 < dot.level && dot.level < 1) {
       dot.timer = setTimeout(animate, 50);
     } else if (dot.level > 1) {
-      direction = -1;
+      dot.direction = -1;
       dot.timer = setTimeout(animate, 500);
     } 
   }
   
   dot.level = 0;
-  direction = 1;
+  dot.direction = 1;
   
   if (dots[x+':'+y] !== undefined) {
     dot.level = dots[x+':'+y].level;
@@ -31,10 +31,12 @@ function Dot(x, y) {
   }
   
   dots[x+':'+y] = dot;
+  
   dot.timer = setTimeout(animate, 50);
 }
 
 Dot.prototype.clear = function () {
+  console.log('clearing' + this.timer);
   clearTimeout(this.timer);
 };
 
