@@ -1,21 +1,12 @@
 <?php
-
-class Home extends Controller {
-
-	function Home()
-	{
+class Home extends MY_Controller {
+	function Home() {
 		parent::Controller();	
+		$this->motif = true;
+		$this->page = 'home';
 	}
 	
-	function index()
-	{
-	  $data['motif'] = true;
-	  $data['page'] = 'home';
-
-		$this->load->view('includes/header', $data);
-		$this->load->view('home');
-		$this->load->view('includes/aside_header');
-		$this->load->view('includes/asides/asides');
-		$this->load->view('includes/footer', $data);
+	function index() {
+		$this->view('home');
 	}
 }

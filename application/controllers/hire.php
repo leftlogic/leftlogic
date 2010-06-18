@@ -1,9 +1,9 @@
 <?php
 
-class Hire extends Controller {
+class Hire extends MY_Controller {
 
-	function Hire()
-	{
+	function Hire() {
+	  $this->page = 'hire';
 		parent::Controller();
 	}
 	
@@ -12,9 +12,6 @@ class Hire extends Controller {
 	  $this->load->helper(array('form'));
     $this->load->library(array('email', 'form_validation'));
     
-    $data['motif'] = false;
-	  $data['page'] = 'hire';
-
 	  $data['name'] = $this->input->post('fName');
     $data['email'] = $this->input->post('fEmail');
     $data['message'] = $this->input->post('fMessage');
@@ -59,10 +56,6 @@ class Hire extends Controller {
       }
     }
 
-		$this->load->view('includes/header', $data);
-		$this->load->view('hire', $data);
-		$this->load->view('includes/aside_header');
-		$this->load->view('includes/asides/asides');
-		$this->load->view('includes/footer', $data);
+		$this->view('hire', $data);
 	}
 }

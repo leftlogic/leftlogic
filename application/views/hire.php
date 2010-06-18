@@ -2,9 +2,9 @@
   <section class="sub-section-alt">
     <h1>Hire Us</h1>  
     <p>Regardless of whether your project is big or small, if you want your website to feature the most sublime user experience possible then drop us a line.</p>   
-  </div><!-- /sub-section-alt -->
+  </section><!-- /sub-section-alt -->
 
-  <div class="sub-section">
+  <section class="sub-section">
     
     <?php echo $server_message; ?>
     
@@ -60,13 +60,13 @@
     <h1>Some of our clients</h1>
     <p class="logos">
      <img class="fournminusthree" src="/images/client-logos/bbc.png" width="120" height="60" alt="BBC">
-     <img src="/images/client-logos/dharmafly.png" width="120" height="60" alt="Dharmafly">
      <img src="/images/client-logos/fellow.png" width="120" height="60" alt="Fellow">
      <img src="/images/client-logos/formula.png" width="120" height="60" alt="Formula">
      <img class="fournminusthree" src="/images/client-logos/milo-2.png" width="120" height="60" alt="Milo">
      <img src="/images/client-logos/molecular.png" width="120" height="60" alt="Molecular">
      <img src="/images/client-logos/steel.png" width="120" height="60" alt="Steel">
      <img src="/images/client-logos/torchbox.png" width="120" height="60" alt="Torchbox"> 
+     <img src="/images/client-logos/dharmafly.png" width="120" height="60" alt="Dharmafly">
     </p>
   </section><!-- /sub-section-alt -->
 </div><!-- /content -->

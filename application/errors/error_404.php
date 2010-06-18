@@ -20,7 +20,7 @@
     
   <div class="content">   
     <div class="sub-section-alt">
-      <h1>404</h1>  
+      <h1>TODO - this should use the default header and footer</h1>  
       <p>Whoops! We couldn't find what you were looking for.</p>
     </div><!-- /sub-section-alt -->
   </div><!-- /content --></div><!-- /main -->

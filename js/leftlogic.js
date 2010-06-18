@@ -36,7 +36,6 @@ function Dot(x, y) {
 }
 
 Dot.prototype.clear = function () {
-  console.log('clearing' + this.timer);
   clearTimeout(this.timer);
 };
 
@@ -62,8 +61,8 @@ ctx.fillStyle = '#EA6D00';
 canvas.addEventListener('mousemove', function (event) {
   var x, y;
   if (drawing) {
-    x = event.clientX + document.body.scrollLeft;
-    y = event.clientY + document.body.scrollTop;
+    x = event.clientX + (document.documentElement.scrollLeft || document.body.scrollLeft);
+    y = event.clientY + (document.documentElement.scrollTop || document.body.scrollTop);
     new Dot(x, y);
   }
 }, false);
@@ -73,9 +72,9 @@ canvas.addEventListener('mousedown', function (event) {
   event.preventDefault();
 }, false);
 
-body.addEventListener('mouseup', function () {
-  x = event.clientX + document.body.scrollLeft;
-  y = event.clientY + document.body.scrollTop;
+body.addEventListener('mouseup', function (event) {
+  x = event.clientX + (document.documentElement.scrollLeft || document.body.scrollLeft);
+  y = event.clientY + (document.documentElement.scrollTop || document.body.scrollTop);
   new Dot(x, y);
   drawing = false;
 }, false);

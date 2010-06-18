@@ -1,7 +1,7 @@
   </aside>
   
   <footer>
-    <?php echo $motif ? '<div id="motif"></div>' : ''; ?>
+    <?php echo isset($motif) && $motif ? '<div id="motif"></div>' : ''; ?>
     <div class="fat-footer">
     <?php /* 
       <section>
@@ -39,7 +39,7 @@
         <h2 class="alt">Call <strong>+44 (0) 1273 557744</strong></h2>
         <p>9.30am - 5.30pm Monday-Friday</p>
         <br/>
-        <p class="fn org">Left Logic <abbr title="Limited">Ltd.</abbr></p>
+        <p class="fn org">Left Logic <abbr>Ltd.</abbr></p>
         <p class="adr"><span class="street">44 Burstead Close</span>, <span class="locality">Brighton</span>, <span class="postal-code">BN1 7HT</span></p>
         <a class="alt" href="http://h2vx.com/vcf/referer">vCard Download</a><?php /* <a href="">Location Map</a> */ ?>
       </section>
