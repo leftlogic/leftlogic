@@ -11,7 +11,7 @@
 
   </section><!-- /sub-section-alt -->
   
-  <section class="workshop">
+  <section class="workshop" id="html5">
     <img src="/images/html5-workshop.jpg" title="Photo by Stefan Nitzsche" />
     <section>
       <h2>Browsers with Wings: HTML5 APIs</h2>
@@ -37,7 +37,7 @@
     
   </section>
   
-  <section class="workshop">
+  <section class="workshop" id="j4d">
     <img src="/images/j4d-workshop.jpg" />
     <section>
       <h2>jQuery for Designers</h2>
