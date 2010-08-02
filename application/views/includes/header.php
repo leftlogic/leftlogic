@@ -8,18 +8,17 @@
   <link rel="stylesheet" href="/assets/css/leftlogic.css" />
   <!--[if IE 6]><link rel="stylesheet" href="/assets/css/ie6.css" /><![endif]-->
 </head>
-<body<?php echo $motif ? ' class="motif"' : ''; ?>>
+<body<?php echo $class ? ' class="' . $class . '"' : ''; ?>>
 <div id="wrapper">
-  <script>document.getElementById('wrapper').className = window.name; window.name = window.name === 'green' ? '' : 'green';</script>
   <div class="main">
     <nav>
       <ul>
         <li><a href="<?=base_url()?>/"<?php echo $page == 'home' ? ' class="selected"' : ''; ?>>Home</a></li>
         <li><a href="<?=base_url()?>/training">Training</a></li>
-        <?php /* <li><a href="">Portfolio</a></li>
-        <li><a href="">R&amp;D Lab</a></li>
-        <li><a href="">Consultancy</a></li> */ ?>
-        <li><a href="/<?=site_url("hire")?>"<?php echo $page == 'hire' ? ' class="selected"' : ''; ?>>Hire Us</a></li>
+        <li><a href="<?=base_url()?>/projects">Projects</a></li>
+        <!-- <li><a href="<?=base_url()?>/portfolio">Portfolio</a></li> -->
+        <!-- <li><a href="<?=base_url()?>/consultancy">Consultancy</a></li> -->
+        <li><a href="<?=base_url()?>/contact"<?php echo $page == 'hire' ? ' class="selected"' : ''; ?>>Contact</a></li>
       </ul>
     </nav>
     

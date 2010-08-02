@@ -43,6 +43,9 @@
 $route['default_controller'] = "home";
 $route['scaffolding_trigger'] = "";
 
+$route['projects/entity-lookup'] = "projects/entitylookup";
+
+
 
 /* End of file routes.php */
 /* Location: ./system/application/config/routes.php */

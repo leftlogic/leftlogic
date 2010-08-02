@@ -15,6 +15,7 @@ RewriteRule ^(.*)$ http://leftlogic.com/$1 [R=301,L]
 # RewriteRule .* down.html
 
 # specific rules 
+RewriteRule ^lounge/articles/(.*)$ /projects/$1 [R,L]
 
 # if the file or directory don't exist
 RewriteCond %{REQUEST_FILENAME} !-d

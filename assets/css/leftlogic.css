@@ -110,6 +110,10 @@ em {
   font-style: italic;
 }
 
+small {
+  font-size: 0.85em;
+}
+
 /** Forms **/
 form div { 
   margin-top: 0.5em;        /* 7px  */
@@ -197,7 +201,7 @@ fieldset textarea {
   background-color: #EE6702;
   overflow: hidden;
 }
-#wrapper.green{
+.green #wrapper {
   background-image: url("/assets/images/bg-texture-green.jpg");
   background-color: #008F69;
 }
@@ -273,9 +277,13 @@ footer .legal {
 }
 
 /** Navigation **/
+nav ul {
+  padding: 0;
+}
+
 nav ul li {
   float: left;
-  padding-right: 20px;
+  padding-right: 15px;
   line-height: 3.5714em;    /* 50px */
   
 }
@@ -295,10 +303,10 @@ nav ul li a:active {
 }
 
 /* RS: changed whilst there's not a lot of nav */
-/*nav ul li a.selected {
+nav ul li a.selected {
   color: #008F69;
 }
-*/
+
 /** Sidebar **/
 aside section {
   margin: 25px;
@@ -308,6 +316,11 @@ aside section div {
   position: relative;
   background-color: #FFF;
 }
+
+aside section img {
+  display: block;
+}
+
 aside section .block-link,
 aside section .block-link:link,
 aside section .block-link:visited {
@@ -340,6 +353,7 @@ aside section h2 {
 }
 
 aside section ul {
+  background: #fff;
   padding: 0 25px;
 }
 aside section ul li {
@@ -446,10 +460,11 @@ aside section .big-grey-box-of-greyness { /* TODO: This needs a better name */
 }
 .main h2 {
   font-family: Georgia, "Time New Roman", serif;
-  font-size: 1em;      /* 14px */
+  font-size: 1.4em;      /* 14px */
   margin: 0;
 }
 .main h3 {
+  font-weight: bolder;
   margin-top: 0;
 }
 .main p {
@@ -473,13 +488,16 @@ aside section .big-grey-box-of-greyness { /* TODO: This needs a better name */
 .main ul,
 .main ol {
   list-style-type: disc;
-  list-style-position: inside;
+  list-style-position: outside;
+  padding-left: 20px;
   margin-top: 0.5em;        /* 7px  */
   margin-bottom: 1em;       /* 14px */
 }
 .main ol {
   list-style-type: decimal;
+  padding-left: 20px;
 }
+
 .main dd {
   margin: 1em;              /* 14px */
   margin-left: 2em;         /* 28px */
@@ -703,4 +721,177 @@ blockquote[cite]:after {
 @media screen and (max-width: 820px) { 
   #wrapper { width: 650px; }
   #motif, aside { display: none; } 
+}
+
+img.plain,
+.green .main img.plain {
+  border: 0;
+  margin: 0 auto;
+  display: block;
+  -webkit-box-shadow: 0 0 5px #ccc;
+}
+
+img.simple,
+.green .main img.simple {
+  border: 0;
+}
+
+/* entity lookup blog post specific */
+div.entity {
+  clear: both;
+  margin: 0;
+  padding: 10px 0 5px 0;
+/*  border-bottom: 1px solid #ccc;*/
+  position: relative; /* required for disabled block */
+}
+
+div.compress div.entity {
+  padding: 3px 0;
+}
+
+div.entity div.html {
+  float: left;
+  margin-bottom: 20px;
+  font-size: 300%;
+  width: 60px;
+  background: url(/images/greyed.gif);
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+div.compress div.entity div.html {
+  margin-bottom: 0;
+  background: none;
+  margin-top: 3px;
+  font-size: 110%;
+}
+
+div.entity div.detail {
+  float: right;
+  width: 465px;
+}
+
+div.entity div.detail div.code, 
+div.entity div.detail div.entityCode,
+div.entity div.detail div.entityName {
+  float: left;
+  width: 100px;
+  font-size: 150%;
+}
+
+div.entity div.detail div.entityCode {
+  width: 150px;
+}
+
+div.compress div.entity div.detail div {
+  font-size: 100%;
+}
+
+div.entity div.description {
+  margin-top: 5px;
+}
+
+div.compress div.entity div.description {
+  display: none;
+}
+
+div.compress div.entity div.detail div.clear {
+  clear: none!important;
+}
+
+div.entity div.tools img {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.disabled {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  float: right;
+  height: 100%;
+  width: 100%;
+  background: #000;
+}
+
+form.editable {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  float: right;
+  height: 100%;
+  padding: 3px;
+}
+
+form.editable label {
+  color: #fff;
+  display: inline;
+  margin-left: 5px;
+  margin-top: 7px;
+}
+
+form.editable input {
+  font-size: 100%;
+  padding: 3px;  
+  width: 250px;
+}
+
+div.submit {
+  border: 1px solid #ccc;
+  border-top: 0;
+  background: #eee;
+  padding: 0.5em 1em;
+}
+
+div.submit p {
+  float: left;
+  width: 460px;
+}
+
+div.submit input {
+  border: 2px outset #999;
+  float: right;
+}
+
+a.bookmarklet {
+  color: #fff;
+  background: #FF4D00;
+  padding: 10px 20px;
+  border: 1px solid #F53500;
+  border-radius: 30px;
+  margin: 10px 0;
+  -webkit-box-shadow: 0 0 3px #000;
+  font-size: 150%;
+  display: inline-block;
+}
+
+a.bookmarklet:hover {
+  -webkit-box-shadow: 0 0 10px #000;
+  border: 1px solid #E51F00;
+}
+
+#lookupForm div.floatL {
+  float: left;
+  width: 320px;
+}
+
+#lookupForm fieldset.floatR {
+  float: right;
+  width: 150px;
+}
+
+#lookupForm label {
+  float: none;
+  display: inline;
+}
+
+#entitylookup fieldset {
+  border: 1px solid #ccc;
+}
+
+#entitylookup h2 {
+  padding-top: 20px;
+  clear: left;
 }

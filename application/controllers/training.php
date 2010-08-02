@@ -8,6 +8,11 @@ class Training extends MY_Controller {
 	}
 	
 	function index() {
-		$this->view('training');	  
+	  $data['asides'] = 'latest-talks';
+		$this->view('training', $data);
+	}
+	
+	function consultancy() {
+	  
 	}
 }

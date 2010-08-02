@@ -1,38 +1,39 @@
 <?php
 
-class Hire extends MY_Controller {
+class Contact extends MY_Controller {
 
-	function Hire() {
-	  $this->page = 'hire';
-		parent::Controller();
-	}
-	
-	function index()
-	{
-	  $this->load->helper(array('form'));
-    $this->load->library(array('email', 'form_validation'));
+  function Contact() {
+    $this->page = 'contact';
+    parent::Controller();
+  }
+  
+  function index() {
+    parse_str($_SERVER['QUERY_STRING'], $_GET);
     
-	  $data['name'] = $this->input->post('fName');
-    $data['email'] = $this->input->post('fEmail');
-    $data['message'] = $this->input->post('fMessage');
-    $data['found_us'] = $this->input->post('fHeard');
+    $this->load->helper(array('form'));
+    $this->load->library(array('email', 'form_validation'));
+
+    $data['name'] = $this->input->post('name');
+    $data['email'] = $this->input->post('email');
+    $data['message'] = isset($_GET['subject']) ? $_GET['subject'] : $this->input->post('message');
+    $data['found_us'] = $this->input->post('heard');
 
     $data['server_message'] = '';
     
     if ($this->input->post('action') == 'send') { 
       $rules = array(
         array(
-          'field'   => 'fName', 
+          'field'   => 'name', 
           'label'   => 'name', 
           'rules'   => 'required'
         ),
         array(
-          'field'   => 'fEmail', 
+          'field'   => 'email', 
           'label'   => 'email address', 
           'rules'   => 'required|valid_email'
         ),
         array(
-          'field'   => 'fMessage', 
+          'field'   => 'message', 
           'label'   => 'message', 
           'rules'   => 'required'
         )
@@ -56,6 +57,6 @@ class Hire extends MY_Controller {
       }
     }
 
-		$this->view('hire', $data);
-	}
+    $this->view('contact', $data);
+  }
 }

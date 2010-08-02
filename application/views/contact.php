@@ -1,7 +1,7 @@
 <div class="content">   
   <section class="sub-section-alt">
-    <h1>Hire Us</h1>  
-    <p>Regardless of whether your project is big or small, if you want your website to feature the most sublime user experience possible then drop us a line.</p>   
+    <h1>Contact Us</h1>  
+    <p>Regardless of whether your project is big or small, if you want your website to feature the most sublime user experience possible then drop us a line to hire us.</p>   
   </section><!-- /sub-section-alt -->
 
   <section class="sub-section">
@@ -10,21 +10,21 @@
     
     <?php //echo validation_errors(); ?>
     
-    <form action="<?php echo current_url(); ?>" method="post">
+    <form action="/contact" method="post">
 
         <div class="first">
           <label for="fName">Name:</label>
-          <input class="text-input" type="text" name="fName" value="<?php echo set_value('fName'); ?>" id="fName">
+          <input class="text-input" type="text" name="name" value="<?=$name?>" id="fName">
         </div>
 
         <div>
           <label for="fEmail">Email:</label>
-          <input class="text-input" type="email" name="fEmail" value="<?php echo set_value('fEmail'); ?>" id="fEmail">
+          <input class="text-input" type="email" name="email" value="<?=$email?>" id="fEmail">
         </div
         
         <div>
           <label for="fHeard">How did you hear about Left Logic?</label>
-          <select id="fHeard" name="fHeard">
+          <select id="fHeard" name="heard">
             <option class="unknown">-- Please let us know --</option>
             <optgroup label="Our Projects">
               <option>jQuery For Designers</option>
@@ -43,7 +43,7 @@
 
         <div>
           <label for="fMessage">Your message:</label>
-          <textarea id="fMessage" name="fMessage" rows="8" cols="40" class="wide"><?php echo set_value('fMessage'); ?></textarea>
+          <textarea id="fMessage" name="message" rows="8" cols="40" class="wide"><?=$message?></textarea>
         </div>
         
         <div>
