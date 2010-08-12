@@ -3,10 +3,11 @@ class Missing extends MY_Controller {
 	function Missing() {
 		parent::Controller();	
 		$this->motif = true;
-		$this->page = '404';
+		$this->page = 'missing';
 	}
 	
 	function index() {
-		$this->view('404');
+    $data['originalURL'] = substr($_POST['originalURL'], 1);
+		$this->view('missing', $data);
 	}
 }

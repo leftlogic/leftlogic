@@ -2,7 +2,7 @@
   <section class="sub-section-alt">
     <h1>Professional Training</h1>  
     <p>At Left Logic, we know that many large organisations have in-house development teams. Sometimes it makes more sense to up-skill your own people rather than hiring outside agencies to develop for you.</p>
-    <p>So at Left Logic we've packaged some of our expertise. We now offer specific training workshops to in-house teams wishing to brush up on their development skills, from browser compatibility to micro formats.</p>
+    <p>So at Left Logic we've packaged some of our expertise. We now offer specific training workshops to in-house teams wishing to brush up on their development skills, from advanced JavaScript &amp; jQuery, to jQuery for Designers to the latest HTML5 technology.</p>
     <p>Left Logic also offers a tailored consultancy service. <a href="/hire">(Contact us for more information)</a></p>
 
     <h2>Comments from workshop delegates</h2>

@@ -277,7 +277,7 @@ footer .legal {
 }
 
 /** Navigation **/
-nav ul {
+.main nav ul {
   padding: 0;
 }
 
@@ -462,6 +462,9 @@ aside section .big-grey-box-of-greyness { /* TODO: This needs a better name */
   font-family: Georgia, "Time New Roman", serif;
   font-size: 1.4em;      /* 14px */
   margin: 0;
+}
+#home h2 {
+  font-size: 100%;      /* 14px */
 }
 .main h3 {
   font-weight: bolder;
@@ -894,4 +897,12 @@ a.bookmarklet:hover {
 #entitylookup h2 {
   padding-top: 20px;
   clear: left;
+}
+
+#play {
+  position: relative;
+  background-image: url("/assets/images/bg-grid.gif");
+  height: 400px;
+  border: 1px solid #aaa;
+  cursor: crosshair;
 }
