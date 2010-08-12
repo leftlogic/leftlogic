@@ -6,5 +6,5 @@
     <li><a href="http://jqueryfordesigners.com/">jQuery for Designers</a></li>
     <li><a href="http://snapbird.org/">Snap Bird</a></li>
   </ul>
-  <a href="<?php echo site_url("contact"); ?>" class="block-link">Hire us, we're available</a>
+  <a href="<?php echo site_url("contact"); ?>" class="block-link">Get in touch to hire us</a>
 </div></section>
