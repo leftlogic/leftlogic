@@ -283,7 +283,7 @@ footer .legal {
 
 nav ul li {
   float: left;
-  padding-right: 15px;
+  padding-right: 22px;
   line-height: 3.5714em;    /* 50px */
   
 }
@@ -559,6 +559,11 @@ th {
 .portfolio .medium,
 .portfolio .small {
   clear: both;
+}
+
+.portfolio h1 {
+  font-size: 24px;
+  padding: 0 30px;
 }
 
 /* Portfolio - Large */

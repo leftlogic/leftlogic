@@ -7,6 +7,7 @@
   </div><!-- /sub-section-alt -->
   
   <div class="portfolio">
+    <h1>Recent Client Work</h1>
     <div class="medium">
       <section>
         <img src="/images/nestoria.png" width="186" height="186" alt="Netoria">
