@@ -2,8 +2,8 @@
   
 var qs = document.querySelector && function (q) { return document.querySelector(q); };
 qs && window.location.pathname.replace(/(.*?)(?:\/|$)/g, function (lead, c) { 
-  if (c && qs('nav a[href$=' + c + ']')) {
-    qs('nav a[href$=' + c + ']').className = 'selected';
+  if (c && qs('nav a[href$="' + c + '"]')) {
+    qs('nav a[href$="' + c + '"]').className = 'selected';
   }
 });
 
