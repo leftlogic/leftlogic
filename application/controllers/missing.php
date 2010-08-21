@@ -10,7 +10,7 @@ class Missing extends MY_Controller {
     $data['originalURL'] = substr($_POST['originalURL'], 1);
     
     $this->load->helper('file');
-    $data['files'] = get_filenames('./images/generated/');
+    $data['files'] = get_filenames('./images/generated/approved/');
 
     $this->view('missing', $data);
   }
