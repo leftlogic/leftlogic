@@ -4,28 +4,14 @@
     <p>Nope, looking around and couldn't find what you were looking for.</p>
     <p>If it wasn't important, how about you play in this box I've left you:</p>
     <div id="play"></div>
-<?php
-/*
+    <?php if (count($files)) : shuffle($files); ?>
     <div id="others">
-      <?php if (file_exists($file)) : ?>
-      <img src="<?=$file?>" />
-      <?php endif ?>
+      <h2>Other 404 images people have left behind:</h2>
+      <?php for ($i = 0; $i < 8 && @$files[$i]; $i++) : ?><img src="/images/generated/<?=$files[$i]?>" width="64" /><?php endfor ?>
     </div>
-    <form id="submit" action="/missing/submit" method="post">
+    <?php endif ?>
+    <form id="submit" action="/savepng.php" method="post">
       <input type="hidden" name="data" value="" id="data">
     </form>
-    <script>
-    (function () {
-      var field = document.getElementById('data');
-      var i = new Image();
-      window.onunload = function () {
-        field.value = document.getElementById('play').firstChild.toDataURL('image/png');
-        field.form.submit();
-        // alert('ok');
-      };
-    })();
-    </script>
-*/
-?>
   </section>
 </div>

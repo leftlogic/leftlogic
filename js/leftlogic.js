@@ -10,13 +10,36 @@ qs && window.location.pathname.replace(/(.*?)(?:\/|$)/g, function (lead, c) {
 var play = document.getElementById('play');
 
 sketchpad(document.body);
+var save = false;
 if (play) {
-  sketchpad(play);
-  play.addEventListener('dblclick', function (event) {
-    var ctx = this.getElementsByTagName('canvas')[0].getContext('2d');
-    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-    event.preventDefault();
-  }, false);
+  if (sketchpad(play)) {
+    
+    var playctx = play.firstChild.getContext('2d'),
+        others = document.getElementById('others');
+    others && others.addEventListener('click', function (event) {
+      if (event.target.nodeName == 'IMG') {
+        playctx.clearRect(0, 0, playctx.canvas.width, playctx.canvas.height);
+        playctx.drawImage(event.target, 0, 0);
+      }
+    });
+    
+    
+    play.addEventListener('dblclick', function (event) {
+      playctx.clearRect(0, 0, playctx.canvas.width, playctx.canvas.height);
+      event.preventDefault();
+    }, false);
+    
+    var timer = 0;
+    play.firstChild.addEventListener('mouseup', function () {
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        var client = new XMLHttpRequest();
+        client.open("POST", "/savepng.php");
+        client.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        client.send('data='+play.firstChild.toDataURL('image/png'));
+      }, 2000);
+    });
+  }
 }
 
 function sketchpad(mirror) {
@@ -77,8 +100,8 @@ function sketchpad(mirror) {
       obj = mirror;
 
   do {
-  	left += obj.offsetLeft;
-  	top += obj.offsetTop;
+    left += obj.offsetLeft;
+    top += obj.offsetTop;
   } while (obj = obj.offsetParent);
 
   if (mirror != body) left += 20; // not sure why, but it works :-S
@@ -121,21 +144,31 @@ function sketchpad(mirror) {
   window.addEventListener('resize', function (event) {
     clearTimeout(resizeTimer);
     var resizeTimer = setTimeout(function () {
-      // copy the canvas before it gets resized
-      copy.height = canvas.height;
-      copy.width = canvas.width;
+      obj = mirror;
+      left = top = 0;
+      do {
+        left += obj.offsetLeft;
+        top += obj.offsetTop;
+      } while (obj = obj.offsetParent);
+      if (mirror != body) left += 20; // not sure why, but it works :-S
+      if (mirror == body) {
+        // copy the canvas before it gets resized
+        copy.height = canvas.height;
+        copy.width = canvas.width;
 
-      ctxcopy.drawImage(canvas, 0, 0);
+        ctxcopy.drawImage(canvas, 0, 0);
 
-      canvas.height = mirror.scrollHeight;
-      canvas.width = window.innerWidth - 16;
+        canvas.height = mirror.scrollHeight;
+        canvas.width = window.innerWidth - 16;
 
-      ctx.drawImage(copy, 0, 0);
-      ctx.fillStyle = '#EA6D00';
+        ctx.drawImage(copy, 0, 0);
+        ctx.fillStyle = '#EA6D00';        
+      }
     }, 100);
   }, false);
 
   mirror.insertBefore(canvas, mirror.firstChild);
+  return true;
 }
 
 })(this, document);  
