@@ -48,12 +48,31 @@ section, aside, header, footer, nav {
   src: url("/assets/fonts/TFDieReg.ttf");
   font-weight: normal;
 }*/
-@font-face {
-	font-family: 'Dierama';
-	src: url('/assets/fonts/TFDieReg.eot');
-	src: local('TFDierama'), local('TFDierama-Regular'), url('/assets/fonts/TFDieReg.woff') format('woff'), url('/assets/fonts/TFDieReg.ttf') format('truetype'), url('/assets/fonts/TFDieReg.svg#TFDierama-Regular') format('svg');
+/*@font-face {
+  font-family: 'Dierama';
+  src: url('/assets/fonts/TFDieReg.eot');
+  src: local('TFDierama'), local('TFDierama-Regular'), url('/assets/fonts/TFDieReg.woff') format('woff'), url('/assets/fonts/TFDieReg.ttf') format('truetype'), url('/assets/fonts/TFDieReg.svg#TFDierama-Regular') format('svg');
   font-weight: normal;
 }
+*/
+
+@font-face {
+	font-family: 'leftdierma1';
+	src: url('/assets/fonts/tfdiereg-webfont-1.eot');
+	src: local('☺'), url('/assets/fonts/tfdiereg-webfont-1.woff') format('woff'), url('/assets/fonts/tfdiereg-webfont-1.ttf') format('truetype'), url('/assets/fonts/tfdiereg-webfont-1.svg#webfontmP096MRF') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'leftdierma2';
+	src: url('/assets/fonts/tfdiereg-webfont-2.eot');
+	src: local('☺'), url('/assets/fonts/tfdiereg-webfont-2.woff') format('woff'), url('/assets/fonts/tfdiereg-webfont-2.ttf') format('truetype'), url('/assets/fonts/tfdiereg-webfont.svg-2#webfontmP096MRF') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 
 /** Global Styles **/
 body {
@@ -67,7 +86,7 @@ body {
 }
 
 h1{
-  font-family: "Dierama", Georgia, "Time New Roman", serif;
+  font-family: "leftdierma1", "leftdierma2", Georgia, "Time New Roman", serif;
   color: #FF4D00;
 }
 h1 .alt, h2 {
@@ -150,7 +169,7 @@ textarea {
   width: 30%;
   display: inline-block;
   padding: 10px 0;
-  font-family: "Dierama", Georgia, "Time New Roman", serif;
+  font-family: "leftdierma1", "leftdierma2", Georgia, "Time New Roman", serif;
   font-size: 1.1428em;      /* 16px */
   border: 1px dotted #FFF;
   background-color: #008F69;
@@ -290,7 +309,7 @@ nav ul li {
 nav ul li a,
 nav ul li a:link,
 nav ul li a:visited {
-  font-family: "Dierama", Georgia, "Time New Roman", serif;
+  font-family: "leftdierma1", "leftdierma2", Georgia, "Time New Roman", serif;
   font-size: 1.1428em;      /* 16px */
   text-decoration: none;
 }
@@ -326,7 +345,7 @@ aside section .block-link:link,
 aside section .block-link:visited {
   display: block;
   padding: 10px 0;
-  font-family: "Dierama", Georgia, "Time New Roman", serif;
+  font-family: "leftdierma1", "leftdierma2", Georgia, "Time New Roman", serif;
   font-size: 1.1428em;      /* 16px */
   border: 1px solid #FFF;
   background-color: #008F69;

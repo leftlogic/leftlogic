@@ -109,6 +109,7 @@ function MicroformatsBookmarklet() {
             'position': 'absolute',
             'background': '#ccc',
             'backgroundImage': 'url(' + shim + ')',
+            'borderRadius': '10px',
             'zIndex': '9999',
             'color': '#000',
             'border': '4px solid #525252',
