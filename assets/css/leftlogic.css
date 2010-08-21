@@ -920,3 +920,7 @@ a.bookmarklet:hover {
   border-style: solid;
   cursor: pointer;
 }
+
+#missing h1 {
+  text-overflow: ellipsis;
+}
