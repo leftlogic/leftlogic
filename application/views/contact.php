@@ -20,7 +20,7 @@
         <div>
           <label for="fEmail">Email:</label>
           <input class="text-input" type="email" name="email" value="<?=$email?>" id="fEmail">
-        </div
+        </div>
         
         <div>
           <label for="fHeard">How did you hear about Left Logic?</label>
