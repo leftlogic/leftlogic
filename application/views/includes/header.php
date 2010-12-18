@@ -15,8 +15,8 @@
       <ul>
         <li><a href="<?=base_url()?>/"<?php echo $page == 'home' ? ' class="selected"' : ''; ?>>Home</a></li>
         <li><a href="<?=base_url()?>/training">Training</a></li>
-        <!-- <li><a href="<?=base_url()?>/projects">Projects</a></li> -->
-        <li><a href="<?=base_url()?>/portfolio">Portfolio</a></li>
+        <li><a href="<?=base_url()?>/projects">Projects</a></li>
+        <!-- <li><a href="<?=base_url()?>/portfolio">Portfolio</a></li> -->
         <!-- <li><a href="<?=base_url()?>/consultancy">Consultancy</a></li> -->
         <li><a href="<?=base_url()?>/contact"<?php echo $page == 'hire' ? ' class="selected"' : ''; ?>>Contact</a></li>
       </ul>
