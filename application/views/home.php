@@ -9,29 +9,16 @@
   <div class="portfolio">
     <h1>Recent Client Work</h1>
     <div class="medium">
+      <?php foreach ($recent as $project) : ?>
       <section>
-        <img src="/images/nestoria.png" width="186" height="186" alt="Netoria">
+        <img src="<?=$project['img']?>" width="186" height="186" alt="<?=$project['client']?>">
         <div>
-          <h2>A Tale of Two Cities</h2>
-          <h3>Client: Nestoria</h3>
+          <h2><?=$project['title']?></h2>
+          <h3>Client: <?=$project['client']?></h3>
+          <?php if (isset($project['url'])) : ?><h3><a href="<?=$project['url']?>">Live project</a></h3><?php endif ?>
         </div>
       </section>
-  
-      <section>
-        <img src="/images/iplayer.png" width="186" height="186" alt="iPlayer JavaScript performance review">
-        <div>
-          <h2>iPlayer performance review</h2>
-          <h3>Client: BBC</h3>
-        </div>
-      </section>
-  
-      <section>
-        <img src="/images/luckyvoice.png" width="186" height="186" alt="Lucky Voice - Home">
-        <div>
-          <h2>Lucky Voice.home</h2>
-          <h3>Client: Torchbox</h3>          
-        </div>
-      </section>
+      <?php endforeach ?>
     </div><!-- /portfolio-three -->
   </div><!-- /portfolio -->
 </div><!-- /content -->

@@ -14,12 +14,14 @@
 
         <div class="first">
           <label for="fName">Name:</label>
-          <input class="text-input" type="text" name="name" value="<?=$name?>" id="fName">
+          <input class="text-input" type="text" required name="name" value="<?=$name?>" id="fName">
+          <em></em>
         </div>
 
         <div>
           <label for="fEmail">Email:</label>
-          <input class="text-input" type="email" name="email" value="<?=$email?>" id="fEmail">
+          <input class="text-input" type="email" required name="email" value="<?=$email?>" id="fEmail">
+          <em></em>
         </div>
         
         <div>
@@ -43,7 +45,7 @@
 
         <div>
           <label for="fMessage">Your message:</label>
-          <textarea id="fMessage" name="message" rows="8" cols="40" class="wide"><?=$message?></textarea>
+          <textarea required id="fMessage" name="message" rows="8" cols="40" class="wide"><?=$message?></textarea><em></em>
         </div>
         
         <div>
@@ -59,14 +61,15 @@
     <!-- <p class="lede">We work directly for organisations or on behalf of other digital agencies, our clients include:</p> -->
     <h1>Some of our clients</h1>
     <p class="logos">
-     <img class="fournminusthree" src="/images/client-logos/bbc.png" width="120" height="60" alt="BBC">
+     <img class="fournminusthree" src="/images/client-logos/google.png" width="120" height="60" alt="Google">
+     <img src="/images/client-logos/bbc.png" width="120" height="60" alt="BBC">
      <img src="/images/client-logos/fellow.png" width="120" height="60" alt="Fellow">
-     <img src="/images/client-logos/formula.png" width="120" height="60" alt="Formula">
-     <img class="fournminusthree" src="/images/client-logos/milo-2.png" width="120" height="60" alt="Milo">
+     <img class="fournminusthree" src="/images/client-logos/formula.png" width="120" height="60" alt="Formula">
+     <img src="/images/client-logos/milo-2.png" width="120" height="60" alt="Milo">
      <img src="/images/client-logos/molecular.png" width="120" height="60" alt="Molecular">
      <img src="/images/client-logos/steel.png" width="120" height="60" alt="Steel">
      <img src="/images/client-logos/torchbox.png" width="120" height="60" alt="Torchbox"> 
-     <img src="/images/client-logos/dharmafly.png" width="120" height="60" alt="Dharmafly">
+     <!-- <img src="/images/client-logos/dharmafly.png" width="120" height="60" alt="Dharmafly"> -->
     </p>
   </section><!-- /sub-section-alt -->
 </div><!-- /content -->

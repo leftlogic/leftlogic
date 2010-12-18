@@ -5,7 +5,7 @@ class Projects extends MY_Controller {
 	  $this->page = 'projects';
 	  
 	  $this->asides = 'projects';
-    parent::Controller(); 
+    parent::Controller();
 	}
 	
 	function index() {

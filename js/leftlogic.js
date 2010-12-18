@@ -1,5 +1,16 @@
 (function (window, document, undefined) {
   
+// Silly WebKit ditched their required support :(
+[].forEach.call(document.querySelectorAll('form'), function (form) {
+  form.onsubmit = function (event) {
+    if (!this.checkValidity()) {
+      event.preventDefault();
+      this.querySelector(':invalid').focus();
+      return false;
+    }
+  };
+});
+
 var qs = document.querySelector && function (q) { return document.querySelector(q); };
 qs && window.location.pathname.replace(/(.*?)(?:\/|$)/g, function (lead, c) { 
   if (c && qs('nav a[href$="' + c + '"]')) {

@@ -7,9 +7,7 @@
   
   <?php include("includes/projects/forbind.php"); ?>
 
-  <?php include("includes/projects/snapbird.php"); ?>
-
-  <?php include("includes/projects/jsbin.php"); ?>    
+     
 
   
 </div><!-- /content -->

@@ -49,9 +49,15 @@ class Contact extends MY_Controller {
         $this->email->to('remy@leftlogic.com');
         $this->email->subject('Contact via leftlogic.com from ' . $data['name']);
         $this->email->message('Found via: ' . $data['found_us'] . "\n\n" . $data['message']);
-        $this->email->send();
+        // $this->email->send();
 
-        $data['server_message'] = '<p>Thank you, your message has been sent.</p>';
+        $data = array(
+          'name' => '',
+          'email' => '',
+          'found_us' => '',
+          'message' => ''
+        );
+        $data['server_message'] = '<p class="success">Thank you, your message has been sent.</p>';
       } else {
         $data['server_message'] = '<p class="error">We couldn\'t send your message.</p><ol class="error">' . $this->form_validation->error_string . '</ol>';
       }

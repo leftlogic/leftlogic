@@ -4,15 +4,15 @@
     <?php echo isset($motif) && $motif ? '<div id="motif"></div>' : ''; ?>
     <div class="fat-footer">
     <?php /* 
-      <section>
-        <h2>Left <span class="alt">Logic</span></h2>
-        <ul>
-          <li><a href="">Consultancy</a></li>
-          <li><a href="">Remy Sharp</a></li>
-          <li><a href="">Testimonials</a></li>
-          <li><a href="">Client List</a></li>
-        </ul>
-      </section>
+    <section>
+      <h2>Left <span class="alt">Logic</span></h2>
+      <ul>
+        <li><a href="">Consultancy</a></li>
+        <li><a href="">Remy Sharp</a></li>
+        <li><a href="/portfolio/testimonials">Testimonials</a></li>
+        <li><a href="/portfolio/clientlist">Client List</a></li>
+      </ul>
+    </section>
       
       <section>
         <h2>Development</h2>
