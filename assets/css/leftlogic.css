@@ -149,6 +149,10 @@ label {
   color: #008F69;
   cursor: pointer;
 }
+label.small {
+  font-weight: normal;
+  color: #646567;
+}
 input,
 textarea {
   padding: 0.195em;        /* 3.5px i.e. 7px total across top and side */
@@ -981,4 +985,17 @@ time {
   padding-top: 20px;
   border-top: 1px solid #ccc;
   margin-top: 40px;
+}
+
+/* World Domination Tour */
+#tour-map {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 450px;
+}
+#tour-map div {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }

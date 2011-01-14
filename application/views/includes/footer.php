@@ -52,6 +52,9 @@
   
 </div><!-- /wrapper -->
 <script src="/js/leftlogic.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="/js/markerclusterer.js"></script>
+<script src="/js/tour.js"></script>
 <script> 
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-1656750-2']);
