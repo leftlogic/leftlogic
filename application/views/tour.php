@@ -8,7 +8,7 @@
     </p>
     <form method="post" action="/tour/signup">
       <h2>Where are you willing to travel to?</h2>
-      <p>Drop a pin on the cities and places you would most like to see a workshop take place:</p>
+      <p>Drop a pin on the city or town you would most like to see a workshop take place:</p>
       <div id="tour-map"></div>
       <input type="hidden" name="locations" id="tour-locations"/>
       

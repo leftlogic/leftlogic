@@ -7,7 +7,7 @@ var markersData = [
       [-51.397, -2.644]
     ],
     markers = [],
-    usersMarkers = [];
+    //usersMarkers = [],
     locationsInput = document.getElementById('tour-locations');
 
 window.onload = function () {
@@ -17,14 +17,21 @@ window.onload = function () {
     mapTypeId: google.maps.MapTypeId.ROADMAP
   });
   
-  google.maps.event.addListener(map, 'click', function(event) {
+  var clickHandler = google.maps.event.addListener(map, 'click', function (event) {
     var marker = new google.maps.Marker({
       position: event.latLng, 
       map: map,
-      clickable: false
-    })
-    usersMarkers.push([event.latLng.xa, event.latLng.za]);
-    locationsInput.value = JSON.stringify(usersMarkers);
+      clickable: false,
+      draggable: true
+    });
+    //usersMarkers.push([event.latLng.xa, event.latLng.za]);
+    //locationsInput.value = JSON.stringify(usersMarkers);
+    locationsInput.value = '[' + event.latLng.xa + ', ' + event.latLng.za +']';
+    google.maps.event.removeListener(clickHandler);
+    google.maps.event.addListener(marker, 'dragend', function (event) {
+      console.log('[' + event.latLng.xa + ', ' + event.latLng.za +']');
+      locationsInput.value = '[' + event.latLng.xa + ', ' + event.latLng.za +']';
+    });
   });
   
   var icon = new google.maps.MarkerImage(
