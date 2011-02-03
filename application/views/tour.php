@@ -10,9 +10,9 @@
         <legend><strong>1.</strong> Which workshop?</legend>
         <p>Let us know which workshops you'd be interested in attending:</p>
         <div class="checkboxOptions">
-          <label><input type="checkbox" name="workshop" value="html5" /> HTML5 APIs</label>
-          <label><input type="checkbox" name="workshop" value="j4d" /> jQuery For Designers</label>
-          <label><input type="checkbox" name="workshop" value="node" /> Node.js</label>
+          <label><input type="checkbox" name="workshop[]" value="html5" /> HTML5 APIs</label>
+          <label><input type="checkbox" name="workshop[]" value="j4d" /> jQuery For Designers</label>
+          <label><input type="checkbox" name="workshop[]" value="node" /> Node.js</label>
         </div>
         <p>For more information on some of the workshops, see our <a href="/training">training</a> page for details.</p>
     </fieldset>
@@ -21,16 +21,15 @@
       <legend><strong>2.</strong> Where would you be willing to travel to?</legend>
       <p>Select from our pre-selected cities or drop a pin on the map:</p>
       <div class="checkboxOptions">
-        <label><input type="checkbox" name="preselected" value="birmingham" /> Birmingham</label>
-        <label><input type="checkbox" name="preselected" value="brighton" /> Brighton</label>
-        <label><input type="checkbox" name="preselected" value="bristol" /> Bristol</label>
-        <label><input type="checkbox" name="preselected" value="dundee" /> Dundee</label>
-        <label><input type="checkbox" name="preselected" value="london" /> London</label>
-        <label><input type="checkbox" name="preselected" value="manchester" /> Manchester</label>
-        <label><input type="checkbox" name="preselected" value="nottingham" /> Nottingham</label>
+        <label><input type="checkbox" name="preselected[]" value="birmingham" /> Birmingham</label>
+        <label><input type="checkbox" name="preselected[]" value="brighton" /> Brighton</label>
+        <label><input type="checkbox" name="preselected[]" value="bristol" /> Bristol</label>
+        <label><input type="checkbox" name="preselected[]" value="dundee" /> Dundee</label>
+        <label><input type="checkbox" name="preselected[]" value="london" /> London</label>
+        <label><input type="checkbox" name="preselected[]" value="manchester" /> Manchester</label>
+        <label><input type="checkbox" name="preselected[]" value="nottingham" /> Nottingham</label>
       </div>
       <div id="tour-map"></div>
-      <input type="hidden" name="locations" id="tour-locations"/>
     </fieldset>
 
     <fieldset>
@@ -47,6 +46,7 @@
       </p>
 
       <div>
+        <input type="hidden" name="locations" id="tour-locations"/>
         <input type="hidden" name="action" value="send" />
         <input class="button" type="submit" value="Submit"/>
       </div>

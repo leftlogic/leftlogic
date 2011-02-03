@@ -110,7 +110,7 @@ function setupTour() {
     textColor: '#FAFAFA'
   };
   
-  var clusterer = new MarkerClusterer(map, markers, { styles: [clusterStyle]});
+  var clusterer = new MarkerClusterer(map, markers, { gridSize: 45, styles: [clusterStyle]});
   
   ev(document.getElementById('tourinterest')).on('submit', function (event) {
     var i = usersMarkers.length,

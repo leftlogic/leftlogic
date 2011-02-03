@@ -18,7 +18,7 @@ class Tour extends MY_Controller {
 	  
 	  $json = json_decode($raw_json);
 	  foreach ($json as $user) {
-	    foreach (json_decode($user->locations) as $location) {
+	    foreach ($user->locations as $location) {
 	      array_push($markersData, $location);
 	    }
 	  }
@@ -29,19 +29,36 @@ class Tour extends MY_Controller {
 	}
 	
 	function signup() {
+	  
+	  $places = array(
+	    'birmingham' => array(52.4829614, -1.893592),
+	    'brighton' => array(50.819522, -0.13642),
+	    'bristol' => array(51.4553129, -2.5919023),
+	    'dundee' => array(56.4614282, -2.9681109),
+	    'london' => array(51.5001524, -0.1262362),
+	    'manchester' => array(53.4807125, -2.2343765),
+	    'nottingham' => array(52.9551147, -1.1491718)
+	  );
+	  
 	  $this->load->helper('file');
 	  $this->load->helper('url');
     
     $data['email'] = $this->input->post('email');
     $data['can_provide_venue']  = $this->input->post('venue') ? true : false;
     $data['workshop'] = $this->input->post('workshop');
-    $data['locations'] = $this->input->post('locations');
-    $data['preselected-locations'] = $this->input->post('preselected');
+    $data['locations'] = json_decode($this->input->post('locations'));
+    $preselectedLocations = $this->input->post('preselected');
+
+    if (is_array($preselectedLocations)) {
+      foreach ($preselectedLocations as $location) {
+        array_push($data['locations'], $places[$location]);
+      }
+    }
     
     if ($this->input->post('action') == 'send') { 
       if (write_file('./data/tour-2011.json', ",\n" . json_encode($data), 'a')) {
          $data['server_message'] = '<p class="success">Thank you, your interest has been saved and we\'ll be in touch as soon as tickets go live.</p>';
-         redirect('signup', 'location');
+         // redirect('signup', 'location');
       } else {
          // fail
          echo '<!-- unable to write file -->';
