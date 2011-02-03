@@ -51,6 +51,10 @@ class Tour extends MY_Controller {
     $data['locations'] = json_decode($this->input->post('locations'));
     $preselectedLocations = $this->input->post('preselected');
 
+    if (!$data['locations']) {
+      $data['locations'] = array();
+    }
+
     if (is_array($preselectedLocations)) {
       foreach ($preselectedLocations as $location) {
         array_push($data['locations'], $places[$location]);
