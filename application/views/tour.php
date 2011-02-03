@@ -4,7 +4,7 @@
     <p>Remy Sharp is planning to travel across the country to run the workshops you want, where you want.</p>
     <p>This is just phase 1: find out if you're interested. We're planning to run full-day workshops during May for around £200 per person.</p>
     <p>If you're interested, let us know where we should go, and what we should run and we'll email you as soon as tickets are released, or you can <a href="http://twitter.com/rem">follow @rem</a> where tickets will also be announced.</p>
-    <p><strong>Deadline to register your interest is: Friday 25th Feburary.</strong></p>
+    <p><strong>Deadline to register your interest is: Friday 25th February.</strong></p>
     <form method="post" action="/tour/signup" id="tourinterest">
       <fieldset>
         <legend><strong>1.</strong> Which workshop?</legend>
