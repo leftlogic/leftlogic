@@ -3,6 +3,7 @@ class MY_Controller extends Controller {
   var $motif = false;
   var $green = false;
   var $asides = null;
+  var $hideDefault = false;
   var $page = '';
   
   function view($page = '', $data = null) {
@@ -55,7 +56,7 @@ class MY_Controller extends Controller {
       }
     }
     
-    $this->load->view('includes/asides/asides');
+    if (!$this->hideDefault) $this->load->view('includes/asides/asides');
     $this->load->view('includes/footer', $data);    
   }
 }

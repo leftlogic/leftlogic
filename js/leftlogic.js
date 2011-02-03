@@ -183,3 +183,9 @@ function sketchpad(mirror) {
 }
 
 })(this, document);  
+
+
+// https://github.com/remy/micro-libraries/blob/master/events.js
+var ev=function(f,h,i){function k(c,b){if(c&&c.nodeName||c===f)b(c);else if(c&&c.length)for(var d=0,a=c.length;d<a;d++)b(c[d])}var g={},n=0,m="e"+new Date,o=function(){return h.addEventListener?function(c,b,d){k(c,function(a){a.addEventListener(b,function(e){if(d.call(a,e)===false){e.preventDefault();e.stopPropagation()}},false)})}:function(c,b,d){k(c,function(a){if(a["on"+b]===null)a.attachEvent("on"+b,function(){return d.call(a,f.event)});else{if(g[b]===i)g[b]={};var e=a[m]=n++;if(g[b][e]!==i){var j=
+g[b][e];g[b][e]=function(l){if(d.call(a,l)!==false)return j();return false}}else g[b][e]=function(l){return d.call(a,l)};a=null}})}}(),p=function(){return h.createEvent?function(c,b,d){k(c,function(a){var e=h.createEvent("HTMLEvents");e.initEvent(b,true,true);e.data=d||{};e.eventName=b;a.dispatchEvent(e)})}:function(c,b,d){k(c,function(a){try{a["on"+b].call(a,d)}catch(e){var j;do{j=a[m];if(!a||a.nodeType===3||a.nodeType===8)break;else g[b][j]&&g[b][j].call(a,{type:b,data:d||{}})}while(a=a.parentNode)}})}}();
+return function(c){if(this===f)return new ev(c);this.el=c;this.addEvent=o;this.fireEvent=p}}(this,document);ev.prototype={on:function(f,h){if(h===undefined)for(var i in f)this.addEvent(this.el,i,f[i]);else this.addEvent(this.el,f,h);return this},fire:function(f){this.fireEvent(this.el,f);return this}};

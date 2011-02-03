@@ -1,47 +1,64 @@
-<div class="content">   
+<div class="content" id="tour">   
   <section class="sub-section-alt">
     <h1>The Big <span class="alt">Workshop</span> Tour</h1>  
-    <p>I'm running a series of rad workshops that are going to be totally cowabunger.</p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <form method="post" action="/tour/signup">
-      <h2>Where are you willing to travel to?</h2>
-      <p>Drop a pin on the city or town you would most like to see a workshop take place:</p>
+    <p>Remy Sharp is planning to travel across the country to run the workshops you want, where you want.</p>
+    <p>This is just phase 1: find out if you're interested. We're planning to run full-day workshops during May for around £200 per person.</p>
+    <p>If you're interested, let us know where we should go, and what we should run and we'll email you as soon as tickets are released, or you can <a href="http://twitter.com/rem">follow @rem</a> where tickets will also be announced.</p>
+    <p><strong>Deadline to register your interest is: Friday 25th Feburary.</strong></p>
+    <form method="post" action="/tour/signup" id="tourinterest">
+      <fieldset>
+        <legend><strong>1.</strong> Which workshop?</legend>
+        <p>Let us know which workshops you'd be interested in attending:</p>
+        <div class="checkboxOptions">
+          <label><input type="checkbox" name="workshop" value="html5" /> HTML5 APIs</label>
+          <label><input type="checkbox" name="workshop" value="j4d" /> jQuery For Designers</label>
+          <label><input type="checkbox" name="workshop" value="node" /> Node.js</label>
+        </div>
+        <p>For more information on some of the workshops, see our <a href="/training">training</a> page for details.</p>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>2.</strong> Where would you be willing to travel to?</legend>
+      <p>Select from our pre-selected cities or drop a pin on the map:</p>
+      <div class="checkboxOptions">
+        <label><input type="checkbox" name="preselected" value="birmingham" /> Birmingham</label>
+        <label><input type="checkbox" name="preselected" value="brighton" /> Brighton</label>
+        <label><input type="checkbox" name="preselected" value="bristol" /> Bristol</label>
+        <label><input type="checkbox" name="preselected" value="dundee" /> Dundee</label>
+        <label><input type="checkbox" name="preselected" value="london" /> London</label>
+        <label><input type="checkbox" name="preselected" value="manchester" /> Manchester</label>
+        <label><input type="checkbox" name="preselected" value="nottingham" /> Nottingham</label>
+      </div>
       <div id="tour-map"></div>
       <input type="hidden" name="locations" id="tour-locations"/>
-      
-      <p>Or select from this list of the most popular cities:</p>
-      <fieldset>
-        <label><input type="checkbox" name="manc" /> Manchester</label>
-        <label><input type="checkbox" name="birm" /> Birmingham</label>
-        <label><input type="checkbox" name="lndn" /> London</label>
-      </fieldset><br />
-      
-      <h2>Register your interest</h2>
-      <p>Let us know which workshops you would like to attend:</p>
-      <fieldset>
-        <label><input type="checkbox" name="html" /> HTML5</label>
-        <label><input type="checkbox" name="jquery" /> jQuery For Designers</label>
-        <label><input type="checkbox" name="node" /> Node.js</label>
-      </fieldset>
-      
-      <p>If you would like to be contacted when we announce the final line-up of workshops leave us your email address</p>
-      <label for="email">Email</label>
-      <input type="email" name="email" value="" id="email" />
-      
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>3.</strong> Register your interest</legend>
+      <label for="email">Email:</label>
+      <input class="text-input" type="email" name="email" value="" id="email" required /><em></em>
+
       <div>
         <label class="small">
           <input type="checkbox" name="venue"/>
           If you can provide offices or a venue we can run the workshop from,
-          check this box, and we will offer you a free ticket if the venue os used.
+          check this box, and we will offer you a free ticket if the venue is used.
         </label>
       </p>
-      
+
       <div>
+        <input type="hidden" name="action" value="send" />
         <input class="button" type="submit" value="Submit"/>
       </div>
+
+    </fieldset>
+
     </form>
   </section>
 </div>
+<script src="http://www.google.com/jsapi"></script>
+<script src="/js/markerclusterer.js"></script>
+<script>
+var markersData = <?=$markersData?>;
+</script>
+<script src="/js/tour.js"></script>

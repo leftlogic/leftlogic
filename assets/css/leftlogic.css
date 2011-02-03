@@ -90,7 +90,7 @@ h1{
   font-family: "Dierama", "leftdierma1", "leftdierma2", Georgia, "Time New Roman", serif;
   color: #FF4D00;
 }
-h1 .alt, h2 {
+h1 .alt, h2, legend {
   color: #008F69;  
 }
 
@@ -152,6 +152,7 @@ label {
 label.small {
   font-weight: normal;
   color: #646567;
+  font-size: 0.85em;
 }
 input,
 textarea {
@@ -162,6 +163,12 @@ textarea {
   color: #646567;
   border: 1px dotted #FF4D00;
 }
+
+input[type=radio],
+input[type=checkbox] {
+  border: 0px;
+}
+
 .text-input {
   width: 50%;
 }
@@ -482,7 +489,8 @@ aside section .big-grey-box-of-greyness { /* TODO: This needs a better name */
   font-size: 2.2857em;      /* 32px */
   margin-bottom: 0.65625em; /* 21px */
 }
-.main h2 {
+.main h2,
+legend {
   font-family: Georgia, "Time New Roman", serif;
   font-size: 1.4em;      /* 14px */
   margin: 0;
@@ -992,10 +1000,43 @@ time {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 450px;
+  height: 300px;
+  border: 1px solid #ccc;
 }
+
 #tour-map div {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+#tour fieldset > p:first-of-type {
+  margin-top: 0;
+}
+
+.checkboxOptions label {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+
+.checkboxOptions label:last-child {
+  margin-right: 0;
+}
+
+.checkboxOptions:after {
+  content: '.';
+  display: block;
+  visibility: hidden;
+  height: 1%;
+}
+
+fieldset + fieldset {
+  margin-top: 40px;
+}
+
+aside section ul li p {
+  line-height: 1.8;
+  padding: 10px 0px;
+  text-align: left;
 }
