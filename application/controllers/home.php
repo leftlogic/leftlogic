@@ -1,7 +1,7 @@
 <?php
 class Home extends MY_Controller {
 	function Home() {
-    $this->asides = 'forbind';
+    $this->asides = 'tour-promo';
 		$this->motif = true;
 		$this->page = 'home';
 		parent::Controller();	
