@@ -40,7 +40,7 @@
       <div>
         <label class="small">
           <input type="checkbox" name="venue"/>
-          If you can provide offices or a venue we can run the workshop from,
+          If you can provide offices or a venue we can run the workshop from for around 12 people,
           check this box, and we will offer you a free ticket if the venue is used.
         </label>
       </p>
@@ -50,6 +50,8 @@
         <input type="hidden" name="action" value="send" />
         <input class="button" type="submit" value="Submit"/>
       </div>
+      
+      <p><small>Note that we <strong>not use</strong> your email address for anything other than this project. Also, entering this information has not committed you to anything, at this phase, we are only trying to ascertain interest.</small></p>
 
     </fieldset>
 
