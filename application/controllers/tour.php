@@ -18,9 +18,11 @@ class Tour extends MY_Controller {
 	  
 	  $json = json_decode($raw_json);
 	  foreach ($json as $user) {
-	    foreach ($user->locations as $location) {
-	      array_push($markersData, $location);
-	    }
+      if (is_array($user->locations)) {
+  	    foreach ($user->locations as $location) {
+  	      array_push($markersData, $location);
+  	    }	      
+      }
 	  }
 	  
 	  $data['markersData'] = json_encode($markersData);
