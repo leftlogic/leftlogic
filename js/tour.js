@@ -15,11 +15,15 @@ function setupTour() {
   //   name: "OpenStreetMap",
   //   maxZoom: 19
   // });
+  var center = new google.maps.LatLng(51.5001524, -0.1262362);
+  if (google.loader && google.loader.ClientLocation) {
+    center = new google.maps.LatLng(google.loader.ClientLocation.latitude, google.loader.ClientLocation.longitude);
+  }
 
   var map = new google.maps.Map(document.getElementById('tour-map'), {
     zoom: 7,
     // yep - geolocation without asking the user for their geo position, nifty, eh?
-    center: new google.maps.LatLng(google.loader.ClientLocation.latitude, google.loader.ClientLocation.longitude),
+    center: center,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     // mapTypeId: 'OSM',
     panControl: false,
