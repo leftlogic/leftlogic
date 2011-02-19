@@ -49,7 +49,7 @@ class Contact extends MY_Controller {
         $this->email->to('remy@leftlogic.com');
         $this->email->subject('Contact via leftlogic.com from ' . $data['name']);
         $this->email->message('Found via: ' . $data['found_us'] . "\n\n" . $data['message']);
-        // $this->email->send();
+        $this->email->send();
 
         $data = array(
           'name' => '',
