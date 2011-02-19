@@ -55,7 +55,6 @@ class Tour extends MY_Controller {
       $data['locations'] = array();
     }
 
-
     if (is_array($preselectedLocations)) {
       foreach ($preselectedLocations as $location) {
         array_push($data['locations'], $places[$location]);
@@ -73,5 +72,5 @@ class Tour extends MY_Controller {
     } 
     
     $this->view('tour-thanks');
-	}
+  }
 }
