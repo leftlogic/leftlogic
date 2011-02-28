@@ -12,7 +12,7 @@
   </section><!-- /sub-section-alt -->
   
   <section class="workshop" id="html5">
-    <img src="/images/html5-workshop.jpg" title="Photo by Stefan Nitzsche" />
+    <img src="/images/html5-workshop2.jpg" />
     <section>
       <h2>Browsers with Wings: HTML5 APIs</h2>
 <?php /*      <span class="cost">£349 + <abbr>VAT</abbr> pp</span>*/?>
@@ -37,8 +37,39 @@
     
   </section>
   
-  <section class="workshop" id="j4d">
+  <section class="workshop" id="node">
     <img src="/images/j4d-workshop.jpg" />
+    <section>
+      
+      <h2>Server side JavaScript with Node</h2>
+
+      <p>JavaScript is increasingly seen as the unbiquitous language for developing for the web, so it stands to reason that JavaScript be used for the server side too. </p>
+
+      <p>Node allows for applications to be developed in JavaScript and is running on the incredibly fast V8 engine (the same JavaScript engine used to run Google Chrome). It can handle thousands of concurrent connections due to it&#8217;s event model, and because of this event model, developing for Node is very familiar if you&#8217;ve already written JavaScript for the browser - as this the same event model.</p>
+
+      <h3 id="what_will_be_covered">What will be covered</h3>
+
+      <ul>
+      <li>The basics: Async development, modules, requires, exports and scope</li>
+      <li>Building web servers: by hand, with Connect, with Express.js</li>
+      <li>Working with document databases (mongodb &amp; redis)</li>
+      <li>Going real time: WebSockets and Socket.IO</li>
+      <li>Releasing and deploying: npm, cluster</li>
+      </ul>
+
+      <h3 id="what_do_you_need_for_this_workshop">What do you need for this workshop?</h3>
+
+      <ul>
+      <li><a href="https://github.com/joyent/node/wiki/Installation">Node installed</a> on your machine (0.4.0 is currently the latest stable release)</li>
+      <li>Ideally have <a href="http://help.github.com/git-installation-redirect/">git installed</a></li>
+      <li>A text editor (Vim, TextMate, Coda, Textpad++, etc)</li>
+      <li>A browser with latest technology baked in, like <a href="http://www.google.com/chrome">Google Chrome</a> for instance</li>
+      </ul>      
+    </section>
+  </section>
+  
+  <section class="workshop" id="j4d">
+    <img src="/images/html5-workshop.jpg" title="Photo by Stefan Nitzsche" />
     <section>
       <h2>jQuery for Designers</h2>
 <?php /*      <span class="cost">£349 + <abbr>VAT</abbr> pp</span> */ ?>
