@@ -4,8 +4,8 @@ class Tour extends MY_Controller {
 	function Tour() {
 	  $this->page = 'tour';
 	  
-    $this->asides = array('tour', 'tour-map-help');
-    $this->hideDefault = true;
+    $this->asides = array('forbind');
+    // $this->hideDefault = true;
     parent::Controller();
 	}
 	

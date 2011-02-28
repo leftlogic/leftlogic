@@ -297,6 +297,10 @@ footer .legal {
   color: #FFF;
 }
 
+thead th {
+  font-weight: bold;
+}
+
 #motif{
   position: absolute;
   background-image: url('../images/motif.png');
@@ -495,6 +499,15 @@ legend {
   font-size: 1.4em;      /* 14px */
   margin: 0;
 }
+
+.main section > h2 {
+  margin-top: 1.2em;
+}
+
+.main section > h2:first-child {
+  margin-top: 0;
+}
+
 #home h2 {
   font-size: 100%;      /* 14px */
 }
@@ -1039,4 +1052,27 @@ aside section ul li p {
   line-height: 1.8;
   padding: 10px 0px;
   text-align: left;
+}
+
+#tourbooking tbody td:nth-child(5) {
+  text-align: center;
+  padding: 0;
+}
+
+#tourbooking tbody td:nth-child(5) a {
+  padding: 10px;
+  display: block;
+}
+
+#tourbooking tbody tr.hover {
+  background: #008F69;
+  color: #fff;
+}
+
+#tourbooking tbody tr.hover a {
+  color: #fefefe;
+}
+
+tr.splitter {
+  border-top: 2px solid #DEDEDE;
 }
