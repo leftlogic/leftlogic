@@ -17,11 +17,11 @@
         <tr><td>jQuery for Designers</td><td>Bristol</td><td>18-May</td><td>£200+VAT</td><td><a href="http://leftlogic.stagehq.com/events/665/booking/new">Book now</a></td></tr>
       </tbody>
     </table>
-    <p><small><strong>Would you be interested in jQuery for Designers in Manchester? </strong>We had so much feedback for Manchester that if you would like to attend a jQuery for Designers course in Manchester on the 10th, <a href="/contact?subject=Re:%20J4D%20course%20in%20Manchester">please contact us</a> and if there's enough interest, we'll book the venue and add the date.</small></p>
+    <p><small><strong>Would you be interested in jQuery for Designers workshop in Manchester? </strong>We had so much feedback for Manchester that if you would like to attend a jQuery for Designers course in Manchester on the 10th, <a href="/contact?subject=Re:%20J4D%20course%20in%20Manchester">please contact us</a> and if there's enough interest, we'll book the venue and add the date.</small></p>
     
     
     <h2 id="ticketinfo">Ticket information</h2>
-    <p>Each ticket is for a full one day workshop on each topic. Along with the course, delegates will have tea and coffee provided (and maybe even some cookies) and full lunch for the day.</p>
+    <p>Each ticket is for a full one day workshop. Included in the price, lunch will be provided plus refreshments throughout the day.</p>
     <p>The workshops run from 10am-5pm (with registration starting at 9:30am).</p>
     <p>For the full outline of the workshops and what you'll learn, see the following links:</p>
     <ul>
@@ -30,6 +30,6 @@
     <li><a href="http://leftlogic.com/training#j4d">jQuery for Designers</a></li>
     </ul>
     <p>Each delegate will be emailed closer to the event date with full information about the workshop and can communicate any special needs or dietary requirements.</p>
-    <p>Please note that due to the way StageHQ (our payment system) works, the VAT won't show up separately when buying the tickets (nor in PayPal). VAT has been separately added, and our VAT registration is: 993 1266 95.</p>
+    <p><small>Please note that due to the way StageHQ (our payment system) works, the VAT won't show up separately when buying the tickets (nor in PayPal). VAT has been separately added, and our VAT registration is: 993 1266 95.</small></p>
   </section>
 </div>
