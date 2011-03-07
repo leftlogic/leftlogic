@@ -18,7 +18,6 @@
         <tr><td>jQuery for Designers</td><td>Bristol</td><td>18-May</td><td>£200+VAT</td><td><a href="http://leftlogic.stagehq.com/events/665/booking/new">Book now</a></td></tr>
       </tbody>
     </table>
-    <p><small><strong>Would you be interested in jQuery for Designers workshop in Manchester? </strong>We had so much feedback for Manchester that if you would like to attend a jQuery for Designers course in Manchester on the 10th, <a href="/contact?subject=Re:%20J4D%20course%20in%20Manchester">please contact us</a> and if there's enough interest, we'll book the venue and add the date.</small></p>
     
     
     <h2 id="ticketinfo">Ticket information</h2>
