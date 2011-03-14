@@ -31,6 +31,10 @@
       </ul>
       <h3>Who is this workshop for?</h3>
       <p>You're not expected to have played with HTML5 just yet, but you will need to have a reasonable understanding of HTML &amp; JavaScript. A lot of the individual APIs are being used in popular web sites today both in desktop browsers and mobile, so rest assured that this applies to developers that are working on the web <em>today</em>.</p>
+	
+	  <h3>Book today</h3>
+      <p>We're running a specially priced project where you can book this workshop today @ £200+VAT:</p><ul><li><a href="http://leftlogic.stagehq.com/events/662/booking/new">5-May / Brighton</a></li><li><a href="http://leftlogic.stagehq.com/events/663/booking/new">9-May / Manchester</a></li></ul>
+
       <p><a href="/contact?subject=Re: HTML5 API Workshop">Get in touch to book this workshop for your company</a></p>
     </section>
 
@@ -64,7 +68,12 @@
       <li>Ideally have <a href="http://help.github.com/git-installation-redirect/">git installed</a></li>
       <li>A text editor (Vim, TextMate, Coda, Textpad++, etc)</li>
       <li>A browser with latest technology baked in, like <a href="http://www.google.com/chrome">Google Chrome</a> for instance</li>
-      </ul>      
+      </ul>   
+
+	  <h3>Book today</h3>
+      <p>We're running a specially priced project where you can book this workshop today @ £200+VAT:</p><ul><li><a href="http://leftlogic.stagehq.com/events/667/booking/new">20-May / London</a></li><li><a href="http://leftlogic.stagehq.com/events/664/booking/new">13-May / Nottingham</a></li></ul>
+   
+      <p><a href="/contact?subject=Re: Node Workshop">Get in touch to book this workshop for your company</a></p>
     </section>
   </section>
   
@@ -87,6 +96,10 @@
       </ul>
       <h3>Who is this workshop for?</h3>
       <p>This workshop is for front-end visual designers and developers who are familiar with HTML and CSS. If you have flirted with jQuery or JavaScript in the past, this will be an advantage, but is not a necessity.</p>
+
+	  <h3>Book today</h3>
+      <p>We're running a specially priced project where you can book this workshop today @ £200+VAT:</p><ul><li><a href="http://leftlogic.stagehq.com/events/676/booking/new">10-May / Manchester</a></li><li><a href="http://leftlogic.stagehq.com/events/668/booking/new">16-May / Birmingham</a></li><li><a href="http://leftlogic.stagehq.com/events/665/booking/new">18-May / Bristol</a></li></ul>
+   
       <p><a href="/contact?subject=Re: jQuery for Designers Workshop">Get in touch to book this workshop for your company</a></p>
     </section>
   </section>
