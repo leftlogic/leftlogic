@@ -64,7 +64,7 @@
       <h3 id="what_do_you_need_for_this_workshop">What do you need for this workshop?</h3>
 
       <ul>
-      <li><a href="https://github.com/joyent/node/wiki/Installation">Node installed</a> on your machine (0.4.0 is currently the latest stable release)</li>
+      <li><a href="https://github.com/joyent/node/wiki/Installation">Node installed</a> on your machine (0.4.0 is currently the latest stable release) (<a href="http://blog.tatham.oddie.com.au/2011/03/16/node-js-on-windows/">also available on Windows</a>)</li>
       <li>Ideally have <a href="http://help.github.com/git-installation-redirect/">git installed</a></li>
       <li>A text editor (Vim, TextMate, Coda, Textpad++, etc)</li>
       <li>A browser with latest technology baked in, like <a href="http://www.google.com/chrome">Google Chrome</a> for instance</li>
