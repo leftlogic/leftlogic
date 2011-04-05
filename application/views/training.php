@@ -98,7 +98,7 @@
       <p>This workshop is for front-end visual designers and developers who are familiar with HTML and CSS. If you have flirted with jQuery or JavaScript in the past, this will be an advantage, but is not a necessity.</p>
 
 	  <h3>Book today</h3>
-      <p>We're running a specially priced project where you can book this workshop today @ £200+VAT:</p><ul><li><a href="http://leftlogic.stagehq.com/events/676/booking/new">10-May / Manchester</a></li><li><a href="http://leftlogic.stagehq.com/events/668/booking/new">16-May / Birmingham</a></li><li><a href="http://leftlogic.stagehq.com/events/665/booking/new">18-May / Bristol</a></li></ul>
+      <p>We're running a specially priced project where you can book this workshop today @ £200+VAT:</p><ul><li><a href="http://leftlogic.stagehq.com/events/676/booking/new">10-May / Manchester</a></li><li><a href="http://leftlogic.stagehq.com/events/665/booking/new">18-May / Bristol</a></li></ul>
    
       <p><a href="/contact?subject=Re: jQuery for Designers Workshop">Get in touch to book this workshop for your company</a></p>
     </section>
