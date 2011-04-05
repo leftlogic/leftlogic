@@ -1076,3 +1076,8 @@ aside section ul li p {
 tr.splitter {
   border-top: 2px solid #DEDEDE;
 }
+
+.availability {
+  padding-left: 20px;
+  background: url(/images/cal.png) no-repeat left center;
+}
