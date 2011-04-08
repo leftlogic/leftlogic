@@ -1081,3 +1081,28 @@ tr.splitter {
   padding-left: 20px;
   background: url(/images/cal.png) no-repeat left center;
 }
+
+.calltoaction {
+  border: 1px dotted #ccc;
+  padding: 10px;
+}
+
+.calltoaction h3 {
+  font-size: 1.2em;
+}
+
+.calltoaction a {
+  font-size: 1.2em;
+}
+
+.calltoaction li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.calltoaction .button {
+  font-family: georgia;
+  padding: 2px;
+  margin-right: 10px;
+}
+

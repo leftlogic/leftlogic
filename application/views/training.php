@@ -32,10 +32,15 @@
       <h3>Who is this workshop for?</h3>
       <p>You're not expected to have played with HTML5 just yet, but you will need to have a reasonable understanding of HTML &amp; JavaScript. A lot of the individual APIs are being used in popular web sites today both in desktop browsers and mobile, so rest assured that this applies to developers that are working on the web <em>today</em>.</p>
 	
-	  <h3>Book today</h3>
-      <p>We're running a specially priced project where you can book this workshop today @ £200+VAT:</p><ul><li><a href="http://leftlogic.stagehq.com/events/662/booking/new">5-May / Brighton</a></li><li><a href="http://leftlogic.stagehq.com/events/663/booking/new">9-May / Manchester</a></li></ul>
-
-      <p><a href="/contact?subject=Re: HTML5 API Workshop">Get in touch to book this workshop for your company</a></p>
+      <div class="calltoaction">
+        <h3>Book today</h3>
+        <p>You can book this workshop today @ <del>£400</del> £200+VAT:</p>
+        <ul>
+          <li><a class="button" href="http://leftlogic.stagehq.com/events/662/booking/new">Book now</a> <span>Brighton / 5-May</span></li>
+          <li><a class="button" href="http://leftlogic.stagehq.com/events/663/booking/new">Book now</a> <span>Manchester / 9-May</span></li>
+        </ul>
+<!--      <p><a href="/contact?subject=Re: HTML5 API Workshop">Get in touch to book this workshop for your company</a></p> -->
+      </div>
     </section>
 
     
@@ -70,10 +75,15 @@
       <li>A browser with latest technology baked in, like <a href="http://www.google.com/chrome">Google Chrome</a> for instance</li>
       </ul>   
 
-	  <h3>Book today</h3>
-      <p>We're running a specially priced project where you can book this workshop today @ £200+VAT:</p><ul><li><a href="http://leftlogic.stagehq.com/events/667/booking/new">20-May / London</a></li><li><a href="http://leftlogic.stagehq.com/events/664/booking/new">13-May / Nottingham</a></li></ul>
-   
-      <p><a href="/contact?subject=Re: Node Workshop">Get in touch to book this workshop for your company</a></p>
+      <div class="calltoaction">
+        <h3>Book today</h3>
+        <p>You can book this workshop today @ <del>£400</del> £200+VAT:</p>
+        <ul>
+          <li><a class="button" href="http://leftlogic.stagehq.com/events/667/booking/new">Book now</a> <span>London / 20-May</span></li>
+          <li><a class="button" href="http://leftlogic.stagehq.com/events/664/booking/new">Book now</a> <span>Nottingham / 13-May</span></li>
+        </ul>
+<!--      <p><a href="/contact?subject=Re: Node Workshop">Get in touch to book this workshop for your company</a></p> -->
+      </div>
     </section>
   </section>
   
@@ -97,10 +107,15 @@
       <h3>Who is this workshop for?</h3>
       <p>This workshop is for front-end visual designers and developers who are familiar with HTML and CSS. If you have flirted with jQuery or JavaScript in the past, this will be an advantage, but is not a necessity.</p>
 
-	  <h3>Book today</h3>
-      <p>We're running a specially priced project where you can book this workshop today @ £200+VAT:</p><ul><li><a href="http://leftlogic.stagehq.com/events/676/booking/new">10-May / Manchester</a></li><li><a href="http://leftlogic.stagehq.com/events/665/booking/new">18-May / Bristol</a></li></ul>
-   
-      <p><a href="/contact?subject=Re: jQuery for Designers Workshop">Get in touch to book this workshop for your company</a></p>
+      <div class="calltoaction">
+        <h3>Book today</h3>
+        <p>You can book this workshop today @ <del>£400</del> £200+VAT:</p>
+        <ul>
+          <li><a class="button" href="http://leftlogic.stagehq.com/events/676/booking/new">Book now</a> <span>Manchester / 10-May</span></li>
+          <li><a class="button" href="http://leftlogic.stagehq.com/events/665/booking/new">Book now</a> <span>Bristol / 18-May</span></li>
+        </ul>
+<!--      <p><a href="/contact?subject=Re: jQuery for Designers Workshop">Get in touch to book this workshop for your company</a></p> -->
+      </div>
     </section>
   </section>
 </div><!-- /content -->
