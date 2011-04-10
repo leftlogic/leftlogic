@@ -79,7 +79,6 @@
         <h3>Book today</h3>
         <p>You can book this workshop today @ <del>£400</del> £200+VAT:</p>
         <ul>
-          <li><a class="button" href="http://leftlogic.stagehq.com/events/667/booking/new">Book now</a> <span>London / 20-May</span></li>
           <li><a class="button" href="http://leftlogic.stagehq.com/events/664/booking/new">Book now</a> <span>Nottingham / 13-May</span></li>
         </ul>
 <!--      <p><a href="/contact?subject=Re: Node Workshop">Get in touch to book this workshop for your company</a></p> -->
