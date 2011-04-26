@@ -52,7 +52,7 @@
       
       <h2>Server side JavaScript with Node</h2>
 
-      <p>JavaScript is increasingly seen as the unbiquitous language for developing for the web, so it stands to reason that JavaScript be used for the server side too. </p>
+      <p>JavaScript is increasingly seen as the ubiquitous language for developing for the web, so it stands to reason that JavaScript be used for the server side too. </p>
 
       <p>Node allows for applications to be developed in JavaScript and is running on the incredibly fast V8 engine (the same JavaScript engine used to run Google Chrome). It can handle thousands of concurrent connections due to it&#8217;s event model, and because of this event model, developing for Node is very familiar if you&#8217;ve already written JavaScript for the browser - as this the same event model.</p>
 
