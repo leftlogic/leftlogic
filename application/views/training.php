@@ -37,7 +37,6 @@
         <p>You can book this workshop today @ <del>£400</del> £200+VAT:</p>
         <ul>
           <li><a class="button" href="http://leftlogic.stagehq.com/events/662/booking/new">Book now</a> <span>Brighton / 5-May</span></li>
-          <li><a class="button" href="http://leftlogic.stagehq.com/events/663/booking/new">Book now</a> <span>Manchester / 9-May</span></li>
         </ul>
 <!--      <p><a href="/contact?subject=Re: HTML5 API Workshop">Get in touch to book this workshop for your company</a></p> -->
       </div>
