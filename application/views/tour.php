@@ -11,7 +11,7 @@
       <tbody>
         <tr><td>HTML5 APIs</td><td>Brighton</td><td>5-May</td><td>£200+VAT</td><td>Sold out</td></tr>
         <tr><td>HTML5 APIs</td><td>Manchester</td><td>9-May</td><td>£200+VAT</td><td>Sold out</td></tr>
-        <tr><td>Node</td><td>Nottingham</td><td>13-May</td><td>£200+VAT</td><td><a href="http://leftlogic.stagehq.com/events/664/booking/new">Book now</a></td></tr>
+        <tr><td>Node</td><td>Nottingham</td><td>13-May</td><td>£200+VAT</td><td>Sold out</td></tr>
         <tr><td>Node</td><td>London</td><td>20-May</td><td>£200+VAT</td><td>Sold out</td></tr>
         <tr><td>jQuery for Designers</td><td>Manchester</td><td>10-May</td><td>£200+VAT</td><td>Sold out</td></tr>
         <!--<tr><td>jQuery for Designers</td><td>Birmingham</td><td>16-May</td><td>£200+VAT</td><td><a href="http://leftlogic.stagehq.com/events/668/booking/new">Book now</a></td></tr> -->
