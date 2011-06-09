@@ -41,12 +41,12 @@
         <br/>
         <p class="fn org">Left Logic <abbr>Ltd.</abbr></p>
         <p class="adr"><span class="street">44 Burstead Close</span>, <span class="locality">Brighton</span>, <span class="postal-code">BN1 7HT</span></p>
-        <a class="alt" href="http://h2vx.com/vcf/referer">vCard Download</a><?php /* <a href="">Location Map</a> */ ?>
+        <?php /* <a class="alt" href="http://h2vx.com/vcf/referer">vCard Download</a><a href="">Location Map</a> */ ?>
       </section>
       
     </div>
     <div class="legal">
-      <p><abbr title="Copyright">&copy;</abbr> 2010 Left Logic <abbr>Ltd.</abbr> All rights reserved. Registered Company <abbr title="number">No.</abbr> 05926047</p>
+      <p><abbr title="Copyright">&copy;</abbr> <?=date('Y', time())?> Left Logic <abbr>Ltd.</abbr> All rights reserved. Registered Company <abbr title="number">No.</abbr> 05926047</p>
     </div>
   </footer>
   
