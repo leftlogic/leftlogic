@@ -12,10 +12,10 @@
   </section><!-- /sub-section-alt -->
   
   <section class="workshop" id="mobile">
-    <img src="/images/mobile-workshop2.jpg" />
+    <img src="/images/mobile-workshop.jpg" />
 
     <section>
-      <h2>Overview</h2>
+      <h2>Mobile Web Apps</h2>
 
       <p>Building rich interactive web sites...dare I say web apps - is a reality with the smart phone browsers shipping with all the latest JavaScript and CSS technologies.</p>
 
