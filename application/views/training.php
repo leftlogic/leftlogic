@@ -23,6 +23,12 @@
 
       <p>Although this workshop will have an iOS focus, a lot of the technology we will look at applies to most new WebKit based devises (Android, Playbook, etc) and smartphones running Opera Mobile.</p>
 
+      <blockquote cite="James O'Brien">Remy's HTML5 for mobile workshop showed me how to do at least three things I'd previously thought were impossible.</blockquote>
+      <!-- https://twitter.com/#!/sparrk/status/156437912546836481 -->
+
+      <blockquote cite="Pete Hotchkin">Truly inspiring day spent with Remy on mobile stuff, time to get stuck in. Anyone got and mobile dev they need doing ;)</blockquote>
+      <!-- https://twitter.com/#!/headloose/status/111121529026248704 -->
+
       <h2>What you'll learn</h2>
       
       <ul>
@@ -59,6 +65,12 @@
       <p>HTML5 has gained a lot of attention over the last 12 months. With browsers increasingly supporting the features of the vast JavaScript APIs both in and around the official HTML5 spec, it's making the job of creating awesome applications purely using these web technologies very easy indeed.</p>
       <p>This full day workshop will introduce you to HTML5 with a brief backstory, before diving into the APIs one by one. As well as going through code and showing practical demonstrations, where possible, we'll also talk about the alternatives for old browsers that don't support "awesome" out of the box.</p>
 
+      <blockquote cite="Stuart Elmore">Awesome day! Thank you so much Remy for a fantastic workshop! :) looking forward to using my new knowledge!</blockquote>
+      <!-- https://twitter.com/#!/digitalgravy/status/15721551812 -->
+
+      <blockquote cite="Corey Dunston">The workshop with @rem today was awesome! Learned a bunch and am genuinely excited to use new tech.</blockquote>
+      <!-- https://twitter.com/#!/cdutson/status/2776066871533569 -->
+
       <h3>What will be covered?</h3>
       <ul>
         <li>Video &amp; audio – move over Flash</li>
@@ -88,20 +100,41 @@
     <img src="/images/j4d-workshop.jpg" />
     <section>
       
-      <h2>Server side JavaScript with Node</h2>
+      <h2>Node & HTML5 for a real-time web</h2>
 
       <p>JavaScript is increasingly seen as the ubiquitous language for developing for the web, so it stands to reason that JavaScript be used for the server side too. </p>
 
       <p>Node allows for applications to be developed in JavaScript and is running on the incredibly fast V8 engine (the same JavaScript engine used to run Google Chrome). It can handle thousands of concurrent connections due to it&#8217;s event model, and because of this event model, developing for Node is very familiar if you&#8217;ve already written JavaScript for the browser - as this the same event model.</p>
 
-      <h3 id="what_will_be_covered">What will be covered</h3>
+      <blockquote cite="Matt Smith">Today's workshop was excellent, it's got me really excited about JavaScript again.</blockquote>
+
+      <blockquote cite="Leigh Garland">Get from dev zero to node hero with a workshop by Remy. More learning in two days than you thought you could take (and still remember it!)</blockquote>
+      <!-- https://twitter.com/#!/toychicken/status/156440185981243393 -->
+
+      <h3>When, where, how much</h3>
+      <ul>
+      <li>Cost: <span class="cost">£595 + <abbr>VAT</abbr> per person</span></li>
+      <li>When: 8-9 March 2012<br></li>
+      <li>Where: The Lighthouse, Brighton (<a href="http://maps.google.co.uk/maps/place?q=the+lighthouse+brighton&cid=1375416526688458247">map</a>)</li>
+      </ul>
+
+      <h3 id="day_one">Day 1: An introduction to Node</h3>
 
       <ul>
       <li>The basics: Async development, modules, requires, exports and scope</li>
+      <li>Debugging techniques</li>
       <li>Building web servers: by hand, with Connect, with Express.js</li>
-      <li>Working with document databases (mongodb &amp; redis)</li>
-      <li>Going real time: WebSockets and Socket.IO</li>
-      <li>Releasing and deploying: npm, cluster</li>
+      <li>Working with document databases (mongodb &amp; mongoose)</li>
+      <li>Repo control, releasing and deploying using npm</li>
+      </ul>
+
+      <h3 id="day_two">Day 2: Using HTML5 tech with Node</h3>
+
+      <ul>
+        <li>Going real time: WebSockets and Socket.IO</li>
+        <li>Building WebSockets from scratch and using Socket.IO</li>
+        <li>Using WebSockets in the browser, with and without support</li>
+        <li>Server sent events and long polling: building the server and clients</li>
       </ul>
 
       <h3 id="what_do_you_need_for_this_workshop">What do you need for this workshop?</h3>
@@ -113,11 +146,15 @@
       <li>A browser with latest technology baked in, like <a href="http://www.google.com/chrome">Google Chrome</a> for instance</li>
       </ul>   
 
+
+      <h3 id="ticket_also_includes">Ticket also includes:</h3>
+      <p>All tickets include refreshments in the morning and afternoon, lunch on both days and an evening meal with Remy Sharp and the other delegates.</p>
+
       <div class="calltoaction">
         <h3>Book today</h3>
-        <p>Get in touch and arrange a company workshop</p>
+        <p>When booking, include your company details and the names and email address of each delegate as we will raise an invoice and email the delegates directly with directions and instructions for the day.</p>
         <ul>
-          <li><a class="button" href="/contact?subject=Node%20Workshop">Enquire now</a></li>
+          <li><a class="button" href="/contact?subject=Node%20Workshop%0A%0APlease book the following individual/s on to the Node workshop:%0A%0AName: %0AEmail:%0A%0ARaise the invoice for: <YOUR COMPANY>">Book now</a></li>
         </ul>
       </div>
     </section>
@@ -131,6 +168,13 @@
       <p>You've heard of jQuery, you know it's supposed to do beautiful things, but you don't do JavaScript, and you don't know where all the pieces go to create <em>your</em> beautiful thing. This workshop will ease you in to adding jQuery to your projects, cover what jQuery has to offer and how you can make use of it.</p>
 
       <p>You'll be learning jQuery from a practical point of view: what you can use out of the box to quickly get effects and interaction live in to your wireframes, prototypes and web sites. The aim <em>isn't</em> to teach you JavaScript, but to teach you what you need to know to be able to leverage jQuery to do your bidding.</p>
+
+      <blockquote cite="Prisca Schmarsow">A day of lightbulbs ~ you demystified jQuery for me—made it easy to understand, now happily working with what you taught me, thank you.</blockquote>
+      <!-- https://twitter.com/#!/prisca_eyedea/status/156439063635820544 -->
+
+      <blockquote cite="Richard Powell">jQuery for designers gave me everything I needed to use jQuery day to day. Now I write my own plug-ins & run my own jQuery workshop.</blockquote>
+      <!-- https://twitter.com/#!/byrichardpowell/status/156429746304061440 -->
+
       <h3>What you'll learn</h3>
       <ul>
         <li>How to impress your clients without writing any code</li>
