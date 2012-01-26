@@ -47,7 +47,7 @@
         <li>The latest install of Google Chrome or Safari</li>
       </ul>
 
-      <div class="calltoaction">
+      <div id="mobile-book-now" class="calltoaction">
         <h3>Book today</h3>
         <p>Get in touch and arrange a company workshop</p>
         <ul>
@@ -84,7 +84,7 @@
       <h3>Who is this workshop for?</h3>
       <p>You're not expected to have played with HTML5 just yet, but you will need to have a reasonable understanding of HTML &amp; JavaScript. A lot of the individual APIs are being used in popular web sites today both in desktop browsers and mobile, so rest assured that this applies to developers that are working on the web <em>today</em>.</p>
 	
-      <div class="calltoaction">
+      <div id="html5-book-now" class="calltoaction">
         <h3>Book today</h3>
         <p>Get in touch and arrange a company workshop</p>
         <ul>
@@ -150,7 +150,7 @@
       <h3 id="ticket_also_includes">Ticket also includes:</h3>
       <p>All tickets include refreshments in the morning and afternoon, lunch on both days and an evening meal with Remy Sharp and the other delegates.</p>
 
-      <div class="calltoaction">
+      <div id="node-book-now" class="calltoaction">
         <h3>Book today</h3>
         <p>When booking, include your company details and the names and email address of each delegate as we will raise an invoice and email the delegates directly with directions and instructions for the day.</p>
         <ul>
@@ -187,7 +187,7 @@
       <h3>Who is this workshop for?</h3>
       <p>This workshop is for front-end visual designers and developers who are familiar with HTML and CSS. If you have flirted with jQuery or JavaScript in the past, this will be an advantage, but is not a necessity.</p>
 
-      <div class="calltoaction">
+      <div id="j4d-book-now" class="calltoaction">
         <h3>Book today</h3>
         <p>Get in touch and arrange a company workshop</p>
         <ul>
