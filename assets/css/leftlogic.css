@@ -761,16 +761,25 @@ canvas.game {
   position: relative;
 }
 
-/*cite:before {
+blockquote cite:before {
   content: '— ';
 }
 
-*/blockquote:before {
+blockquote p:first-of-type:before {
   content: '\201C';
 }
 
-blockquote:after {
+blockquote p:last-of-type {
+  margin-bottom: 4px;
+}
+
+blockquote p:last-of-type:after {
   content: '\201D';
+}
+
+
+blockquote[cite]:before {
+  content: '\201C';
 }
 
 blockquote[cite]:after {
@@ -779,6 +788,10 @@ blockquote[cite]:after {
   font-size: 12px;
   color: #646567;
   font-family: Georgia, 'Time New Roman', serif;
+}
+
+blockquote footer {
+  padding-top: 0;
 }
 
 @media screen and (max-width: 820px) { 
