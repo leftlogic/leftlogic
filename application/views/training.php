@@ -60,7 +60,7 @@
   <section class="workshop" id="html5">
     <img src="/images/html5-workshop2.jpg" />
     <section>
-      <h2>Browsers with Wings: HTML5 APIs</h2>
+      <h2>Using HTML5 and JavaScript to build Web Apps</h2>
 <?php /*      <span class="cost">£349 + <abbr>VAT</abbr> pp</span>*/?>
       <p>HTML5 has gained a lot of attention over the last 12 months. With browsers increasingly supporting the features of the vast JavaScript APIs both in and around the official HTML5 spec, it's making the job of creating awesome applications purely using these web technologies very easy indeed.</p>
       <p>This full day workshop will introduce you to HTML5 with a brief backstory, before diving into the APIs one by one. As well as going through code and showing practical demonstrations, where possible, we'll also talk about the alternatives for old browsers that don't support "awesome" out of the box.</p>

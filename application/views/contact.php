@@ -2,7 +2,7 @@
   <section class="sub-section-alt">
     <h1>Contact Us</h1>  
     <p>Regardless of whether your project is big or small, if you want your website to feature the most sublime user experience possible then drop us a line to hire us.</p>   
-    <p class="availability">Currently taking bookings from the end of Janurary 2012 and onwards.</p>
+    <p class="availability">Currently taking bookings from mid-March 2012 and onwards.</p>
   </section><!-- /sub-section-alt -->
 
   <section class="sub-section">
