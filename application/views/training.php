@@ -154,7 +154,7 @@
         <h3>Book today</h3>
         <p>When booking, include your company details and the names and email address of each delegate as we will raise an invoice and email the delegates directly with directions and instructions for the day.</p>
         <ul>
-          <li><a class="button" href="/contact?subject=Node%20Workshop%0A%0APlease book the following individual/s on to the Node workshop:%0A%0AName: %0AEmail:%0A%0ARaise the invoice for: <YOUR COMPANY>">Book now</a></li>
+          <li><a class="button" href="/contact?subject=Node%20%26%20HTML5%20for%20a%20real-time%20web%0A%0APlease book the following individual/s on to the Node workshop:%0A%0AName: %0AEmail:%0A%0ARaise the invoice for: <YOUR COMPANY>">Book now</a></li>
         </ul>
       </div>
     </section>

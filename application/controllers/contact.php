@@ -46,7 +46,7 @@ class Contact extends MY_Controller {
       if ($this->form_validation->run() == true) {
         // Send Email
         $this->email->from($data['email'], $data['name']);
-        $this->email->to('remy@leftlogic.com');
+        $this->email->to('info@leftlogic.com');
         $this->email->subject('Contact via leftlogic.com from ' . $data['name']);
         $this->email->message('Found via: ' . $data['found_us'] . "\n\n" . $data['message']);
         $this->email->send();
