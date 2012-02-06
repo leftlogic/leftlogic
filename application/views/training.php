@@ -106,6 +106,8 @@
 
       <p>Node allows for applications to be developed in JavaScript and is running on the incredibly fast V8 engine (the same JavaScript engine used to run Google Chrome). It can handle thousands of concurrent connections due to it&#8217;s event model, and because of this event model, developing for Node is very familiar if you&#8217;ve already written JavaScript for the browser - as this the same event model.</p>
 
+      <p>Need to convince your boss? <a href="/training/whynode">here's an outline to help</a></p>
+
       <blockquote cite="Matt Smith">Today's workshop was excellent, it's got me really excited about JavaScript again.</blockquote>
 
       <blockquote cite="Leigh Garland">Get from dev zero to node hero with a workshop by Remy. More learning in two days than you thought you could take (and still remember it!)</blockquote>
