@@ -7,7 +7,7 @@
     <?php if (count($files) && is_array($files)) : shuffle($files); ?>
     <div id="others">
       <h2>Other 404 images people have left behind:</h2>
-      <?php for ($i = 0; $i < 8 && @$files[$i]; $i++) : ?><img src="/images/generated/approved/<?=$files[$i]?>" width="64" /><?php endfor ?>
+      <?php for ($i = 0; $i < $limit && @$files[$i]; $i++) : ?><img src="/images/generated/approved/<?=$files[$i]?>" width="64" /><?php endfor ?>
     </div>
     <?php endif ?>
     <form id="submit" action="/savepng.php" method="post">

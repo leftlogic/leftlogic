@@ -45,7 +45,7 @@ $route['scaffolding_trigger'] = "";
 
 $route['projects/entity-lookup'] = "projects/entitylookup";
 
-
+$route['404/all'] = "missing/index/true";
 
 /* End of file routes.php */
 /* Location: ./system/application/config/routes.php */
