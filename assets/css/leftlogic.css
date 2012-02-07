@@ -1119,3 +1119,11 @@ tr.splitter {
   margin-right: 10px;
 }
 
+#othrs img {
+  display: block;
+  float: left;
+}
+
+#others {
+  overflow: hidden;
+}
