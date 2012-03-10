@@ -56,7 +56,7 @@
         <p>Or book on to a current workshop:</p>
         <ul>
           <li>Mobilism workshop, Amsterdam 9-May<br>
-            <a href="http://mobilism.nl/2012/workshops#remy">book tickets</a>
+            <a href="http://mobilism.nl/2012/workshops#mobile-web-apps">book tickets</a>
           </li>
         </ul>
       </div>
