@@ -132,8 +132,8 @@
       <li>The basics: Async development, modules, requires, exports and scope</li>
       <li>Debugging techniques</li>
       <li>Building web servers: by hand, with Connect, with Express.js</li>
-      <li>Working with document databases (mongodb &amp; mongoose)</li>
-      <li>Repo control, releasing and deploying using npm</li>
+      <!-- <li>Working with document databases (mongodb &amp; mongoose)</li> -->
+      <li>Repo control, deploying using npm and release tips</li>
       </ul>
 
       <h3 id="day_two">Day 2: Using HTML5 tech with Node</h3>
