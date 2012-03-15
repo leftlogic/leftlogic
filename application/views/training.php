@@ -148,7 +148,7 @@
       <h3 id="what_do_you_need_for_this_workshop">What do you need for this workshop?</h3>
 
       <ul>
-      <li><a href="http://nodejs.org">Node installed</a> on your machine (0.6.7 is currently the latest stable release)</li>
+      <li><a href="http://nodejs.org">Node installed</a> on your machine (ideally the latest stable release)</li>
       <li>Ideally have <a href="http://help.github.com/git-installation-redirect/">git installed</a></li>
       <li>A text editor (Vim, TextMate, Coda, Textpad++, etc)</li>
       <li>A browser with latest technology baked in, like <a href="http://www.google.com/chrome">Google Chrome</a> for instance</li>
