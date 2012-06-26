@@ -45,6 +45,7 @@
         <li>Bring your mobile device, preferably an iPhone or iPad with the latest OS</li>
         <li>A little knowledge of CSS and JavaScript will help</li>
         <li>The latest install of Google Chrome or Safari</li>
+        <li>Installation of <a href="http://nodejs.org">Node.JS</a></li>
       </ul>
 
       <div id="mobile-book-now" class="calltoaction">
@@ -55,8 +56,8 @@
         </ul>
         <p>Or book on to a current workshop:</p>
         <ul>
-          <li>Mobilism workshop, Amsterdam 9-May<br>
-            <a href="http://mobilism.nl/2012/workshops#mobile-web-apps">book tickets</a>
+          <li>Full Frontal, 8-November (includes free pass to conference)<br>
+            <a href="http://2012.full-frontal.org/workshop/mobile">book tickets</a>
           </li>
         </ul>
       </div>
