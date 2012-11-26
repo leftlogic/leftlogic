@@ -15,7 +15,7 @@ class Contact extends MY_Controller {
 
     $data['name'] = $this->input->post('name');
     $data['email'] = $this->input->post('email');
-    $data['message'] = isset($_GET['subject']) ? $_GET['subject'] : $this->input->post('message');
+    $data['message'] = isset($_GET['subject']) ? $_GET['subject'] : $this->input->post('the_data');
     $data['found_us'] = $this->input->post('heard');
 
     $data['server_message'] = '';
@@ -33,7 +33,7 @@ class Contact extends MY_Controller {
           'rules'   => 'required|valid_email'
         ),
         array(
-          'field'   => 'message', 
+          'field'   => 'the_data', 
           'label'   => 'message', 
           'rules'   => 'required'
         )

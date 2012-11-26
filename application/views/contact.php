@@ -2,7 +2,7 @@
   <section class="sub-section-alt">
     <h1>Contact Us</h1>  
     <p>Regardless of whether your project is big or small, if you want your website to feature the most sublime user experience possible then drop us a line to hire us.</p>   
-    <p class="availability">Currently taking bookings from mid-June 2012 and onwards.</p>
+    <p class="availability">Currently taking bookings from Jan 2013 and onwards.</p>
   </section><!-- /sub-section-alt -->
 
   <section class="sub-section">
@@ -46,7 +46,8 @@
 
         <div>
           <label for="fMessage">Your message:</label>
-          <textarea required id="fMessage" name="message" rows="8" cols="40" class="wide"><?=$message?></textarea><em></em>
+          <textarea id="fMessage" style="display:none" name="message" rows="8" cols="40" class="wide"><?=$message?></textarea>
+          <textarea required id="the_data" name="the_data" rows="8" cols="40" class="wide"><?=$message?></textarea><em></em>
         </div>
         
         <div>

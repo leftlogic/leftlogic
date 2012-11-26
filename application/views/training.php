@@ -122,8 +122,8 @@
 
       <h3>When, where, how much</h3>
       <ul>
-      <li>Cost: <span class="cost">£595 + <abbr>VAT</abbr> per person</span></li>
-      <li>When: 8-9 March 2012<br></li>
+      <li>Cost: <span class="cost">£695 + <abbr>VAT</abbr> per person</span></li>
+      <li>When: TBA 2013<br></li>
       <li>Where: The Lighthouse, Brighton (<a href="http://maps.google.co.uk/maps/place?q=the+lighthouse+brighton&cid=1375416526688458247">map</a>)</li>
       </ul>
 
@@ -161,10 +161,12 @@
 
       <div id="node-book-now" class="calltoaction">
         <h3>Book today</h3>
-        <p>When booking, include your company details and the names and email address of each delegate as we will raise an invoice and email the delegates directly with directions and instructions for the day.</p>
+<!--        <p>When booking, include your company details and the names and email address of each delegate as we will raise an invoice and email the delegates directly with directions and instructions for the day.</p>
         <ul>
           <li><a class="button" href="/contact?subject=Node%20%26%20HTML5%20for%20a%20real-time%20web%0A%0APlease book the following individual/s on to the Node workshop:%0A%0AName: %0AEmail:%0A%0ARaise the invoice for: <YOUR COMPANY>">Book now</a></li>
-        </ul>
+        </ul>-->
+        <p>Get in touch and arrange a company workshop</p>
+        <ul><li><a class="button" href="/contact?subject=Node%20%26%20HTML5%20for%20a%20real-time%20web">Enquire now</a></li></ul>
       </div>
     </section>
   </section>

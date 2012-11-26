@@ -228,6 +228,7 @@ fieldset textarea {
   border-right: 20px solid #FFF1DA;
   background-image: url("/assets/images/bg-texture.jpg");
   background-position: 0 50%;
+  background-size: cover;
   background-repeat: repeat-y;
   background-color: #EE6702;
   overflow: hidden;
