@@ -54,12 +54,6 @@
         <ul>
           <li><a class="button" href="/contact?subject=Mobile%20Workshop">Enquire now</a></li>
         </ul>
-        <p>Or book on to a current workshop:</p>
-        <ul>
-          <li>Full Frontal, 8-November (includes free pass to conference)<br>
-            <a href="http://2012.full-frontal.org/workshop/mobile">book tickets</a>
-          </li>
-        </ul>
       </div>
     </section>
   </section>
