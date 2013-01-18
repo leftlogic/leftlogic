@@ -29,6 +29,13 @@
       <blockquote cite="Pete Hotchkin">Truly inspiring day spent with Remy on mobile stuff, time to get stuck in. Anyone got and mobile dev they need doing ;)</blockquote>
       <!-- https://twitter.com/#!/headloose/status/111121529026248704 -->
 
+      <h3>When, where, how much</h3>
+      <ul>
+      <li>Cost: <span class="cost">£400 + <abbr>VAT</abbr> per person</span></li>
+      <li>When: 28-Feb 2013<br></li>
+      <li>Where: The Lighthouse, Brighton (<a href="http://maps.google.co.uk/maps/place?q=the+lighthouse+brighton&cid=1375416526688458247">map</a>)</li>
+      </ul>
+
       <h2>What you'll learn</h2>
       
       <ul>
@@ -50,10 +57,14 @@
 
       <div id="mobile-book-now" class="calltoaction">
         <h3>Book today</h3>
-        <p>Get in touch and arrange a company workshop</p>
+        <p>When booking, include your company details and the names and email address of each delegate as we will raise an invoice and email the delegates directly with directions and instructions for the day.</p>
+        <ul>
+          <li><a class="button" href="/contact?subject=Mobile%20Workshop%0A%0APlease book the following individual/s on to the Mobile workshop:%0A%0AName: %0AEmail:%0A%0ARaise the invoice for: <YOUR COMPANY>">Book now</a></li>
+        </ul>
+        <!-- <p>Get in touch and arrange a company workshop</p>
         <ul>
           <li><a class="button" href="/contact?subject=Mobile%20Workshop">Enquire now</a></li>
-        </ul>
+        </ul> -->
       </div>
     </section>
   </section>

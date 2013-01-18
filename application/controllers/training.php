@@ -8,8 +8,8 @@ class Training extends MY_Controller {
 	}
 	
 	function index() {
-//	  $data['asides'] = 'upcoming';
-		$this->view('training'); //, $data);
+	  $data['asides'] = 'subscribe';
+		$this->view('training', $data);
 	}
 
 	function whynode() {

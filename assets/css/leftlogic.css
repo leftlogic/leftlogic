@@ -356,6 +356,15 @@ aside section div {
   background-color: #FFF;
 }
 
+aside section p {
+  margin: 0 20px;
+}
+
+aside section label {
+  font-weight: normal;
+  margin-top: 7px;
+}
+
 aside section img {
   display: block;
 }
@@ -363,6 +372,8 @@ aside section img {
 aside section .block-link,
 aside section .block-link:link,
 aside section .block-link:visited {
+  width: 100%;
+  cursor: pointer;
   display: block;
   padding: 10px 0;
   font-family: "Dierama", "leftdierma1", "leftdierma2", Georgia, "Time New Roman", serif;
@@ -372,6 +383,9 @@ aside section .block-link:visited {
   color: #FFF;
   text-align: center;
   text-decoration: none;
+  margin: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 aside section .block-link:hover,
 aside section .block-link:focus,
@@ -1130,4 +1144,12 @@ tr.splitter {
 
 #others {
   overflow: hidden;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+.sticky {
+  width: 228px;
 }

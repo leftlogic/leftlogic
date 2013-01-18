@@ -46,6 +46,8 @@ class MY_Controller extends Controller {
       $this->asides = $data['asides'];
     }
     
+    if (!$this->hideDefault) $this->load->view('includes/asides/asides');
+
     if ($this->asides) {
       if (is_string($this->asides)) {
         $this->load->view('includes/asides/' . $this->asides);
@@ -56,7 +58,6 @@ class MY_Controller extends Controller {
       }
     }
     
-    if (!$this->hideDefault) $this->load->view('includes/asides/asides');
     $this->load->view('includes/footer', $data);    
   }
 }
