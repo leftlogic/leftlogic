@@ -2,7 +2,7 @@
   <div class="sub-section-alt">
     <h1><span class="alt">Left</span> Logic</h1>  
     <p>Left Logic is one of the few web-development agencies that actively define the Internet, instead of the other way around.</p>
-    <p>We are front end development specialist. Our work is influenced by You. Your needs and the needs of your clients drive our design and build process, ensuring your website is finely tuned to your business conditions.  We achieve this by adopting a different perspective, using logical principles that apply from the left as well as the right.</p> 
+    <p>We are front end development specialists. Our work is influenced by You. Your needs and the needs of your clients drive our design and build process, ensuring your website is finely tuned to your business conditions.  We achieve this by adopting a different perspective, using logical principles that apply from the left as well as the right.</p> 
     <p>We offer training, workshops and seminars, and regularly speak at conferences both in the UK and abroad.</p>
   </div><!-- /sub-section-alt -->
   

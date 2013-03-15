@@ -15,13 +15,13 @@
 
         <div class="first">
           <label for="fName">Name:</label>
-          <input class="text-input" type="text" required name="name" value="<?=$name?>" id="fName">
+          <input class="text-input" type="text" required name="name" value="<?=htmlentities($name)?>" id="fName">
           <em></em>
         </div>
 
         <div>
           <label for="fEmail">Email:</label>
-          <input class="text-input" type="email" required name="email" value="<?=$email?>" id="fEmail">
+          <input class="text-input" type="email" required name="email" value="<?=htmlentities($email)?>" id="fEmail">
           <em></em>
         </div>
         
@@ -46,8 +46,8 @@
 
         <div>
           <label for="fMessage">Your message:</label>
-          <textarea id="fMessage" style="display:none" name="message" rows="8" cols="40" class="wide"><?=$message?></textarea>
-          <textarea required id="the_data" name="the_data" rows="8" cols="40" class="wide"><?=$message?></textarea><em></em>
+          <textarea id="fMessage" style="display:none" name="message" rows="8" cols="40" class="wide"><?=htmlentities($message)?></textarea>
+          <textarea required id="the_data" name="the_data" rows="8" cols="40" class="wide"><?=htmlentities($message)?></textarea><em></em>
         </div>
         
         <div>
