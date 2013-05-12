@@ -229,7 +229,7 @@
         <h3>Book now!</h3>
         <!-- <p>When booking, include your company details and the names and email address of each delegate as we will raise an invoice and email the delegates directly with directions and instructions for the day.</p> -->
         <ul>
-          <li><a class="button" href="https://leftlogic.stagehq.com/events/2287/booking/f8nwplqzwll08dnwagvp/step_1">Book now</a></li>
+          <li><a class="button" href="https://leftlogic.stagehq.com/events/2287">Book now</a> (tickets go on sale 15-May @ 10am)</li>
         </ul>
         <p>We can also <a href="/contact?subject=Node%20workshop%0A%0APlease book the following individual/s on to the Node workshop:%0A%0AName: %0AEmail:%0A%0ARaise the invoice for: <YOUR COMPANY>">raise an invoice</a> for your company if you'd prefer to pay via invoice.</p>
         <!-- <p>Get in touch and arrange a company workshop</p> -->
