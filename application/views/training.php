@@ -107,8 +107,8 @@
 
     
   </section>
-  
-  <section class="workshop" id="node">
+<?php /*
+  <section class="workshop" id="node2day">
     <img src="/images/j4d-workshop.jpg" />
     <section>
       
@@ -122,8 +122,7 @@
 
       <blockquote cite="Matt Smith">Today's workshop was excellent, it's got me really excited about JavaScript again.</blockquote>
 
-      <blockquote cite="Leigh Garland">Get from dev zero to node hero with a workshop by Remy. More learning in two days than you thought you could take (and still remember it!)</blockquote>
-      <!-- https://twitter.com/#!/toychicken/status/156440185981243393 -->
+      <blockquote data-url="https://twitter.com/#!/toychicken/status/156440185981243393" cite="Leigh Garland">Get from dev zero to node hero with a workshop by Remy. More learning in two days than you thought you could take (and still remember it!)</blockquote>
 
       <h3>When, where, how much</h3>
       <ul>
@@ -175,7 +174,71 @@
       </div>
     </section>
   </section>
-  
+*/ ?>
+
+  <section class="workshop" id="node1day">
+    <img src="/images/j4d-workshop.jpg" />
+    <section>
+      
+      <h2>Node: knowledge smash & grab</h2>
+
+      <p>Remy has run sell out Node workshops for a couple of years now, and this workshop is a fully packed day of material and exercises to get you up and running quickly with all the fundamentals you need to create your Node backed application.</p>
+
+      <p>Need to convince your boss? <a href="/training/whynode">here's an outline to help</a></p>
+
+      <blockquote cite="Matt Smith">Today's workshop was excellent, it's got me really excited about JavaScript again.</blockquote>
+
+      <blockquote data-url="https://twitter.com/#!/toychicken/status/156440185981243393" cite="Leigh Garland">Get from dev zero to node hero with a workshop by Remy. More learning in two days than you thought you could take (and still remember it!)</blockquote>
+
+      <h3 id="node_what_you_learn">What you'll learn</h3>
+      <ul>
+        <li>Up and running in 5 minutes</li>
+        <li>Getting past the basics: modules, static servers, application servers</li>
+        <li>Adding real-time: websockets</li>
+        <li>Workflow tools for running and debugging</li>
+        <li>Datastores with Mongo &amp; Mongoose</li>
+        <li>Dependencies with npm</li>
+        <li>Hands on advice for:<ul>
+          <li>publishing to github</li>
+          <li>publishing to npm</li>
+          <li>configuring for development</li>
+          <li>deploying to servers</li></ul>
+        </li>
+      </ul>
+
+      <h3 id="what_do_you_need_for_this_workshop">What you need for this workshop?</h3>
+
+      <ul>
+        <li><a href="http://nodejs.org">Node installed</a> (make sure it's a recent version)</li>
+        <li>Ideally have <a href="http://help.github.com/git-installation-redirect/">git installed</a> &amp; a <a href="http://github.com">github</a> account.</li>
+        <li>A text editor (Sublime Text, TextMate, Coda, Textpad++, etc)</li>
+        <li>A browser with latest technology baked in, like <a href="http://www.google.com/chrome">Google Chrome</a> for instance</li>
+      </ul>
+
+      <h3>When, where, how much</h3>
+      <ul>
+        <li>Cost: <span class="cost">£395 + <abbr>VAT</abbr> per person</span></li>
+        <li>When: 19 July 2013<br></li>
+        <li>Where: The Lighthouse, Brighton (<a href="http://maps.google.co.uk/maps/place?q=the+lighthouse+brighton&cid=1375416526688458247">map</a>)</li>
+      </ul>
+
+      <h3 id="ticket_also_includes">Ticket includes:</h3>
+        <p>All tickets include lunch and refreshments in the morning and afternoon. For special dietary requirements, please let us know.</p>
+
+      <div id="node-book-now" class="calltoaction">
+        <h3>Book now!</h3>
+        <p>When booking, include your company details and the names and email address of each delegate as we will raise an invoice and email the delegates directly with directions and instructions for the day.</p>
+        <ul>
+          <li><a class="button" href="https://leftlogic.stagehq.com/events/2287/booking/f8nwplqzwll08dnwagvp/step_1">Book now</a></li>
+        </ul>
+        <p>We can also <a href="/contact?subject=Node%20workshop%0A%0APlease book the following individual/s on to the Node workshop:%0A%0AName: %0AEmail:%0A%0ARaise the invoice for: <YOUR COMPANY>">raise an invoice</a> for your company if you'd prefer to pay via invoice.</p>
+        <!-- <p>Get in touch and arrange a company workshop</p> -->
+        <!-- <ul><li><a class="button" href="/contact?subject=Node%20%26%20HTML5%20for%20a%20real-time%20web">Enquire now</a></li></ul> -->
+      </div>
+    </section>
+  </section>
+
+
   <section class="workshop" id="j4d">
     <img src="/images/html5-workshop.jpg" title="Photo by Stefan Nitzsche" />
     <section>

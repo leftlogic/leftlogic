@@ -44,6 +44,7 @@ $route['default_controller'] = "home";
 $route['scaffolding_trigger'] = "";
 
 $route['projects/entity-lookup'] = "projects/entitylookup";
+$route['link/(.*)$'] = "link/index/$1";
 
 $route['404/all'] = "missing/index/true";
 
