@@ -21,7 +21,7 @@
 
       <p>This day long workshop will be a mix of introducing the latest technology &amp; tricks on the mobile device and hands on practical exercises where you'll get to play with what you're learning.</p>
 
-      <p>Although this workshop will have an iOS focus, a lot of the technology we will look at applies to most new WebKit based devises (Android, Playbook, etc) and smartphones running Opera Mobile.</p>
+      <p>Although this workshop will have an iOS focus, a lot of the technology we will look at applies to most new WebKit based devices (Android, Playbook, etc) and smartphones running Opera Mobile.</p>
 
       <blockquote cite="James O'Brien">Remy's HTML5 for mobile workshop showed me how to do at least three things I'd previously thought were impossible.</blockquote>
       <!-- https://twitter.com/#!/sparrk/status/156437912546836481 -->
