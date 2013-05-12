@@ -227,7 +227,7 @@
 
       <div id="node-book-now" class="calltoaction">
         <h3>Book now!</h3>
-        <p>When booking, include your company details and the names and email address of each delegate as we will raise an invoice and email the delegates directly with directions and instructions for the day.</p>
+        <!-- <p>When booking, include your company details and the names and email address of each delegate as we will raise an invoice and email the delegates directly with directions and instructions for the day.</p> -->
         <ul>
           <li><a class="button" href="https://leftlogic.stagehq.com/events/2287/booking/f8nwplqzwll08dnwagvp/step_1">Book now</a></li>
         </ul>
