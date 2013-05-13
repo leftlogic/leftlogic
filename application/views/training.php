@@ -266,12 +266,19 @@
       <h3>Who is this workshop for?</h3>
       <p>This workshop is for front-end visual designers and developers who are familiar with HTML and CSS. If you have flirted with jQuery or JavaScript in the past, this will be an advantage, but is not a necessity.</p>
 
+      <h3>When, where, how much</h3>
+      <ul>
+        <li>Cost: <span class="cost">£395 + <abbr>VAT</abbr> per person</span></li>
+        <li>When: 18 July 2013<br></li>
+        <li>Where: The Lighthouse, Brighton (<a href="http://maps.google.co.uk/maps/place?q=the+lighthouse+brighton&cid=1375416526688458247">map</a>)</li>
+      </ul>
+
       <div id="j4d-book-now" class="calltoaction">
-        <h3>Book today</h3>
-        <p>Get in touch and arrange a company workshop</p>
+        <h3>Book now!</h3>
         <ul>
-          <li><a class="button" href="/contact?subject=jQuery%20for%20Designers%20Workshop">Enquire now</a></li>
+          <li><a class="button" href="https://leftlogic.stagehq.com/events/2287">Book now</a> (tickets go on sale 15-May @ 10am)</li>
         </ul>
+        <p>We can also <a href="/contact?subject=jQuery%20for%20Designers%20workshop%0A%0APlease book the following individual/s on to the jQuery for Designers workshop:%0A%0AName: %0AEmail:%0A%0ARaise the invoice for: <YOUR COMPANY>">raise an invoice</a> for your company if you'd prefer to pay via invoice.</p>
       </div>
     </section>
   </section>

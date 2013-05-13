@@ -1,6 +1,6 @@
 <div class="content">   
   <section class="sub-section-alt">
-<h1>Why your boss should send to you to the Real-time Node &amp; HTML5 workshop</h1>
+<h1>Why your boss should send to you to the Node workshop</h1>
 
 <p>The web used to be static. Single page, click, reload. Then came Ajax and we embraced it. The web was now dynamic. We've moved on. Our expectations are higher, we want information in an instant. The web has moved on to <strong>real-time.</strong></p>
 
