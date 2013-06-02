@@ -1,5 +1,5 @@
 <section>
-  <h2>Upcomgin workshops</h2>
+  <h2>Upcoming workshops</h2>
   <ul>
   <li><a href="/training#node1day">Get up &amp; running with Node</a></li>
   <li><a href="/training#j4d">jQuery for Designers</a></li>
