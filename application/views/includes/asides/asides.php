@@ -1,3 +1,11 @@
+<section>
+  <h2>Upcomgin workshops</h2>
+  <ul>
+  <li><a href="/training#node1day">Get up &amp; running with Node</a></li>
+  <li><a href="/training#j4d">jQuery for Designers</a></li>
+  </ul>
+  <a href="https://leftlogic.stagehq.com/" class="block-link">Book your place now</a>
+</section>
 <section><div>
   <h2>Latest Work</h2>
   <ul>

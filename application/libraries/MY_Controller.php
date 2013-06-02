@@ -41,7 +41,7 @@ class MY_Controller extends Controller {
   function footer($data) {
     $data['motif'] = $this->motif;    
     $this->load->view('includes/aside_header');
-    
+     
     if (@$data['asides']) {
       $this->asides = $data['asides'];
     }

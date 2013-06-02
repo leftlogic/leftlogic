@@ -276,7 +276,7 @@
       <div id="j4d-book-now" class="calltoaction">
         <h3>Book now!</h3>
         <ul>
-          <li><a class="button" href="https://leftlogic.stagehq.com/events/2287">Book now</a> (tickets go on sale 15-May @ 10am)</li>
+          <li><a class="button" href="https://leftlogic.stagehq.com/events/2286">Book now</a> (tickets go on sale 15-May @ 10am)</li>
         </ul>
         <p>We can also <a href="/contact?subject=jQuery%20for%20Designers%20workshop%0A%0APlease book the following individual/s on to the jQuery for Designers workshop:%0A%0AName: %0AEmail:%0A%0ARaise the invoice for: <YOUR COMPANY>">raise an invoice</a> for your company if you'd prefer to pay via invoice.</p>
       </div>

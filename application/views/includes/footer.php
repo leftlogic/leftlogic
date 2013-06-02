@@ -37,7 +37,7 @@
       
       <section class="vcard">
         <h2 class="alt">Call <strong>+44 (0) 1273 557744</strong></h2>
-        <p>9.30am - 5.30pm Monday-Friday</p>
+        <p>9.30am - 5.30pm UK timezone<br> Monday-Friday</p>
         <br/>
         <p class="fn org">Left Logic <abbr>Ltd.</abbr></p>
         <p class="adr"><span class="street">44 Burstead Close</span>, <span class="locality">Brighton</span>, <span class="postal-code">BN1 7HT</span></p>
