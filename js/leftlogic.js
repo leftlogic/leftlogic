@@ -5,6 +5,11 @@ return function(c){if(this===f)return new ev(c);this.el=c;this.addEvent=o;this.f
 
 (function (window, document, undefined) {
 
+var blockquotes = document.getElementsByTagName('blockquote');
+for (var i = 0; i < blockquotes.length; i++) {
+  
+}
+
 var table = document.getElementById('tourbooking');
 if (table) {
   ev(table.getElementsByTagName('a')).on({

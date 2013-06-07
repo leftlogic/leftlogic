@@ -11,7 +11,7 @@ body, #entry {
 }
 
 body, table, #loading p, #connect fieldset, #entry {
-  font-family:  'Lucida Grande', verdana, arial, helvetica, sans-serif  
+  font-family:  'Lucida Grande', verdana, arial, helvetica, sans-serif
 }
 
 pre { margin: 4px 0; line-height: 18px;}
@@ -66,7 +66,7 @@ div > label { float: left; display: block; width: 150px;}
 #toolbar {
   position: fixed;
   color: #fff;
-  width: 100%; 
+  width: 100%;
   bottom: 0;
   background: #733;
   height: 94px;
@@ -86,16 +86,16 @@ div > label { float: left; display: block; width: 150px;}
 #logWrapper {
   display: block;
   /* enough padding to clear the toolbar.. is there a better way to do this? */
-  padding-bottom: 94px; 
+  padding-bottom: 94px;
   background: inherit;
-  overflow: hidden;  
+  overflow: hidden;
 }
 
 /*#log {
   display: block;
   /* enough padding to clear the toolbar.. is there a better way to do this? */
   padding-top: 1em;
-  padding-bottom: 5.1em; 
+  padding-bottom: 5.1em;
   background: inherit;
   overflow: hidden;
 }
@@ -133,7 +133,7 @@ div > label { float: left; display: block; width: 150px;}
   padding: 5px;
 }
 
-.nick { 
+.nick {
   font-weight: bold;
   padding: 0 1em 0 0.5em;
 }
@@ -153,7 +153,7 @@ div > label { float: left; display: block; width: 150px;}
 }
 
 #toolbar li {
-  display: block; 
+  display: block;
   float: left;
   margin: 0 2em 0 0;
 }

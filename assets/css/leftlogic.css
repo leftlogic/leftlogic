@@ -94,7 +94,7 @@ h1{
   color: #FF4D00;
 }
 h1 .alt, h2, legend {
-  color: #008F69;  
+  color: #008F69;
 }
 
 a,
@@ -117,7 +117,7 @@ a.alt:visited,
 }
 a.alt:hover,
 a.alt:focus,
-a.alt:active 
+a.alt:active
 .lede a:hover,
 .lede a:focus,
 .lede a:active {
@@ -138,7 +138,7 @@ small {
 }
 
 /** Forms **/
-form div { 
+form div {
   margin-top: 0.5em;        /* 7px  */
   margin-bottom: 1em;       /* 14px */
 }
@@ -216,7 +216,7 @@ fieldset textarea {
 }
 
 /** Helpers **/
-.lede { 
+.lede {
   color: #FF4D00
 }
 .alt {
@@ -324,7 +324,7 @@ nav ul li {
   float: left;
   padding-right: 22px;
   line-height: 3.5714em;    /* 50px */
-  
+
 }
 nav ul li a,
 nav ul li a:link,
@@ -614,7 +614,7 @@ td, th {
   border: 1px dotted #DEDEDE;
 }
 th {
-  background-color: #FFFAF1;  
+  background-color: #FFFAF1;
 }
 
 /** Portfolio Sections **/
@@ -812,11 +812,6 @@ blockquote footer {
   padding-top: 0;
 }
 
-@media screen and (max-width: 820px) { 
-  #wrapper { width: 650px; }
-  #motif, aside { display: none; } 
-}
-
 img.plain,
 .green .main img.plain {
   border: 0;
@@ -865,7 +860,7 @@ div.entity div.detail {
   width: 465px;
 }
 
-div.entity div.detail div.code, 
+div.entity div.detail div.code,
 div.entity div.detail div.entityCode,
 div.entity div.detail div.entityName {
   float: left;
@@ -928,7 +923,7 @@ form.editable label {
 
 form.editable input {
   font-size: 100%;
-  padding: 3px;  
+  padding: 3px;
   width: 250px;
 }
 
@@ -1152,4 +1147,28 @@ tr.splitter {
 }
 .sticky {
   width: 228px;
+}
+.focus {
+  border-left: 30px solid #EE6702;
+  padding: 20px;
+}
+
+.green .focus {
+  border-left-color: #008F69;
+}
+
+@media screen and (max-width: 820px) {
+  #wrapper { border: 0; }
+  .main { width: 100%; margin: 0;}
+  #wrapper { width: 100%; box-sizing: border-box; display: block; margin-right: 30px; float: none; position: relative;}
+  .main .content, .sub-section-alt { width: 100%; box-sizing: border-box;}
+  #motif, aside { display: none; }
+  
+  .workshop img { display: none; }
+  .workshop section { width: auto; padding-left: 30px; }
+  
+  nav {
+    background: #FFF1DA url(/images/favicon.png) no-repeat 98% 10px;
+    background-size: auto 30px;
+  }
 }
