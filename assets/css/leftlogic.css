@@ -1171,6 +1171,8 @@ tr.splitter {
     background: #FFF1DA url(/images/favicon.png) no-repeat 98% 10px;
     background-size: auto 30px;
   }
+  
+  textarea { width: 100%; }
 }
 
 @media screen and (max-width: 320px) {
