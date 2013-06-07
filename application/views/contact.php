@@ -1,16 +1,16 @@
-<div class="content">   
+<div class="content">
   <section class="sub-section-alt">
-    <h1>Contact Us</h1>  
-    <p>Regardless of whether your project is big or small, if you want your website to feature the most sublime user experience possible then drop us a line to hire us.</p>   
-    <p class="availability">Currently taking bookings from Jan 2013 and onwards.</p>
+    <h1>Contact Us</h1>
+    <p>Regardless of whether your project is big or small, if you want your website to feature the most sublime user experience possible then drop us a line to hire us.</p>
+    <p class="availability">Currently taking bookings for 2013.</p>
   </section><!-- /sub-section-alt -->
 
   <section class="sub-section">
-    
+
     <?php echo $server_message; ?>
-    
+
     <?php //echo validation_errors(); ?>
-    
+
     <form action="/contact" method="post">
 
         <div class="first">
@@ -24,7 +24,7 @@
           <input class="text-input" type="email" required name="email" value="<?=htmlentities($email)?>" id="fEmail">
           <em></em>
         </div>
-        
+
         <div>
           <label for="fHeard">How did you hear about Left Logic?</label>
           <select id="fHeard" name="heard">
@@ -49,7 +49,7 @@
           <textarea id="fMessage" style="display:none" name="message" rows="8" cols="40" class="wide"><?=htmlentities($message)?></textarea>
           <textarea required id="the_data" name="the_data" rows="8" cols="40" class="wide"><?=htmlentities($message)?></textarea><em></em>
         </div>
-        
+
         <div>
           <input class="button" type="submit" value="Send">
           <input type="hidden" name="action" value="send">
@@ -58,7 +58,7 @@
   </section><!-- /sub-section -->
 </div><!-- /content -->
 
-<div class="content">  
+<div class="content">
   <section class="sub-section-alt">
     <!-- <p class="lede">We work directly for organisations or on behalf of other digital agencies, our clients include:</p> -->
     <h1>Some of our clients</h1>
