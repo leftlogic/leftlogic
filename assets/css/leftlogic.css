@@ -1192,4 +1192,22 @@ tr.splitter {
   .workshop section {
     padding: 0 10px;
   }
+  
+  .portfolio .medium section:first-child {
+    margin-left: 12px;
+  }
+  
+  .portfolio .medium section {
+    width: 100%;
+  }
+  
+  .portfolio .medium img {
+    float: left;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .portfolio .medium div {
+    margin-left: 100px;
+  }
 }
