@@ -1150,7 +1150,7 @@ tr.splitter {
 }
 .focus {
   border-left: 30px solid #EE6702;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .green .focus {
@@ -1163,12 +1163,33 @@ tr.splitter {
   #wrapper { width: 100%; box-sizing: border-box; display: block; margin-right: 30px; float: none; position: relative;}
   .main .content, .sub-section-alt { width: 100%; box-sizing: border-box;}
   #motif, aside { display: none; }
-  
+
   .workshop img { display: none; }
   .workshop section { width: auto; padding-left: 30px; }
-  
+
   nav {
     background: #FFF1DA url(/images/favicon.png) no-repeat 98% 10px;
     background-size: auto 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  nav, .sub-section, .sub-section-alt {
+    padding: 10px;
+  }
+  nav ul li {
+    line-height: 16px;
+    padding-right: 10px;
+  }
+  nav {
+    background-position: 98% 2px;
+  }
+  
+  .portfolio, .workshop {
+    padding: 20px 0;
+  }
+  
+  .workshop section {
+    padding: 0 10px;
   }
 }
