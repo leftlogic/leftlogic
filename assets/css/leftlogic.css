@@ -85,8 +85,14 @@ body {
   background-color: #FFF;
   font-family: Georgia, "Time New Roman", serif;
   font-size: 0.875em;     /* 14px */
+  font-size: 1em;     /* 14px */
   line-height: 1.2858;    /* 18px */
   color: #646567;
+}
+
+aside {
+    font-size: 0.875em;     /* 14px */
+
 }
 
 h1{
@@ -1171,7 +1177,7 @@ tr.splitter {
     background: #FFF1DA url(/images/favicon.png) no-repeat 98% 10px;
     background-size: auto 30px;
   }
-  
+
   textarea { width: 100%; }
 }
 
@@ -1186,29 +1192,29 @@ tr.splitter {
   nav {
     background-position: 98% 2px;
   }
-  
+
   .portfolio, .workshop {
     padding: 20px 0;
   }
-  
+
   .workshop section {
     padding: 0 10px;
   }
-  
+
   .portfolio .medium section:first-child {
     margin-left: 12px;
   }
-  
+
   .portfolio .medium section {
     width: 100%;
   }
-  
+
   .portfolio .medium img {
     float: left;
     width: 100px;
     height: 100px;
   }
-  
+
   .portfolio .medium div {
     margin-left: 100px;
   }
