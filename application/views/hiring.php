@@ -11,7 +11,7 @@
       <li>£1,000 training budget (paid working days obviously)</li>
       <li>Salary based on your current experience</li>
       <li>Free access to Left Logic based events (local workshops Remy runs for instance)</li>
-      <li>20 days paid holiday</li>
+      <li>20 days paid holiday (plus bank holidays)</li>
       <li>4 days a week in central Brighton office, 1 day flexible time (working from home, during weekend - as you please)</li>
       <li>MacBook Pro provided (unless you want to use your own machine) and 24 inch cinema display</li>
       <li>Support any interest in speaking or teaching workshops</li>
