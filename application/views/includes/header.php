@@ -15,6 +15,7 @@
     <nav>
       <ul>
         <li><a href="<?=base_url()?>/"<?php echo $page == 'home' ? ' class="selected"' : ''; ?>>Home</a></li>
+        <li><a href="<?=base_url()?>/hiring">Hiring</a></li>
         <li><a href="<?=base_url()?>/training">Training</a></li>
         <li><a href="<?=base_url()?>/projects">Projects</a></li>
         <!-- <li><a href="<?=base_url()?>/tour">Workshop Tour</a></li> -->
