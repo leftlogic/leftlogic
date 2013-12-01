@@ -10,14 +10,20 @@
 (function () {
   if (!document.querySelector || !document.body.classList) return;
 
+  if (webkitRequestAnimationFrame) requestAnimationFrame = webkitRequestAnimationFrame;
+
+  if (!requestAnimationFrame) return;
+
   var sticky = document.querySelector('.sticky'),
       origOffsetY = sticky.offsetTop;
 
-  function onScroll(e) {
+  function onScroll() {
     window.scrollY >= origOffsetY ? sticky.classList.add('fixed') :
                                     sticky.classList.remove('fixed');
   }
 
-  document.addEventListener('scroll', onScroll);
+  document.addEventListener('scroll', function () {
+    requestAnimationFrame(onScroll);
+  });
 })();
 </script>

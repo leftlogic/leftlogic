@@ -1,7 +1,7 @@
 <?php
 class Home extends MY_Controller {
 	function Home() {
-    $this->asides = 'forbind';
+    $this->asides = 'jsbin';
 		$this->motif = true;
 		$this->page = 'home';
 		parent::Controller();
