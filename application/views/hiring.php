@@ -66,6 +66,6 @@
 
     <h2>Get in touch</h2>
 
-    <p>If you're interested in applying, please <a href="/contact?subject=Employment%20enquiry">contact us</a> with a covering email as to why you're the person for the job, links to your github profile (or equally some portfolio that shows off your coding chops) and some form of work history (CV or linked for example).</p>
+    <p>If you're interested in applying, please <a href="/contact?subject=Employment%20enquiry">contact us</a> with a covering email as to why you're the person for the job, links to your github profile (or equally some portfolio that shows off your coding chops) and some form of work history (CV or LinkedIn for example).</p>
   </section>
 </div>
