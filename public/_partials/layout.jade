@@ -9,32 +9,10 @@ html
     link(rel='stylesheet', href='/css/style.css')
     block head
   body
-    header(class="#{ current.source == 'index' ? 'home' : '' }")
-      .overlay.section
-        .inner
-          .logo
-            img(src='/img/logo.png', alt='Left Logic')
-          nav
-            ul
-              li
-                a(href='#', class="#{ current.source == 'index' ? 'active' : '' }") Home
-              li
-                a(href='/hiring', class="#{ current.source == 'hiring' ? 'active' : '' }") Hiring
-              li
-                a(href='/training', class="#{ current.source == 'training' ? 'active' : '' }") Training
-              li
-                a(href='/projects', class="#{ current.source == 'projects' ? 'active' : '' }") Projects
-              li
-                a(href='/contact', class="#{ current.source == 'contact' ? 'active' : '' }") Contact
-          .clearfix
-          #title
-            h1(data-typer-targets='Specialists in JavaScript Development,Specialists in Lego Building,The Best at Lego Building,The Best at Being Awesome,Specialists in JavaScript Development') #{title}
+    header
+      block header
     #content
       block content
     footer.section
       .inner
         | Footer
-    script(src='/js/jquery-1.10.2.min.js')
-    script(src='/js/jquery.typer.js')
-    script.
-      $('#title h1').typer();

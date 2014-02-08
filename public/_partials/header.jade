@@ -1,0 +1,15 @@
+.logo
+  img(src='/img/logo.png', alt='Left Logic')
+nav
+  ul
+    li
+      a(href='#', class="#{ current.source == 'index' ? 'active' : '' }") Home
+    li
+      a(href='/hiring', class="#{ current.source == 'hiring' ? 'active' : '' }") Hiring
+    li
+      a(href='/training', class="#{ current.source == 'training' ? 'active' : '' }") Training
+    li
+      a(href='/projects', class="#{ current.source == 'projects' ? 'active' : '' }") Projects
+    li
+      a(href='/contact', class="#{ current.source == 'contact' ? 'active' : '' }") Contact
+.clearfix

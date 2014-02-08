@@ -1,0 +1,11 @@
+extends layout
+
+block header
+  .overlay_home.section
+    .inner
+      include header
+      #title
+        h1 #{title}
+
+block content
+  != yield
