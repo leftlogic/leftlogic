@@ -1,6 +1,5 @@
 @background: #ffffff;
 @orange: #ee5f03;
-@overlay_orange: rgb(238, 95, 3);
 @overlay_orange_transparent: rgba(238, 95, 3, 0.85);
 @content_width: 1000px;
 
@@ -52,15 +51,32 @@ body {
 
 a {
   text-decoration: none;
+  color: @orange;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  color: #333333;
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.2rem;
+  margin: 0 0 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: 0 0 2rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin: 0 0 2rem;
+}
+
+p {
+  margin: 0 0 2rem;
+  color: #888888;
 }
 
 /* Structure */
@@ -89,11 +105,14 @@ header {
   background-size: cover;
 
   .overlay {
-    background: @overlay_orange;
+    background: @orange;
+  }
+
+  .inner {
+    max-width: 1100px !important;
   }
 
   .logo {
-    width: 50%;
     float: left;
     line-height: 0;
 
@@ -105,7 +124,6 @@ header {
   /* Navigation */
 
   nav {
-    width: 50%;
     float: right;
     text-align: right;
     height: 40px; /* Same height as the logo */
@@ -121,16 +139,20 @@ header {
         display: inline-block;
         height: inherit;
         line-height: inherit;
+        padding: 0 1rem;
 
         a {
-          color: rgba(255, 255, 255, 0.5);
+          color: rgba(255, 255, 255, 0.7);
           display: block;
-          padding: 0 1rem;
-          font-weight: bold;
         }
 
-        a:hover, a.active {
+        a:hover {
           color: #ffffff;
+        }
+
+        a.active {
+          color: #ffffff;
+          border-bottom: 2px solid #ffffff;
         }
       }
 
@@ -149,18 +171,23 @@ header {
 
     h1 {
       font-size: 3rem;
+      line-height: 4.5rem;
+      color: inherit;
       text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.15);
+      width: 40rem;
+      margin: 0 auto;
     }
   }
 }
 
-header.home {
-  #title {
-    padding: 9rem 0 7rem 0 !important;
-  }
+.overlay_home {
+  background: @overlay_orange_transparent;
 
-  .overlay {
-    background: @overlay_orange_transparent;
+  #title {
+    padding: 7rem 0 5rem 0 !important;
+  }
+}
+
 /* Projects */
 
 #projects .section {
