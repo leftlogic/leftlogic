@@ -1,30 +1,5 @@
 {
   "index": {
-    "projects": [
-      {
-        "title": "JS Bin",
-        "id": "jsbin",
-        "content": "JS Bin is a form of paste bin, but with a twist. It allows you to also include the HTML and CSS to provide context to your pasty. As such, it means you can actually run the JavaScript and pass this on to a colleague to help to debug.",
-        "link": "http://jsbin.com",
-        "imageUrl": "/img/projects/jsbin.png",
-        "colour": "grey"
-      },
-      {
-        "title": "Full Frontal",
-        "id": "full-frontal",
-        "content": "JS Bin is a form of paste bin, but with a twist. It allows you to also include the HTML and CSS to provide context to your pasty. As such, it means you can actually run the JavaScript and pass this on to a colleague to help to debug.",
-        "link": "http://2013.full-frontal.org",
-        "imageUrl": "/img/projects/full-frontal-2013.png"
-      },
-      {
-        "title": "nodemon",
-        "id": "nodemon",
-        "content": "nodemon will watch the files in the directory where nodemon was started, and if they change, it will automatically restart your node application. nodemon simply wraps your node application and keeps an eye on any files that have changed.",
-        "link": "http://remy.github.io/nodemon",
-        "imageUrl": "/img/projects/nodemon.png",
-        "colour": "green"
-      }
-    ]
   },
   "404": {
     "title": "404 - Not Found!"
