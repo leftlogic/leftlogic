@@ -1,7 +1,12 @@
 {
   "index": {
+    "title": "Specialists in JavaScript Development",
+    "title_large": true
   },
   "404": {
     "title": "404 - Not Found!"
+  },
+  "hiring": {
+    "title": "We're hiring!"
   }
 }
