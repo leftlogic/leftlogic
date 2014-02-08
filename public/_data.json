@@ -1,5 +1,6 @@
 {
   "index": {
+    "layout": "_partials/home",
     "title": "Specialists in JavaScript Development",
     "title_large": true
   },
