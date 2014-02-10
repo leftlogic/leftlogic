@@ -1,7 +1,7 @@
 @background: #ffffff;
 @orange: #ee5f03;
 @overlay_orange_transparent: rgba(238, 95, 3, 0.85);
-@content_width: 1000px;
+@content_width: 68.75rem;
 
 /* Google Fonts - Lato */
 
@@ -60,8 +60,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   margin: 0 0 2rem;
+  font-weight: bold;
 }
 
 h2 {
@@ -74,7 +75,19 @@ h3 {
   margin: 0 0 2rem;
 }
 
-p {
+h4 {
+  font-size: 1.4rem;
+  margin: 0 0 2rem;
+  color: #888888;
+}
+
+h6 {
+  font-size: 1rem;
+  margin: 0 0 2rem;
+  color: #888888;
+}
+
+ul, p {
   margin: 0 0 2rem;
   color: #888888;
 }
@@ -86,16 +99,53 @@ p {
   margin: 0 auto;
 }
 
+#content {
+  width: 49.5rem;
+  float: left;
+}
+
+#sidebar {
+  width: 16.5rem;
+  float: right;
+  height: 100rem;
+
+  .sidebar_section {
+    background: #f2f2f2;
+    padding: 2rem;
+    margin: 0 0 3rem;
+
+    h6 {
+      margin: 0 0 1rem;
+    }
+
+    ul {
+      padding: 0 0 0 1.1rem;
+    }
+
+    ul:last-child {
+      margin: 0;
+    }
+
+    p:last-child {
+      margin: 0;
+    }
+
+    ul, p {
+      color: #aaaaaa
+    }
+  }
+
+  .sidebar_section:last-child {
+    margin: 0;
+  }
+}
+
 /* Sections - used throughout the site to split up, well, sections */
 
 .section {
   width: 100%;
   padding: 3rem;
   position: relative; /* Allows for child absolute positioning */
-}
-
-#jsbin {
-  background: #f5f5f5;
 }
 
 /* Header */
@@ -106,10 +156,6 @@ header {
 
   .overlay {
     background: @orange;
-  }
-
-  .inner {
-    max-width: 1100px !important;
   }
 
   .logo {
@@ -139,7 +185,7 @@ header {
         display: inline-block;
         height: inherit;
         line-height: inherit;
-        padding: 0 1rem;
+        padding: 0 1.2rem;
 
         a {
           color: rgba(255, 255, 255, 0.7);
@@ -156,7 +202,7 @@ header {
         }
       }
 
-      li:last-child a {
+      li:last-child {
         padding-right: 0;
       }
     }
@@ -184,22 +230,90 @@ header {
   background: @overlay_orange_transparent;
 
   #title {
-    padding: 6rem 0 4rem 0 !important;
+    padding: 5rem 0 3rem 0 !important;
   }
 }
 
 /* Projects */
 
-#projects .section {
+#projects {
+  .section {
+    .info {
+      float: left;
+      width: 26rem;
+      padding-top: 2.6rem;
+    }
+
+    img {
+      float: right;
+      width: 520px;
+      height: 367px; // Eventually crop images and compress
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  #jsbin {
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  #jsbin:after {
+    content: "";
+    background-image: url('../img/projects/jsbin_background.png');
+    background-position: center 60px;
+    background-repeat: no-repeat;
+    background-size: 600px 600px;
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  #full_frontal:after {
+    content: "";
+    background-image: url('../img/projects/full-frontal-2013_background.png');
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  #nodemon {
+    background: #008f69;
+
+    h2, a {
+      color: #ffffff;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.5)
+    } 
+  }
+}
+
+#projects .section:nth-child(2n) {
   .info {
-    float: left;
-    width: 30rem;
-    padding-top: 1.6rem;
+    float: right;
   }
 
   img {
-    float: right;
-    width: 450px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    float: left;
+  }
+}
+
+@media screen and (max-width: 74.75rem) {
+  #sidebar {
+    display: none;
+  }
+
+  #content {
+    width: 100%;
   }
 }

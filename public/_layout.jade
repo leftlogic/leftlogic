@@ -8,4 +8,8 @@ block header
 block content
   .section
     .inner
-      != yield
+      #content
+        != yield
+      #sidebar
+        include _partials/sidebar
+      .clearfix
