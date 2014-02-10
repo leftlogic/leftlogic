@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "The Left Logic website.",
   "main": "server.js",
+  "private": true,
   "scripts": {
     "start": "node_modules/.bin/harp server",
     "test": "node_modules/.bin/harp compile"
