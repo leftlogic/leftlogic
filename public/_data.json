@@ -5,7 +5,8 @@
     "title_large": true
   },
   "404": {
-    "title": "404 - Not Found!"
+    "title": "404 - Not Found!",
+    "layout": "_partials/404"
   },
   "hiring": {
     "title": "We're hiring!"
