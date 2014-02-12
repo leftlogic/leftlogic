@@ -7,10 +7,14 @@ nav
     -var menu = { 'Home': '/', 'Hiring': '/hiring', 'Training': '/training', 'Contact': '/contact' };
 
     each val, key in menu
-      if selected.indexOf(val) === 0
-        li
-          a.active(href=val)= key
-      else
-        li
-          a(href=val)= key
+      li
+        if val === '/'
+          if selected === '/index'
+            a.active(href=val)= key
+          else
+            a(href=val)= key
+        else if selected.indexOf(val) === 0
+            a.active(href=val)= key
+        else
+            a(href=val)= key
 .clearfix
