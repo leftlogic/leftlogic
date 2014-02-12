@@ -1,13 +1,16 @@
 a.logo(href='/')
   img(src='/img/logo.png', alt='Left Logic')
+
 nav
   ul
-    li
-      a(href='/', class="#{ current.source == 'index' ? 'active' : '' }") Home
-    li
-      a(href='/hiring', class="#{ current.source == 'hiring' ? 'active' : '' }") Hiring
-    li
-      a(href='/training', class="#{ current.source == 'training' ? 'active' : '' }") Training
-    li
-      a(href='/contact', class="#{ current.source == 'contact' ? 'active' : '' }") Contact
+    -var selected = '/' + current.path.join('/');
+    -var menu = { 'Home': '/', 'Hiring': '/hiring', 'Training': '/training', 'Contact': '/contact' };
+
+    each val, key in menu
+      if selected.indexOf(val) === 0
+        li
+          a.active(href=val)= key
+      else
+        li
+          a(href=val)= key
 .clearfix
