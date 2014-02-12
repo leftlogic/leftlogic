@@ -15,6 +15,12 @@ Left Logic also offers a tailored consultancy service. [Contact us for more info
 
 ## Comments from workshop delegates
 
-"I thought content level was pitched just right. Very relaxed and friendly atmosphere. A great day." - George Hedges, Sussex Downs College
+<blockquote>
+  <p>"I thought content level was pitched just right. Very relaxed and friendly atmosphere. A great day."</p>
+  <cite>- George Hedges, Sussex Downs College</cite>
+</blockquote>
 
-"Remy is a rare type - a developer who understand designers and has a passion for how things look. He presented some complex but elegant jQuery concepts in a straightforward way." - Andy Birchwood
+<blockquote>
+  <p>"Remy is a rare type - a developer who understand designers and has a passion for how things look. He presented some complex but elegant jQuery concepts in a straightforward way."</p>
+  <cite>- Andy Birchwood</cite>
+</blockquote>

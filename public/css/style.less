@@ -1,5 +1,6 @@
 @background: #ffffff;
 @orange: hsla(23, 90%, 60%, 1);
+@green: #008f69;
 @overlay_orange_transparent: hsla(23, 90%, 60%, 0.85);
 @content_width: 68.75rem;
 
@@ -54,6 +55,10 @@ a {
   color: @orange;
 }
 
+a:hover {
+  border-bottom: 1px solid @orange;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   color: #333333;
@@ -92,6 +97,19 @@ ul, p {
   color: #888888;
 }
 
+blockquote {
+  margin: 0 0 2rem;
+  color: #888888;
+  border-left: 4px solid @orange;
+  padding-left: 2rem;
+}
+
+blockquote p {
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
 /* Structure */
 
 .inner {
@@ -113,6 +131,10 @@ ul, p {
     background: #f2f2f2;
     padding: 2rem;
     margin: 0 0 3rem;
+
+    a {
+      color: @green;
+    }
 
     h6 {
       margin: 0 0 1rem;
@@ -161,6 +183,7 @@ header {
   .logo {
     float: left;
     line-height: 0;
+    border: none !important;
 
     img {
       height: 40px;
