@@ -1,7 +1,7 @@
 @background: #ffffff;
-@orange: hsla(23, 90%, 60%, 1);
+@orange: rgba(214, 116, 38, 1);
 @green: #008f69;
-@overlay_orange_transparent: hsla(23, 90%, 60%, 0.85);
+@overlay_orange_transparent: rgba(214, 116, 38, 0.85);
 @content_width: 68.75rem;
 
 /* Google Fonts - Lato */
@@ -109,6 +109,23 @@ blockquote p {
   font-style: italic;
   font-size: 1.2rem;
   color: #aaaaaa;
+}
+
+/* Buttons */
+
+.button {
+  display: inline-block;
+  line-height: 1rem;
+  padding: 1.2rem 2rem 1rem;
+  background: @orange;
+  color: #ffffff;
+  border-radius: 3.2rem;
+  border: none;
+}
+
+.button:hover {
+  opacity: 0.6;
+  border: none;
 }
 
 /* Structure */
@@ -247,6 +264,11 @@ header {
       margin: 0 auto;
       font-weight: normal;
     }
+
+    .button {
+      background: #ffffff;
+      color: @orange;
+    }
   }
 }
 
@@ -334,6 +356,21 @@ header {
   img {
     float: left;
   }
+}
+
+/* Footer */
+
+#work_with_us {
+  background: rgba(0, 0, 0, 0.05);
+  text-align: center;
+
+  .inner {
+    max-width: 45rem;
+  }
+}
+
+footer {
+  background: #333333;
 }
 
 @media screen and (max-width: 74.75rem) {
