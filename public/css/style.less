@@ -95,6 +95,7 @@ h6 {
 ul, p {
   margin: 0 0 2rem;
   color: #888888;
+  font-size: 1rem;
 }
 
 blockquote {
@@ -124,7 +125,7 @@ blockquote p {
 }
 
 .button:hover {
-  opacity: 0.6;
+  background: #333333;
   border: none;
 }
 
@@ -147,7 +148,6 @@ blockquote p {
 #sidebar {
   width: 16.5rem;
   float: right;
-  height: 100rem;
 
   .sidebar_section {
     background: #f2f2f2;
@@ -308,10 +308,10 @@ header {
 
   #jsbin:after {
     content: "";
-    background-image: url('../img/projects/jsbin_background.png');
+    background-image: url('../img/projects/jsbin_logo.png');
     background-position: center 60px;
     background-repeat: no-repeat;
-    background-size: 600px 600px;
+    background-size: 365px 512px;
     opacity: 0.15;
     top: 0;
     left: 0;
@@ -323,7 +323,7 @@ header {
 
   #full_frontal:after {
     content: "";
-    background-image: url('../img/projects/full-frontal-2013_background.png');
+    background-image: url('../img/projects/full_frontal_background.png');
     background-position: center bottom;
     background-repeat: repeat-x;
     opacity: 0.1;
@@ -336,7 +336,7 @@ header {
   }
 
   #nodemon {
-    background: #008f69;
+    background: rgba(44, 41, 36, 0.74);
 
     h2, a {
       color: #ffffff;
@@ -349,6 +349,21 @@ header {
     p {
       color: rgba(255, 255, 255, 0.5)
     } 
+  }
+
+  #nodemon:after {
+    content: "";
+    background-image: url('../img/projects/nodemon_logo.png');
+    background-position: center 60px;
+    background-repeat: no-repeat;
+    background-size: 365px 512px;
+    opacity: 0.15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
   }
 }
 
@@ -414,5 +429,21 @@ footer {
 
   #content {
     width: 100%;
+  }
+
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+  html {
+    font-size: 12px;
+  }
+
+  .section {
+    padding: 2rem;
   }
 }
