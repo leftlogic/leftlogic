@@ -1,20 +1,5 @@
 a.logo(href='/')
   img(src='/img/logo.png', alt='Left Logic')
 
-nav
-  ul
-    -var selected = '/' + current.path.join('/');
-    -var menu = { 'Home': '/', 'Hiring': '/hiring', 'Training': '/training', 'Contact': '/contact' };
-
-    each val, key in menu
-      li
-        if val === '/'
-          if selected === '/index'
-            a.active(href=val)= key
-          else
-            a(href=val)= key
-        else if selected.indexOf(val) === 0
-            a.active(href=val)= key
-        else
-            a(href=val)= key
+include navigation
 .clearfix
