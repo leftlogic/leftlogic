@@ -1,11 +1,15 @@
 extends layout
 
 block header
-  .overlay_home.section
+  .overlay.section
     .inner
       include header
-      #title
-        h1 #{title} Blah blah blah
 
 block content
-  != yield
+  .section
+    .inner
+      #content
+        != yield
+      #sidebar
+        include sidebar
+      .clearfix
