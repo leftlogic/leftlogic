@@ -2,7 +2,7 @@
 
 Remy has run sell out Node workshops for a couple of years now, and this workshop is a fully packed day of material and exercises to get you up and running quickly with all the fundamentals you need to create your Node backed application.
 
-Need to convince your boss? [Here's an outline to help](#).
+Need to convince your boss? [Here's an outline to help](/training/whynode).
 
 <blockquote>
   <p>"Today's workshop was excellent, it's got me really excited about JavaScript again."</p>
