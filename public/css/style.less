@@ -99,8 +99,7 @@ ul, p {
 }
 
 blockquote {
-  margin: 0 0 2rem;
-  color: #888888;
+  margin: 0 2rem 2rem;
   border-left: 4px solid @orange;
   padding-left: 2rem;
 }
@@ -109,7 +108,14 @@ blockquote p {
   font-family: Georgia;
   font-style: italic;
   font-size: 1.2rem;
-  color: #aaaaaa;
+  color: #888888;
+  margin: 0 0 0.8rem;
+}
+
+blockquote cite {
+  font-style: italic;
+  color: #bbbbbb;
+  display: inline-block;
 }
 
 code {
@@ -186,7 +192,7 @@ label {
   float: left;
 
   p:last-child, ul:last-child, blockquote:last-child {
-    margin: 0;
+    margin-bottom: 0 !important;
   }
 }
 
