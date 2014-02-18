@@ -1,5 +1,11 @@
 {
   "globals": {
-    "title": "Left Logic"
+    "title": "Left Logic",
+    "menu": {
+      "Home": "/",
+      "Hiring": "/hiring",
+      "Training": "/training",
+      "Contact": "/contact"
+    }
   }
 }
