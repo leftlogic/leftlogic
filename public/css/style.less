@@ -1,7 +1,7 @@
 @background: #ffffff;
-@orange: rgba(221, 103, 8, 1);
+@orange: #F6862C;
 @green: #008f69;
-@overlay_orange_transparent: rgba(221, 103, 8, 0.85);
+@overlay_orange_transparent: rgba(246, 134, 44, 0.8);
 @content_width: 68.75rem;
 
 /* Google Fonts - Lato */
@@ -141,7 +141,7 @@ input, textarea {
 }
 
 input[type=text], input[type=email] {
-  width: 30rem;
+  max-width: 30rem;
 }
 
 input:focus, textarea:focus {
@@ -189,7 +189,7 @@ label {
 }
 
 #content {
-  width: 49.5rem;
+  width: 48rem;
   float: left;
 
   p:last-child, ul:last-child, blockquote:last-child {
@@ -198,7 +198,7 @@ label {
 }
 
 #sidebar {
-  width: 16.5rem;
+  width: 18rem;
   float: right;
 
   .sidebar_section {
@@ -211,15 +211,25 @@ label {
     }
 
     a:hover {
-      border-color: @green;
+      border-bottom-color: @green;
+    }
+
+    .button {
+      background: @green;
+      color: #ffffff;
+    }
+
+    .button:hover {
+      background: #333333;
     }
 
     h6 {
-      margin: 0 0 1rem;
+      margin: 0 0 1.4rem;
+      color: #666666;
     }
 
     ul {
-      padding: 0 0 0 1.1rem;
+      padding: 0 0 0 1.4rem;
     }
 
     ul:last-child {
@@ -231,7 +241,13 @@ label {
     }
 
     ul, p {
-      color: #aaaaaa
+      color: #aaaaaa;
+      margin: 0 0 1.4rem;
+    }
+
+    input[type=text], input[type=email] {
+      width: 100%;
+      margin: 0 0 1.4rem;
     }
   }
 
@@ -251,7 +267,7 @@ label {
 /* Header */
 
 header {
-  background: url('../img/shelf.jpg') center bottom;
+  background: url('../img/shelf-blurred.jpg') center bottom;
   background-size: cover;
 
   .overlay {
