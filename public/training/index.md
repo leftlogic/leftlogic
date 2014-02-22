@@ -1,6 +1,6 @@
 # Professional Training
 
-#### At Left Logic, we know that many large organisations have in-house development teams. Sometimes it makes more sense to up-skill your own people rather than hiring outside agencies to develop for you.
+#### At Left Logic, we know that many large organisations have in-house development teams. Sometimes it makes more sense to up-skill your own people rather than hiring agencies to develop for you.
 
 Left Logic has packaged some of our expertise. We now offer specific training workshops to in-house teams wishing to brush up on their development skills, from latest HTML5 technology, mobile development & debugging to jQuery for Designers.
 
