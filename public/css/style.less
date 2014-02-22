@@ -53,6 +53,15 @@ body {
 a {
   text-decoration: none;
   color: @orange;
+  border-bottom: 1px solid transparent;
+}
+
+a, .button {
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear
 }
 
 a:hover {
@@ -141,7 +150,7 @@ input, textarea {
 }
 
 input[type=text], input[type=email] {
-  max-width: 30rem;
+  width: 30rem;
 }
 
 input:focus, textarea:focus {
@@ -169,7 +178,7 @@ label {
 .button {
   display: inline-block;
   line-height: 1rem;
-  padding: 1.2rem 2rem 1rem;
+  padding: 0.9rem 1.4rem;
   background: @orange;
   color: #ffffff;
   border-radius: 3.2rem;
@@ -251,6 +260,27 @@ label {
     }
   }
 
+  a.sidebar_section {
+    display: block;
+    border: none;
+  }
+
+  a.sidebar_section:hover {
+    background: #333333;
+  }
+
+  .sidebar_section_green {
+    background: #008f69;
+
+    h6 {
+      color: #ffffff;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
   .sidebar_section:last-child {
     margin: 0;
   }
@@ -307,6 +337,7 @@ header {
         a {
           color: #ffffff;
           display: block;
+          border-bottom: 2px solid transparent;
         }
 
         a:hover, a.active {
