@@ -1,6 +1,5 @@
 -var selected = '/' + current.path.join('/');
 
-// Doesn't work yet
 if selected.indexOf('/training') === 0 && selected !== '/training/index'
   a(href='/contact').sidebar_section.sidebar_section_green
     h6 Book Now!
@@ -17,6 +16,3 @@ if selected.indexOf('/training') === 0 && selected !== '/training/index'
   p If you want to be the first to hear of upcoming training and events, subscribe to our newsletter.
   input(type='email', name='email', id='email', placeholder='Email Address')
   input.button(type='submit', value='Signup')
-
-.sidebar_section
-  p This is some text
