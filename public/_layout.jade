@@ -1,15 +1,2 @@
-extends _partials/layout
-
-block header
-  .overlay.section
-    .inner
-      include _partials/header
-
-block content
-  .section
-    .inner
-      #content
-        != yield
-      #sidebar
-        include _partials/sidebar
-      .clearfix
+// Use page.jade as the default layout.
+include _layouts/page
