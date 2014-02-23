@@ -11,8 +11,8 @@ Currently taking bookings for 2014
   <div class="input input_text">
     <input type="email" name="email_address" placeholder="Email Address (required)" required />
   </div>
-  <div class="input input_text">
-    <textarea name="message" placeholder="Message (required)" required />
+  <div class="input">
+    <textarea name="message" placeholder="Message (required)" required></textarea>
   </div>
   <div class="input">
     <input class="button" type="submit" value="Send Message" />
