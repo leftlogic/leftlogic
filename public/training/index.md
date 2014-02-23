@@ -8,10 +8,13 @@ Left Logic also offers a tailored consultancy service. [Contact us for more info
 
 ## Workshops
 
-* [Debug, and know thy tools](/training/debug)
-* [Node: knowledge smash &amp; grab in a day](/training/node)
-* [Mobile Web Apps](/training/mobile)
-* [Using HTML5 and JavaScript to build Web Apps](/training/html)
+<ul id="training">
+  <li id="debug"><a href="/training/debug"><span>Debug, and know thy tools</span></a></li>
+  <li id="node"><a href="/training/node"><span>Node: knowledge smash &amp; grab in a day</span></a></li>
+  <li id="mobile"><a href="/training/mobile"><span>Mobile Web Apps</span></a></li>
+  <li id="html"><a href="/training/html"><span>Using HTML5 and JavaScript to build Web Apps</span></a></li>
+</ul>
+<div class="clearfix"></div>
 
 ## Comments from workshop delegates
 
