@@ -1,7 +1,5 @@
--var selected = '/' + current.path.join('/');
-
-if selected.indexOf('/training') === 0 && selected !== '/training/index'
-  a(href='/contact').sidebar_section.sidebar_section_green
+if sidebar_booking_section
+  a(href='#{sidebar_booking_section_link}').sidebar_section.sidebar_section_green
     h6 Book Now!
     p Get in touch and arrange this workshop today!
 

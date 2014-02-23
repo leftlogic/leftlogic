@@ -1,0 +1,18 @@
+{
+  "debug": {
+    "sidebar_booking_section": true,
+    "sidebar_booking_section_link": "/contact"
+  },
+  "html": {
+    "sidebar_booking_section": true,
+    "sidebar_booking_section_link": "/contact"
+  },
+  "mobile": {
+    "sidebar_booking_section": true,
+    "sidebar_booking_section_link": "/contact"
+  },
+  "node": {
+    "sidebar_booking_section": true,
+    "sidebar_booking_section_link": "/contact"
+  }
+}
