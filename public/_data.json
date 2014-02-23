@@ -9,6 +9,7 @@
   },
   "hiring": {
     "title": "We're hiring!"
+    "layout": "_layouts/fullwidth"
   },
   "training": {
     "title": "Professional Training"
