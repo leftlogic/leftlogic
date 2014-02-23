@@ -1,6 +1,6 @@
 {
   "globals": {
-    "title": "Left Logic",
+    "site_title": "Left Logic",
     "menu": {
       "Home": "/",
       "About": "/about",

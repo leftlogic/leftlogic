@@ -1,17 +1,20 @@
 {
   "index": {
     "layout": "_layouts/home",
-    "title": "Specialists in JavaScript Development"
+    "heading": "Specialists in JavaScript Development"
   },
   "404": {
-    "layout": "_layouts/404",
-    "title": "404 - Not Found!"
+    "title": "Not Found",
+    "layout": "_layouts/404"
   },
-  "hiring": {
-    "title": "We're hiring!"
+  "about": {
+    "title": "About",
     "layout": "_layouts/fullwidth"
   },
-  "training": {
-    "title": "Professional Training"
+  "contact": {
+    "title": "Contact"
+  },
+  "hiring": {
+    "title": "Hiring"
   }
 }

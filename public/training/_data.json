@@ -1,18 +1,28 @@
 {
+  "index": {
+    "title": "Training"
+  },
   "debug": {
+    "title": "Debug, and know thy tools",
     "sidebar_booking_section": true,
     "sidebar_booking_section_link": "/contact"
   },
   "html": {
+    "title": "Using HTML5 and JavaScript to build Web Apps",
     "sidebar_booking_section": true,
     "sidebar_booking_section_link": "/contact"
   },
   "mobile": {
+    "title": "Mobile Web Apps",
     "sidebar_booking_section": true,
     "sidebar_booking_section_link": "/contact"
   },
   "node": {
+    "title": "Node: Knowledge Smash & Grab",
     "sidebar_booking_section": true,
     "sidebar_booking_section_link": "/contact"
+  },
+  "whynode": {
+    "title": "Why Your Boss Should Send You to the Node Workshop"
   }
 }
