@@ -137,12 +137,13 @@ code {
 input, textarea, select {
   outline: none;
   border-radius: none;
+  font: inherit;
+  font-size: 1rem;
 }
 
 input, textarea {
   border: 1px solid #cccccc;
   padding: 0.8rem 1rem 0.6rem;
-  font: inherit;
   resize: none;
   color: #888888;
 }
@@ -185,6 +186,7 @@ label {
   color: #ffffff;
   border-radius: 3.2rem;
   border: none;
+  font-size: 1rem;
 }
 
 .button:hover {
@@ -448,7 +450,7 @@ header {
 
     p {
       color: rgba(255, 255, 255, 0.5)
-    } 
+    }
   }
 
   #nodemon:after {
@@ -481,48 +483,57 @@ header {
 
 #training {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0 0 1rem;
 
   li {
     float: left;
     display: block;
-    margin: 0 2rem 2rem 0;
-    width: 22.8rem;
+    padding: 0 1rem 2rem 0;
+    width: 50%;
     height: 15rem;
 
-    a {
-      display: block;
-      height: 100%;
+    .background {
+
       width: 100%;
-      background: @overlay_orange_transparent;
-      color: #ffffff;
-      border: none;
-      position: relative;
-      font-size: 1.2rem;
+      height: 100%;
 
-      span {
-        display: inline-block;
-        position: absolute;
-        bottom: 2rem;
-        left: 2rem;
-        right: 2rem;
+      a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: @overlay_orange_transparent;
+        color: #ffffff;
+        border: none;
+        position: relative;
+        font-size: 1.2rem;
+
+        span {
+          display: inline-block;
+          position: absolute;
+          bottom: 2rem;
+          left: 2rem;
+          right: 2rem;
+        }
       }
-    }
 
-    a:hover {
-      background: rgba(51, 51, 51, 0.9);
-    }
+      a:hover {
+        background: rgba(51, 51, 51, 0.9);
+      }
+
+     }
   }
 
-  #debug, #node, #mobile, #html {
+  #debug .background, #node .background, #mobile .background, #html .background {
     background: url('../img/shelf.jpg') center center;
     background-size: cover;
   }
 
   li:nth-child(2n) {
-    margin-right: 0;
+    padding-right: 0;
+    padding-left: 1rem;
   }
+
 }
 
 /* Footer */
@@ -559,22 +570,34 @@ footer {
   }
 }
 
-@media screen and (max-width: 74.75rem) {
+@media screen and (max-width: 75.75rem) {
   #sidebar {
-    display: none;
+    float: none;
+    width: 100%;
+    text-align: center;
   }
 
   #content {
+    float: none;
     width: 100%;
+    margin-bottom: 3rem;
   }
 
-  html {
+  /*html {
     font-size: 14px;
+  }*/
+}
+
+@media screen and (max-width: 872px) {
+  #training li {
+    width: 100%;
+    height: 10rem;
+    padding: 0 0 2rem !important;
   }
 }
 
-@media only screen 
-and (min-width : 320px) 
+@media only screen
+and (min-width : 320px)
 and (max-width : 480px) {
   html {
     font-size: 12px;
