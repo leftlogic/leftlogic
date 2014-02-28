@@ -1,0 +1,13 @@
+before_script: 
+- npm install
+node_js: 
+- "0.10"
+notifications: 
+  email: false
+language: node_js
+deploy: 
+  api_key: 
+    secure: BQ/fTaJKtTyFBiQa3x7X37f2gTSYHo0SmVQwVTqSrB8hxapkV+VqZm2H+6SMcz4XxoixbqExcSiOP8YC9NIJqoUXJN+Vvf8TcTKSC1axnh92rQOgtRAtH9HDGrAiU7ijLyZqJbiL0CJzt2n+8WBWNr6PcdoYa2Qh6Sub1tT0GBA=
+  provider: heroku
+  on: v2
+  app: leftlogic
