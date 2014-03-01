@@ -8,8 +8,7 @@
     "layout": "_layouts/fullwidth"
   },
   "about": {
-    "title": "About",
-    "layout": "_layouts/fullwidth"
+    "title": "About"
   },
   "contact": {
     "title": "Contact"
