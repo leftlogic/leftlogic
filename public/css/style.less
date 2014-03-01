@@ -2,6 +2,7 @@
 @orange: #F6862C;
 @green: #008f69;
 @overlay_orange_transparent: rgba(246, 134, 44, 0.8);
+@overlay_orange_transparent_more: rgba(246, 134, 44, 0.65);
 @content_width: 68.75rem;
 
 /* Google Fonts - Lato */
@@ -85,7 +86,7 @@ h3 {
 h4 {
   font-size: 1.4rem;
   margin: 0 0 2rem;
-  color: #888888;
+  color: #aaaaaa;
 }
 
 h6 {
@@ -470,6 +471,59 @@ header {
 
   img {
     float: left;
+  }
+}
+
+/* About */
+
+#about {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    position: relative;
+    margin: 0 0 2rem;
+
+    .about_avatar {
+      height: 13.7rem;
+      width: 13.7rem;
+      position: absolute;
+      top: 0.8rem;
+      left: 0;
+      background-size: cover !important;
+      background-position: center center;
+
+      .about_overlay {
+        width: 100%;
+        height: 100%;
+        background: @overlay_orange_transparent_more;
+      }
+    }
+
+    .about_content {
+      margin-left: 15.7rem;
+
+      h2 {
+        margin: 0;
+      }
+    }
+  }
+
+  #remy .about_avatar {
+    background: url('../img/avatars/remy.jpg');
+  }
+
+  #julie .about_avatar {
+    background: url('../img/avatars/julie.jpg');
+  }
+
+  #fabien .about_avatar {
+    background: url('../img/avatars/fabien.jpg');
+  }
+
+  #giulia .about_avatar {
+    background: url('../img/avatars/giulia.jpg');
   }
 }
 
