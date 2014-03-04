@@ -14,9 +14,14 @@ html
     block content
     .section#work_with_us
       .inner
-        h2 Work With Us
-        p Regardless of whether your project is big or small, if you want your website to feature the most sublime user experience possible then drop us a line to hire us.
-        a.button(href='/contact') Contact us &rarr;
+        if sidebar_booking_section
+          h2 Book now!
+          p Get in touch and arrange a company workshop today.
+          a.button.button_green(href='/contact') Book now &rarr;
+        else
+          h2 Work With Us
+          p Regardless of whether your project is big or small, if you want your website to feature the most sublime user experience possible then drop us a line to hire us.
+          a.button(href='/contact') Contact us &rarr;
     footer.section
       .inner
         .copyright
