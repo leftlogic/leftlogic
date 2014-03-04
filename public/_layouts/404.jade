@@ -3,7 +3,7 @@ extends layout
 block header
   .overlay.section
     .inner
-      include ../_partials/header
+      != partial('../_partials/header')
 
 block content
   .section
@@ -11,5 +11,5 @@ block content
       #content
         != yield
       #sidebar
-        include ../_partials/sidebar
+        != partial('../_partials/sidebar')
       .clearfix
