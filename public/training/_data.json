@@ -4,23 +4,24 @@
   },
   "debug": {
     "title": "Debug, and know thy tools",
-    "sidebar_booking_section": true,
-    "sidebar_booking_section_link": "/contact"
+    "booking_section": true,
+    "booking_open": true,
+    "booking_link": "#"
   },
   "html": {
     "title": "Using HTML5 and JavaScript to build Web Apps",
-    "sidebar_booking_section": true,
-    "sidebar_booking_section_link": "/contact"
+    "booking_section": true,
+    "booking_open": false
   },
   "mobile": {
     "title": "Mobile Web Apps",
-    "sidebar_booking_section": true,
-    "sidebar_booking_section_link": "/contact"
+    "booking_section": true,
+    "booking_open": false
   },
   "node": {
     "title": "Node: Knowledge Smash & Grab",
-    "sidebar_booking_section": true,
-    "sidebar_booking_section_link": "/contact"
+    "booking_section": true,
+    "booking_open": false
   },
   "whynode": {
     "title": "Why Your Boss Should Send You to the Node Workshop"

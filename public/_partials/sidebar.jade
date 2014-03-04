@@ -1,7 +1,12 @@
-if sidebar_booking_section
-  a(href='#{sidebar_booking_section_link}').sidebar_section.sidebar_section_green
-    h6 Book Now!
-    p Get in touch and arrange this workshop today!
+if booking_section
+  if booking_open
+    a(href='#{booking_link}').sidebar_section.sidebar_section_green
+      h6 Book Now!
+      p Get in touch and arrange this workshop today!
+  else
+    a(href='/contact').sidebar_section.sidebar_section_green
+      h6 Enquire Now!
+      p Get in touch and arrange this workshop today!
 
 .sidebar_section
   h6 Upcoming Workshop
