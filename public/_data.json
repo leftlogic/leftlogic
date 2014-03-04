@@ -5,7 +5,7 @@
   },
   "404": {
     "title": "Not Found",
-    "layout": "_layouts/fullwidth"
+    "layout": "_layouts/404"
   },
   "about": {
     "title": "About"
