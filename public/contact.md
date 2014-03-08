@@ -6,13 +6,13 @@ Currently taking enquiries for 2014
 
 <form action="/contact" method="post">
   <div class="input input_text">
-    <input type="text" name="full_name" placeholder="Full Name (required)" required />
+    <input type="text" name="full_name" placeholder="Full Name" required />
   </div>
   <div class="input input_text">
-    <input type="email" name="email_address" placeholder="Email Address (required)" required />
+    <input type="email" name="email_address" placeholder="Email Address" required />
   </div>
   <div class="input">
-    <textarea name="message" placeholder="Message (required)" required></textarea>
+    <textarea name="message" placeholder="Message" required></textarea>
   </div>
   <div class="input">
     <input class="button" type="submit" value="Send Message" />
