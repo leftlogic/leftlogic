@@ -5,10 +5,10 @@ nav
       li
         if val === '/'
           if selected === '/index'
-            a.active(href=val)= key
+            a.selected(href=val)= key
           else
             a(href=val)= key
         else if selected.indexOf(val) === 0
-            a.active(href=val)= key
+            a.selected(href=val)= key
         else
             a(href=val)= key
