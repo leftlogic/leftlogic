@@ -2,7 +2,7 @@
 
 #### Get in touch if you need JavaScript development as a client side solution, Node.js server side application or training from Left Logic.
 
-Currently taking enquiries for 2014
+Currently taking enquiries for 2014.
 
 <form action="/contact" method="post">
   <div class="input input_text">
