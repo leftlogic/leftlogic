@@ -49,9 +49,9 @@
         }
         ctx.fillStyle = 'rgba(' + color + ', ' + dot.level + ')';
         if (mirror == body) {
-          ctx.clearRect(~~(x / 10) * 10, ~~(y / 10) * 10, 9, 9); // because we're using opacity
+          ctx.clearRect(~~(x / 14) * 14, ~~(y / 14) * 14, 13, 13); // because we're using opacity
         }
-        ctx.fillRect(~~(x / 10) * 10, ~~(y / 10) * 10, 9, 9);
+        ctx.fillRect(~~(x / 14) * 14, ~~(y / 14) * 14, 13, 13);
         ctx.restore();
         if (mirror == body) {
           if (0 < dot.level && dot.level < 1) {
