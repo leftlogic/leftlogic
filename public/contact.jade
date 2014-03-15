@@ -1,0 +1,17 @@
+:markdown
+
+  # Contact Us
+
+  #### Get in touch if you need JavaScript development as a client side solution, Node.js server side application or training from Left Logic.
+
+  Currently taking enquiries for 2014.
+
+form(action="/contact", method="post")
+  .input.input_text
+    input(type="text", name="full_name", placeholder="Full Name", required)
+  .input.input_text
+    input(type="email", name="email_address", placeholder="Email Address", required)
+  .input
+    textarea(name="message", placeholder="Message", required)
+  .input
+    input(class="button", type="submit", value="Send Message")
