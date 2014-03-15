@@ -5,7 +5,7 @@
 @overlay_orange_transparent_more: rgba(246, 134, 44, 0.4);
 @content_width: 68.75rem;
 
-/* Google Fonts - Lato */
+/* Google Fonts - Montserrat */
 
 @font-face {
   font-family: 'Montserrat';
@@ -13,7 +13,6 @@
   font-weight: 400;
   src: local('Montserrat-Regular'), url(http://themes.googleusercontent.com/static/fonts/montserrat/v4/zhcz-_WihjSQC0oHJ9TCYL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
 }
-
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -27,11 +26,9 @@
   content: " ";
   display: table;
 }
-
 .clearfix:after {
   clear: both;
 }
-
 .clearfix {
   *zoom: 1;
 }
@@ -43,7 +40,6 @@
   color: inherit;
   font: inherit;
 }
-
 body {
   background: @background;
   font: 16px/1.8 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -55,69 +51,53 @@ a {
   text-decoration: none;
   color: @orange;
   border-bottom: 1px solid transparent;
+  &:hover {
+    border-bottom: 1px solid @orange;
+  }
 }
-
-a:hover {
-  border-bottom: 1px solid @orange;
-}
-
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+  margin: 0 0 2rem;
   color: #333333;
 }
-
 h1 {
   font-size: 2.6rem;
-  margin: 0 0 2rem;
   font-weight: bold;
   line-height: 1.6;
 }
-
 h2 {
   font-size: 1.8rem;
-  margin: 0 0 2rem;
   font-weight: bold;
 }
-
 h3 {
   font-size: 1.4rem;
-  margin: 0 0 2rem;
 }
-
 h4 {
   font-size: 1.4rem;
-  margin: 0 0 2rem;
   color: #aaaaaa;
 }
-
 h6 {
   font-size: 1rem;
-  margin: 0 0 2rem;
   color: #888888;
 }
-
 ul, p {
-  margin: 0 0 2rem;
   color: #888888;
   font-size: 1rem;
+  margin: 0 0 2rem;
 }
-
 blockquote {
   margin: 0 0 2rem;
   border-left: 4px solid rgba(246, 134, 44, 0.4);
   padding-left: 2rem;
-}
-
-blockquote p {
-  font-size: 1rem;
-  color: #888888;
-  margin: 0 0 0.8rem;
-}
-
-blockquote cite {
-  color: #bbbbbb;
-  display: inline-block;
-  font-size: 1rem;
+  p {
+    font-size: 1rem;
+    color: #888888;
+    margin: 0 0 0.8rem;
+  }
+  cite {
+    color: #bbbbbb;
+    display: inline-block;
+    font-size: 1rem;
+  }
 }
 
 code {
@@ -185,13 +165,11 @@ label {
   border-radius: 3.2rem;
   border: none;
   font-size: 1rem;
+  &:hover {
+    background: #333333;
+    border: none;
+  }
 }
-
-.button:hover {
-  background: #333333;
-  border: none;
-}
-
 .button_green {
   background: @green;
   color: #ffffff;
@@ -203,102 +181,81 @@ label {
   max-width: @content_width;
   margin: 0 auto;
 }
-
 #content {
   width: 47.6rem;
   float: left;
-
   *:last-child {
     margin-bottom: 0 !important;
   }
 }
-
 #sidebar {
   width: 18.5rem;
   float: right;
-
   .sidebar_section {
     background: #f2f2f2;
     padding: 2rem;
     margin: 0 0 3rem;
-
     a {
       color: @green;
+      &:hover {
+        border-bottom-color: @green;
+      }
     }
-
-    a:hover {
-      border-bottom-color: @green;
-    }
-
     .button {
       background: @green;
       color: #ffffff;
+      &:hover {
+        background: #333333;
+      }
     }
-
-    .button:hover {
-      background: #333333;
-    }
-
     h6 {
       margin: 0 0 1.4rem;
       color: #666666;
     }
-
     ul {
       padding: 0 0 0 1.4rem;
     }
-
-    ul:last-child {
-      margin: 0;
-    }
-
-    p:last-child {
-      margin: 0;
-    }
-
     ul, p {
       color: #aaaaaa;
       margin: 0 0 1.4rem;
+      &:last-child {
+        margin: 0;
+      }
     }
-
     input[type=text], input[type=email] {
       width: 100%;
       margin: 0 0 1.4rem;
     }
   }
-
-  a.sidebar_section {
-    display: block;
-    border: none;
-  }
-
-  a.sidebar_section:hover {
-    background: #333333;
-  }
-
-  .sidebar_section_green {
-    background: #008f69;
-
-    h6 {
-      color: #ffffff;
+  a {
+    &.sidebar_section {
+      display: block;
+      border: none;
+      &:hover {
+        background: #333333;
+      }
+      &:last-child {
+        margin: 0;
+      }
     }
-
-    p {
-      color: rgba(255, 255, 255, 0.6);
+    &.sidebar_section_green {
+      background: #008f69;
+      h6 {
+        color: #ffffff;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.6);
+      }
     }
-  }
-
-  .sidebar_section:last-child {
-    margin: 0;
   }
 }
 
-/* Sections - used throughout the site to split up, well, sections */
+/* Sections */
 
 .section {
   width: 100%;
   padding: 3rem;
-  position: relative; /* Allows for child absolute positioning */
+  position: relative;
 }
 
 /* Header */
@@ -306,16 +263,19 @@ label {
 header {
   background: url('../img/shelf.jpg') center 100%;
   background-size: cover;
-
   .overlay {
     background: @overlay_orange_transparent;
   }
-
+  .overlay_home {
+    background: @overlay_orange_transparent;
+    #heading {
+     padding: 4rem 0 2rem 0 !important
+    }
+  }
   .logo {
     float: left;
     line-height: 0;
     border: none !important;
-
     img {
       height: 40px;
     }
@@ -328,32 +288,27 @@ header {
     text-align: right;
     height: 40px; /* Same height as the logo */
     line-height: 40px;
-
     ul {
       list-style: none;
       height: inherit;
       margin: 0;
       padding: 0;
-
       li {
         display: inline-block;
         height: inherit;
         line-height: inherit;
         padding: 0 1.2rem;
-
+        &:last-child {
+          padding-right: 0;
+        }
         a {
           color: #ffffff;
           display: block;
           border-bottom: 2px solid transparent;
+          &:hover, &.selected {
+            border-bottom: 2px solid #ffffff;
+          }
         }
-
-        a:hover, a.selected {
-          border-bottom: 2px solid #ffffff;
-        }
-      }
-
-      li:last-child {
-        padding-right: 0;
       }
     }
   }
@@ -364,7 +319,6 @@ header {
     padding: 3rem 0 2rem 0;
     color: #ffffff;
     text-align: center;
-
     h1 {
       font-size: 3rem;
       line-height: 4.5rem;
@@ -372,19 +326,10 @@ header {
       width: 40rem;
       margin: 0 auto;
     }
-
     .button {
       background: #ffffff;
       color: @orange;
     }
-  }
-}
-
-.overlay_home {
-  background: @overlay_orange_transparent;
-
-  #heading {
-   padding: 4rem 0 2rem 0 !important
   }
 }
 
@@ -393,7 +338,6 @@ header {
 .heading {
   position: relative;
 }
-
 .heading_inner {
   font-size: 1rem;
   text-align: center;
@@ -409,7 +353,6 @@ header {
   background: #fff;
   border-radius: 5rem;
 }
-
 #projects {
   .section {
     .info {
@@ -417,88 +360,67 @@ header {
       width: 32rem;
       padding-top: 3.4rem;
     }
-
     img {
       float: right;
       width: 520px;
-      height: 367px; // Eventually crop images and compress
+      height: 367px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     }
+    &:nth-child(2n) {
+      .info {
+        float: right;
+      }
+      img {
+        float: left;
+      }
+    }
   }
-
   #jsbin {
     background: rgba(0, 0, 0, 0.05);
     padding-top: 5rem !important;
+    &:after {
+      content: "";
+      background-image: url('../img/projects/jsbin_logo.png');
+      background-position: center 60px;
+      background-repeat: no-repeat;
+      background-size: 365px 512px;
+      opacity: 0.15;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
   }
-
-  #jsbin:after {
-    content: "";
-    background-image: url('../img/projects/jsbin_logo.png');
-    background-position: center 60px;
-    background-repeat: no-repeat;
-    background-size: 365px 512px;
-    opacity: 0.15;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
+  #full_frontal {
+    &:after {
+      content: "";
+      background-image: url('../img/projects/full_frontal_background.png');
+      background-position: center bottom;
+      background-repeat: repeat-x;
+      opacity: 0.1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
   }
-
-  #full_frontal:after {
-    content: "";
-    background-image: url('../img/projects/full_frontal_background.png');
-    background-position: center bottom;
-    background-repeat: repeat-x;
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-  }
-
   #nodemon {
     background: rgba(44, 41, 36, 0.74);
-
     h2, a {
       color: #ffffff;
     }
-
-    a:hover {
-      border-color: #ffffff;
+    a {
+      &:hover {
+        border-color: #ffffff;
+      }
     }
-
     p {
       color: rgba(255, 255, 255, 0.5)
     }
-  }
-
-  #nodemon:after {
-    content: "";
-    background-image: url('../img/projects/nodemon_logo.png');
-    background-position: center 60px;
-    background-repeat: no-repeat;
-    background-size: 455px 512px;
-    opacity: 0.15;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-  }
-}
-
-#projects .section:nth-child(2n) {
-  .info {
-    float: right;
-  }
-
-  img {
-    float: left;
   }
 }
 
@@ -508,11 +430,9 @@ header {
   list-style: none;
   padding: 0;
   margin: 0;
-
   li {
     position: relative;
     margin: 0 0 2.8rem;
-
     .about_avatar {
       height: 13.8rem;
       width: 13.8rem;
@@ -521,41 +441,40 @@ header {
       left: 0;
       background-size: cover !important;
       background-position: center center;
-
       .about_overlay {
         width: 100%;
         height: 100%;
-        /* background: @overlay_orange_transparent_more; */
       }
     }
-
     .about_content {
       margin-left: 15.8rem;
-
       h2 {
         margin: 0;
       }
-
       .social {
         font-weight: bold;
       }
     }
   }
-
-  #remy .about_avatar {
-    background: url('../img/avatars/remy.jpg');
+  #remy {
+    .about_avatar {
+      background: url('../img/avatars/remy.jpg');
+    }
   }
-
-  #julie .about_avatar {
-    background: url('../img/avatars/julie.jpg');
+  #julie {
+    .about_avatar {
+      background: url('../img/avatars/julie.jpg');
+    }
   }
-
-  #fabien .about_avatar {
-    background: url('../img/avatars/fabien.jpg');
+  #fabien {
+    .about_avatar {
+      background: url('../img/avatars/fabien.jpg');
+    }
   }
-
-  #giulia .about_avatar {
-    background: url('../img/avatars/giulia.jpg');
+  #giulia {
+    .about_avatar {
+      background: url('../img/avatars/giulia.jpg');
+    }
   }
 }
 
@@ -565,21 +484,21 @@ header {
   list-style: none;
   padding: 0;
   margin: 0 0 1rem;
-
   li {
     float: left;
     display: block;
     padding: 0 1rem 2rem 0;
     width: 50%;
     height: 15rem;
-
+    &:nth-child(2n) {
+      padding-right: 0;
+      padding-left: 1rem;
+    }
     .background {
-
       width: 100%;
       height: 100%;
       background-size: cover !important;
       background-position: center center;
-
       a {
         display: block;
         height: 100%;
@@ -589,7 +508,9 @@ header {
         border: none;
         position: relative;
         font-size: 1.2rem;
-
+        &:hover {
+          background: rgba(51, 51, 51, 0.9);
+        }
         span {
           display: inline-block;
           position: absolute;
@@ -598,35 +519,28 @@ header {
           right: 2rem;
         }
       }
-
-      a:hover {
-        background: rgba(51, 51, 51, 0.9);
-      }
-
-     }
+    }
   }
-
-  #debug .background {
-    background: url('../img/workshops/debug.jpg');
+  #debug {
+    .background {
+      background: url('../img/workshops/debug.jpg');
+    }
   }
-
-  #node .background {
-    background: url('../img/workshops/node.jpg');
+  #node {
+    .background {
+      background: url('../img/workshops/node.jpg');
+    }
   }
-
-  #mobile .background {
-    background: url('../img/workshops/mobile.jpg');
+  #mobile {
+    .background {
+      background: url('../img/workshops/mobile.jpg');
+    }
   }
-
-  #html .background {
-    background: url('../img/workshops/html.jpg');
+  #html {
+    .background {
+      background: url('../img/workshops/html.jpg');
+    }
   }
-
-  li:nth-child(2n) {
-    padding-right: 0;
-    padding-left: 1rem;
-  }
-
 }
 
 /* Footer */
@@ -634,7 +548,6 @@ header {
 #work_with_us {
   background: rgba(0, 0, 0, 0.05);
   text-align: center;
-
   .inner {
     max-width: 45rem;
   }
@@ -643,25 +556,23 @@ header {
 footer {
   background: #333333;
   padding: 3rem 3rem 2.7rem !important;
-
   p {
     margin: 0;
     color: #888888;
   }
-
   .copyright {
     float: left;
   }
-
   .contact {
     float: right;
     text-align: right;
-
     strong {
       color: #ffffff;
     }
   }
 }
+
+/* Media queries */
 
 @media screen and (max-width: 75.75rem) {
   #sidebar {
@@ -669,18 +580,12 @@ footer {
     width: 100%;
     text-align: center;
   }
-
   #content {
     float: none;
     width: 100%;
     margin-bottom: 3rem;
   }
-
-  /*html {
-    font-size: 14px;
-  }*/
 }
-
 @media screen and (max-width: 872px) {
   #training li {
     width: 100%;
@@ -688,7 +593,6 @@ footer {
     padding: 0 0 2rem !important;
   }
 }
-
 @media screen and (max-width: 74.75rem) {
   #projects .section .info {
     width: auto;
@@ -699,50 +603,39 @@ footer {
     height: auto;
   }
   footer {
-
     .copyright {
       float: none;
       text-align: center;
     }
-
     .contact {
       float: none;
       text-align: center;
       margin: 2rem 0 0;
     }
-
   }
 }
-
 @media screen and (max-width: 46rem) {
   header {
-
     .inner {
       text-align: center;
     }
-
     .logo {
       float: none;
       position: relative;
       left: -1.9rem;
     }
-
     nav {
       float: none;
       text-align: center;
       margin: 1rem 0 0;
-
       li:first-child {
         padding-left: 0;
       }
     }
-
     #heading {
       display: none;
     }
-
   }
-
   #projects #jsbin:after {
     background-size: 265px 332px;
   }
@@ -753,29 +646,23 @@ footer {
     height: 6rem;
     width: 6rem;
   }
-
   #about li .about_content {
     margin-left: 8rem;
   }
 }
-
 @media screen and (max-width : 480px) {
   html {
     font-size: 12px;
   }
-
   .section, footer {
     padding: 2rem !important;
   }
-
   header nav {
     margin: 0;
   }
-
   header .logo {
     left: -2.3rem;
   }
-
   header .logo img {
     height: 35px;
   }
@@ -783,14 +670,8 @@ footer {
 
 #play {
   position: relative;
-background-image: url("/assets/images/bg-grid.gif");
-height: 400px;
-border: 1px solid #aaa;
-cursor: crosshair;
-}
-
-canvas.game {
-position: absolute;
-top: 0;
-left: 0;
+  background-image: url("/assets/images/bg-grid.gif");
+  height: 400px;
+  border: 1px solid #aaa;
+  cursor: crosshair;
 }
