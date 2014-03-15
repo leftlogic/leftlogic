@@ -7,6 +7,42 @@
       "Training": "/training",
       "Contact": "/contact"
     },
-    "analytics": "UA-1656750-2"
+    "analytics": "UA-1656750-2",
+    "team": [
+      {
+        "name": "remy",
+        "fullname": "Remy Sharp",
+        "title": "Founder & Developer",
+        "about": "Writes JavaScript... and some stuff, wants to sound interesting, but fails. Other text should probably go here...",
+        "twitter": "rem",
+        "github": "remy",
+        "blog": "http://remysharp.com"
+      },
+     {
+        "name": "julie",
+        "fullname": "Julie Sharp",
+        "title": "Events manager",
+        "about": "Writes JavaScript... and some stuff, wants to sound interesting, but fails. Other text should probably go here...",
+        "twitter": "julieanne"
+      },
+      {
+        "name": "fabien",
+        "fullname": "Fabien O'Carroll",
+        "title": "Founder & Developer",
+        "about": "Writes JavaScript... and some stuff, wants to sound interesting, but fails. Other text should probably go here...",
+        "twitter": "allouis_",
+        "github": "allouis",
+        "blog": "http://allou.is"
+      },
+      {
+        "name": "giulia",
+        "fullname": "Giulia Alfonsi",
+        "title": "Founder & Developer",
+        "about": "Writes JavaScript... and some stuff, wants to sound interesting, but fails. Other text should probably go here...",
+        "twitter": "electric_g",
+        "github": "electricg",
+        "blog": "http://giugee.com"
+      }
+    ]
   }
 }
