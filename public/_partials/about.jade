@@ -1,4 +1,4 @@
-li#name
+li(id="#{ name }")
   .about_avatar
     .about_overlay
   .about_content
@@ -7,8 +7,14 @@ li#name
     p= about
     .social
       if twitter
-        a(href="http://twitter.com/#{ twitter }"): i.icon-twitter @#{ twitter }
+        a(href="http://twitter.com/#{ twitter }")
+          i.icon-twitter
+          | @#{ twitter }
       if github
-        a(href="http://github.com/#{ github }"): i.icon-github @#{ github }
+        a(href="http://github.com/#{ github }")
+          i.icon-github
+          | @#{ github }
       if blog
-        a(href="#{ blog }"): i.icon-blog #{ blog.replace(/^http:../, '') }
+        a(href="#{ blog }")
+          i.icon-blog
+          | #{ blog.replace(/^http:../, '') }
