@@ -1,5 +1,5 @@
 li(id="#{ name }")
-  .about_avatar
+  img.about_avatar(src="/img/avatars/#{ name }.jpg")
     .about_overlay
   .about_content
     h2= fullname
@@ -7,14 +7,8 @@ li(id="#{ name }")
     p= about
     .social
       if twitter
-        a(href="http://twitter.com/#{ twitter }")
-          i.icon-twitter
-          | @#{ twitter }
+        a(href="http://twitter.com/#{ twitter }").icon-twitter= twitter
       if github
-        a(href="http://github.com/#{ github }")
-          i.icon-github
-          | @#{ github }
+        a(href="http://github.com/#{ github }").icon-github= github
       if blog
-        a(href="#{ blog }")
-          i.icon-blog
-          | #{ blog.replace(/^http:../, '') }
+        a.icon-blog(href="#{ blog }")= blog.replace(/^http:../, '')

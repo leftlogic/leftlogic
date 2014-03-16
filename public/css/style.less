@@ -206,7 +206,8 @@ label {
 
 /* Icons */
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -565,7 +566,7 @@ header {
         a {
           margin-right: 1.4rem;
 
-          .icon-twitter, .icon-github, .icon-blog {
+          &:before {
             font-size: 1.4rem;
             color: @orange;
             position: relative;
@@ -573,40 +574,13 @@ header {
             margin-right: 0.4rem;
           }
 
-          &:hover {
-            border-bottom: none;
+          &:hover,
+          &:hover:before {
+            border-bottom: 1px solid transparent;
             color: #333333;
-
-            .icon-twitter, .icon-github, .icon-blog {
-              color: #333333;
-            }
           }
         }
       }
-    }
-  }
-
-  #remy {
-    .about_avatar {
-      background: url('../img/avatars/remy.jpg');
-    }
-  }
-
-  #julie {
-    .about_avatar {
-      background: url('../img/avatars/julie.jpg');
-    }
-  }
-
-  #fabien {
-    .about_avatar {
-      background: url('../img/avatars/fabien.jpg');
-    }
-  }
-
-  #giulia {
-    .about_avatar {
-      background: url('../img/avatars/giulia.jpg');
     }
   }
 }
@@ -806,13 +780,41 @@ footer {
 }
 
 @media screen and (max-width: 760px) {
-  #about li .about_avatar {
-    height: 6rem;
-    width: 6rem;
-  }
+  #about li {
+    .about_avatar {
+      float: left;
+      position: static;
+      height: 6rem;
+      width: 6rem;
+      top: 0;
+      margin-bottom: 1rem;
+    }
 
-  #about li .about_content {
-    margin-left: 8rem;
+    .about_content {
+      margin-left: 0;
+
+      h2, h4 {
+        margin-left: 8rem;
+        line-height: 2rem;
+      }
+
+      p:first-of-type {
+        margin: 2rem 0 0 0;
+        clear: left;
+      }
+
+      p {
+        font-size: 1.15rem;
+        line-height: 1.5rem;
+      }
+
+      .social a {
+        overflow: hidden;
+        display: inline-block;
+        width: 16px;
+        margin-right: 1rem;
+      }
+    }
   }
 }
 
