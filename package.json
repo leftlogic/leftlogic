@@ -5,8 +5,8 @@
   "main": "server.js",
   "private": true,
   "scripts": {
-    "start": "node_modules/.bin/harp server",
-    "test": "node_modules/.bin/harp compile"
+    "start": "node server.js",
+    "test": "cd public; ../node_modules/.bin/harp compile; cd ../"
   },
   "engines": {
     "node": "0.10.x",
@@ -21,6 +21,6 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "harp": "*",
-    "harp-static": "0.0.1"
+    "glob": "~3.2.9"
   }
 }
