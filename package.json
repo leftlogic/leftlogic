@@ -21,6 +21,7 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "harp": "*",
-    "glob": "~3.2.9"
+    "glob": "~3.2.9",
+    "express": "~3.4.8"
   }
 }
