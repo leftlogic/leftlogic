@@ -6,7 +6,7 @@ module.exports = function (app) {
   app.post('/contact', function (req, res) {
     return sendgrid.send({
       from: req.body.email_address,
-      to: 'dcgauld@gmail.com', // Testing at the mo.
+      to: 'info@leftlogic.com',
       subject: 'Contact via leftlogic.com from ' + req.body.full_name,
       text: req.body.message
     }, function (err, message) {
