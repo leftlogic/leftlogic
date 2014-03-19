@@ -5,9 +5,9 @@ var sendgrid = require('sendgrid')(process.env.SENDGRID_USERNAME, process.env.SE
 module.exports = function (app) {
   app.post('/contact', function (req, res) {
     return sendgrid.send({
-      from: req.body.email,
+      from: req.body.email_address,
       to: 'dcgauld@gmail.com', // Testing at the mo.
-      subject: 'Contact via leftlogic.com from ' + req.body.name,
+      subject: 'Contact via leftlogic.com from ' + req.body.full_name,
       text: req.body.message
     }, function (err, message) {
       if (err) {
