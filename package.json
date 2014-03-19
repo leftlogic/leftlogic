@@ -22,6 +22,7 @@
   "dependencies": {
     "harp": "*",
     "glob": "~3.2.9",
-    "express": "~3.4.8"
+    "express": "~3.4.8",
+    "sendgrid": "~1.0.2"
   }
 }
