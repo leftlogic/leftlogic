@@ -1,10 +1,6 @@
 'use strict';
 
-var SendGrid = require('sendgrid').SendGrid;
-var sendgrid = new SendGrid(
-  process.env.SENDGRID_USERNAME,
-  process.env.SENDGRID_PASSWORD
-);
+var sendgrid = require('sendgrid')(process.env.SENDGRID_USERNAME, process.env.SENDGRID_PASSWORD);
 
 module.exports = function (app) {
   app.post('/contact', function (req, res) {
