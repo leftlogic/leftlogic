@@ -58,6 +58,7 @@ app.configure('development', function () {
 });
 
 app.configure(function () {
+  app.use(express.bodyParser());
   app.use(app.router);
   routes(app);
 });
