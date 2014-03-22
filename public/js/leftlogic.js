@@ -10,7 +10,7 @@
       others && others.addEventListener('click', function (event) {
         if (event.target.nodeName == 'IMG') {
           playctx.clearRect(0, 0, playctx.canvas.width, playctx.canvas.height);
-          playctx.drawImage(event.target, 0, 0);
+          playctx.drawImage(event.target, 0, 0, playctx.canvas.width - 4, playctx.canvas.height);
         }
       });
 
