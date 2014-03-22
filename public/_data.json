@@ -5,7 +5,8 @@
   },
   "404": {
     "title": "Not Found",
-    "layout": "_layouts/404"
+    "layout": "_layouts/404",
+    "fourohfour_drawings": true
   },
   "about": {
     "title": "About"

@@ -8,15 +8,30 @@ if booking_section
       h6 Enquire Now!
       p Get in touch and arrange this workshop today!
 
-.sidebar_section
-  h6 Upcoming Workshop
-  p 2nd April 2014:<br />
-    a(href='/training/debug') Debug, and know thy tools<br />
-  a.button(href='/training/debug') Book now!
+if fourohfour_drawings
+  .sidebar_section
+    h6 Previous Drawings
+    p A selection of other 404 images people have drawn:
+    ul#fourohfour_drawings
+      li
+        img(src="http://leftlogic.com/images/generated/approved/1328612572.png", alt="")
+      li
+        img(src="http://leftlogic.com/images/generated/approved/1360736588.png", alt="")
+      li
+        img(src="http://leftlogic.com/images/generated/approved/1338564453.png", alt="")
+      li
+        img(src="http://leftlogic.com/images/generated/approved/1360738464.png", alt="")
 
-.sidebar_section
-  h6 Newsletter Signup
-  p If you want to be the first to hear of upcoming training and events, subscribe to our newsletter.
-  form(action='https://tinyletter.com/leftlogic', method='post')
-    input(type='email', name='email', id='email', placeholder='Email Address')
-    input.button(type='submit', value='Signup')
+if !fourohfour_drawings
+  .sidebar_section
+    h6 Upcoming Workshop
+    p 2nd April 2014:<br />
+      a(href='/training/debug') Debug, and know thy tools<br />
+    a.button(href='/training/debug') Book now!
+
+  .sidebar_section
+    h6 Newsletter Signup
+    p If you want to be the first to hear of upcoming training and events, subscribe to our newsletter.
+    form(action='https://tinyletter.com/leftlogic', method='post')
+      input(type='email', name='email', id='email', placeholder='Email Address')
+      input.button(type='submit', value='Signup')
