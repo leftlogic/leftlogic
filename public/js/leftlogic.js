@@ -1,6 +1,7 @@
 (function (window, document, undefined) {
   var play = document.getElementById('play'),
       save = false;
+var dots = {};
 
   if (play) {
     if (sketchpad(play)) {
@@ -20,6 +21,7 @@
 
       var timer = 0;
       play.firstChild.addEventListener('mouseup', function () {
+        console.log(dataToString());
         clearTimeout(timer);
         timer = setTimeout(function () {
           var client = new XMLHttpRequest();
@@ -31,13 +33,29 @@
     }
   }
 
+  function dataToString() {
+    var string = '';
+    var i;
+    var position;
+    for (i = 0; i < 53 * 40; i++) {
+      string += '0';
+    }
+    for (row in dots) {
+      for (column in dots[row]) {
+        position = ((parseInt(row) - 1) * 53) + parseInt(column) - 1; // Subtract 1 to allow range from 0 to string length.
+        string = string.substr(0, position) + '1' + string.substr(position + 1);
+      }
+    }
+    return string;
+  }
+
   function sketchpad(mirror) {
     if (!document.createElement('canvas').getContext('2d')) {
       return;
     }
-    var dots = {};
 
     function Dot(x, y) {
+
       var dot = this,
           color = colors[~~(Math.random()*colors.length)];
 
@@ -66,12 +84,20 @@
       dot.level = mirror == body ? 0 : 1;
       dot.direction = 1;
 
-      if (dots[x+':'+y] !== undefined) {
+      /*if (dots[x+':'+y] !== undefined) {
         dot.level = dots[x+':'+y].level;
         dots[x+':'+y].clear();
       }
 
-      dots[x+':'+y] = dot;
+      dots[x+':'+y] = dot;*/
+
+      var column = ~~(x / 14) + 1;
+      var row = ~~(y / 14) + 1;
+      dots[row] = dots[row] || {};
+      dots[row][column] = dot;
+
+      console.log(dots);
+
       dot.timer = setTimeout(animate, 50);
     }
 
