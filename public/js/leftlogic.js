@@ -1,7 +1,7 @@
 (function (window, document, undefined) {
-  var play = document.getElementById('play'),
-      save = false;
-var dots = {};
+  var play = document.getElementById('play');
+  var save = false;
+  var dots = {};
 
   if (play) {
     if (sketchpad(play)) {
@@ -35,14 +35,17 @@ var dots = {};
 
   function dataToString() {
     var string = '';
-    var i;
     var position;
-    for (i = 0; i < 53 * 40; i++) {
+    for (var i = 0; i < 53 * 40; i++) {
       string += '0';
     }
     for (row in dots) {
       for (column in dots[row]) {
-        position = ((parseInt(row) - 1) * 53) + parseInt(column) - 1; // Subtract 1 to allow range from 0 to string length.
+        // Here we need to convert the coords from a dot (e.g. 3, 4) into a
+        // position in the string (in order to add a 1). We multiply the row
+        // number (minus 1) by 53 (the amount of columns), and then add on the
+        // remainder columns of the last row. This gives us the position.
+        position = ((parseInt(row) - 1) * 53) + parseInt(column) - 1;
         string = string.substr(0, position) + '1' + string.substr(position + 1);
       }
     }
@@ -55,9 +58,10 @@ var dots = {};
     }
 
     function Dot(x, y) {
-
-      var dot = this,
-          color = colors[~~(Math.random()*colors.length)];
+      var dot = this;
+      var color = colors[~~(Math.random()*colors.length)];
+      var column = ~~(x / 14) + 1;
+      var row = ~~(y / 14) + 1;
 
       function animate() {
         ctx.save();
@@ -91,12 +95,10 @@ var dots = {};
 
       dots[x+':'+y] = dot;*/
 
-      var column = ~~(x / 14) + 1;
-      var row = ~~(y / 14) + 1;
+      // Adds the dot to a Object of Objects (columns in rows) to convert into
+      // a string later on.
       dots[row] = dots[row] || {};
       dots[row][column] = dot;
-
-      console.log(dots);
 
       dot.timer = setTimeout(animate, 50);
     }
