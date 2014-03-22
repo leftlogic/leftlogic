@@ -855,10 +855,18 @@ footer {
 }
 
 #play {
+  box-sizing: content-box;
   position: relative;
-  background-image: url("../img/bg-grid.gif");
-  background-size: 140px 140px;
   height: 560px;
-  border: 1px solid #aaa;
+  width: 741px;
+  border: 1px solid #aaaaaa;
   cursor: crosshair;
+
+  .game {
+    background-image: url("../img/bg-grid.gif");
+    background-size: 140px 140px;
+    background-position: 0 0;
+    width: 100%;
+    height: 100%;
+  }
 }

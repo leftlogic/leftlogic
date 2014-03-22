@@ -109,8 +109,6 @@
 
     var canvas = document.createElement('canvas'),
         ctx = canvas.getContext('2d'),
-        copy = document.createElement('canvas'),
-        ctxcopy = copy.getContext('2d'),
         drawing = false,
         body = document.body,
         comp = mirror.currentStyle ? mirror.currentStyle : getComputedStyle(mirror, null),
@@ -124,8 +122,6 @@
       left += obj.offsetLeft;
       top += obj.offsetTop;
     } while (obj = obj.offsetParent);
-
-    if (mirror != body) left += 20; // not sure why, but it works :-S
 
     canvas.className = 'game';
     canvas.height = parseInt(comp['height']);
@@ -159,32 +155,6 @@
       // y = event.clientY + mirror.scrollTop;
       // new Dot(x, y);
       drawing = false;
-    }, false);
-
-    window.addEventListener('resize', function (event) {
-      clearTimeout(resizeTimer);
-      var resizeTimer = setTimeout(function () {
-        obj = mirror;
-        left = top = 0;
-        do {
-          left += obj.offsetLeft;
-          top += obj.offsetTop;
-        } while (obj = obj.offsetParent);
-        if (mirror != body) left += 20; // not sure why, but it works :-S
-        if (mirror == body) {
-          // copy the canvas before it gets resized
-          copy.height = canvas.height;
-          copy.width = canvas.width;
-
-          ctxcopy.drawImage(canvas, 0, 0);
-
-          canvas.height = mirror.scrollHeight;
-          canvas.width = window.innerWidth - 16;
-
-          ctx.drawImage(copy, 0, 0);
-          ctx.fillStyle = '#EA6D00';
-        }
-      }, 100);
     }, false);
 
     mirror.insertBefore(canvas, mirror.firstChild);
