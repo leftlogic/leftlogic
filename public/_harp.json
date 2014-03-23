@@ -12,7 +12,7 @@
       {
         "name": "jsbin",
         "fullname": "JS Bin",
-        "about": "JS Bin is a form of paste bin, but with a twist. It allows you to also include the HTML and CSS to provide context to your pasty. As such, it means you can actually run the JavaScript and pass this on to a colleague to help to debug.",
+        "about": "JS Bin is a form of paste bin, but with a twist. It allows you to also include the HTML and CSS to provide context to your pasted contnet. As such, it means you can actually run the JavaScript and pass this on to a colleague to help to debug.",
         "link": "http://jsbin.com"
       },
       {

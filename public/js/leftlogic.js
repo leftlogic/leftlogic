@@ -1,34 +1,40 @@
 (function (window, document, undefined) {
+  'use strict';
   var play = document.getElementById('play');
-  var save = false;
+  // var save = false;
   var dots = {};
+
+  var dotsize = 10;
 
   if (play) {
     if (sketchpad(play)) {
       var playctx = play.firstChild.getContext('2d'),
           others = document.getElementById('others');
-      others && others.addEventListener('click', function (event) {
-        if (event.target.nodeName == 'IMG') {
-          playctx.clearRect(0, 0, playctx.canvas.width, playctx.canvas.height);
-          playctx.drawImage(event.target, 0, 0, playctx.canvas.width - 4, playctx.canvas.height);
-        }
-      });
+      if (others) {
+        others.addEventListener('click', function (event) {
+          if (event.target.nodeName === 'IMG') {
+            playctx.clearRect(0, 0, playctx.canvas.width, playctx.canvas.height);
+            playctx.drawImage(event.target, 0, 0); //, playctx.canvas.width - 4, playctx.canvas.height);
+          }
+        });
+      }
 
       play.addEventListener('dblclick', function (event) {
         playctx.clearRect(0, 0, playctx.canvas.width, playctx.canvas.height);
         event.preventDefault();
       }, false);
 
-      var timer = 0;
+      // var timer = 0;
       play.firstChild.addEventListener('mouseup', function () {
         console.log(dataToString());
-        clearTimeout(timer);
-        timer = setTimeout(function () {
-          var client = new XMLHttpRequest();
-          client.open("POST", "/savepng.php");
-          client.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-          client.send('data='+play.firstChild.toDataURL('image/png'));
-        }, 2000);
+        return;
+        // clearTimeout(timer);
+        // timer = setTimeout(function () {
+        //   var client = new XMLHttpRequest();
+        //   client.open('POST', '/savepng.php');
+        //   client.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        //   client.send('data='+play.firstChild.toDataURL('image/png'));
+        // }, 2000);
       });
     }
   }
@@ -39,8 +45,9 @@
     for (var i = 0; i < 53 * 40; i++) {
       string += '0';
     }
-    for (row in dots) {
-      for (column in dots[row]) {
+    console.log(dots);
+    for (var row in dots) {
+      for (var column in dots[row]) {
         // Here we need to convert the coords from a dot (e.g. 3, 4) into a
         // position in the string (in order to add a 1). We multiply the row
         // number (minus 1) by 53 (the amount of columns), and then add on the
@@ -60,32 +67,24 @@
     function Dot(x, y) {
       var dot = this;
       var color = colors[~~(Math.random()*colors.length)];
-      var column = ~~(x / 14) + 1;
-      var row = ~~(y / 14) + 1;
+      var column = (x / dotsize) + 1 | 0;
+      var row = (y / dotsize) + 1 | 0;
 
-      function animate() {
+      function draw() {
         ctx.save();
         dot.level += 0.1 * dot.direction;
         if (dot.level < 0.01) {
           dot.level = 0;
         }
         ctx.fillStyle = 'rgba(' + color + ', ' + dot.level + ')';
-        if (mirror == body) {
-          ctx.clearRect(~~(x / 14) * 14, ~~(y / 14) * 14, 13, 13); // because we're using opacity
-        }
-        ctx.fillRect(~~(x / 14) * 14, ~~(y / 14) * 14, 13, 13);
+        // if (mirror === body) {
+        //   ctx.clearRect(~~(x / dotsize) * dotsize, ~~(y / dotsize) * dotsize, dotsize-1, dotsize-1); // because we're using opacity
+        // }
+        ctx.fillRect(~~(x / dotsize) * dotsize, ~~(y / dotsize) * dotsize, dotsize-1, dotsize-1);
         ctx.restore();
-        if (mirror == body) {
-          if (0 < dot.level && dot.level < 1) {
-            dot.timer = setTimeout(animate, 50);
-          } else if (dot.level > 1) {
-            dot.direction = -1;
-            dot.timer = setTimeout(animate, 500);
-          }
-        }
       }
 
-      dot.level = mirror == body ? 0 : 1;
+      dot.level = 1;
       dot.direction = 1;
 
       /*if (dots[x+':'+y] !== undefined) {
@@ -100,7 +99,8 @@
       dots[row] = dots[row] || {};
       dots[row][column] = dot;
 
-      dot.timer = setTimeout(animate, 50);
+      // dot.timer = setTimeout(animate, 50);
+      draw();
     }
 
     Dot.prototype.clear = function () {
@@ -110,11 +110,9 @@
     var canvas = document.createElement('canvas'),
         ctx = canvas.getContext('2d'),
         drawing = false,
-        body = document.body,
         comp = mirror.currentStyle ? mirror.currentStyle : getComputedStyle(mirror, null),
         left = 0,
         top = 0,
-        resizeTimer = null,
         colors = ['234,109,0', '219,64,0', '224,73,0', '224,78,0', '229,95,0', '228,100,0', '229,101,0'],
         obj = mirror;
 
@@ -124,8 +122,8 @@
     } while (obj = obj.offsetParent);
 
     canvas.className = 'game';
-    canvas.height = parseInt(comp['height']);
-    canvas.width = parseInt(comp['width']);
+    canvas.height = parseInt(comp.height);
+    canvas.width = parseInt(comp.width);
 
     ctx.lineWidth = 9;
     ctx.moveTo(1, 1);
@@ -137,8 +135,6 @@
       if (drawing) {
         x = event.clientX + (document.documentElement.scrollLeft || document.body.scrollLeft) - left;
         y = event.clientY + (document.documentElement.scrollTop || document.body.scrollTop) - top;
-        // x = event.clientX + mirror.scrollLeft;
-        // y = event.clientY + mirror.scrollTop;
         new Dot(x, y);
       }
     }, false);
@@ -148,12 +144,7 @@
       event.preventDefault();
     }, false);
 
-    mirror.addEventListener('mouseup', function (event) {
-      x = event.clientX + (document.documentElement.scrollLeft || document.body.scrollLeft) - left;
-      y = event.clientY + (document.documentElement.scrollTop || document.body.scrollTop) - top;
-      // x = event.clientX + mirror.scrollLeft;
-      // y = event.clientY + mirror.scrollTop;
-      // new Dot(x, y);
+    document.addEventListener('mouseup', function (event) {
       drawing = false;
     }, false);
 

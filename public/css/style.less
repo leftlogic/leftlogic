@@ -197,6 +197,10 @@ label {
     background: #333333;
     border: none;
   }
+
+  &:after {
+    content: ' \2192'
+  }
 }
 
 .button_green {
@@ -348,6 +352,7 @@ header {
   }
 
   .overlay_home {
+    padding: 2rem 1rem;
     background: @overlay_orange_transparent;
 
     #heading {
@@ -361,7 +366,7 @@ header {
     border: none !important;
 
     img {
-      height: 40px;
+      height: 60px;
     }
   }
 
@@ -682,12 +687,12 @@ header {
 }
 
 footer {
-  background: #333333;
-  padding: 3rem 3rem 2.7rem !important;
+  background: #333;
+  padding: 3rem 3rem 2.7rem;
 
   p {
     margin: 0;
-    color: #888888;
+    color: #888;
   }
 
   .copyright {
@@ -699,7 +704,13 @@ footer {
     text-align: right;
 
     strong {
-      color: #ffffff;
+      color: #fff;
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+        margin-left: 15px;
+      }
     }
   }
 }
@@ -728,7 +739,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 74.75rem) {
+@media screen and (max-width: 800px) {
   #projects .section .info {
     width: auto;
     padding-top: 0;
@@ -817,24 +828,78 @@ footer {
         font-size: 1.15rem;
         line-height: 1.5rem;
       }
-
-      .social a {
-        overflow: hidden;
-        display: inline-block;
-        width: 16px;
-        margin-right: 1rem;
-      }
     }
   }
 }
 
 @media screen and (max-width : 480px) {
+  #index header {
+    background-position: 0;
+  }
+
+  header {
+    background-position: 0 -6px;
+  }
+
   html {
     font-size: 12px;
   }
 
-  .section, footer {
-    padding: 2rem !important;
+  h1, h2, h3 {
+    line-height: 1.4;
+  }
+
+  .social a {
+    display: block;
+    font-weight: 200;
+    margin-right: 1rem;
+
+    &:before {
+      font-size: 2rem;
+    }
+  }
+
+
+  header nav ul li {
+    line-height: 30px;
+    font-size: 1.2rem;
+
+    a:hover,
+    a.selected {
+      line-height: 30px;
+      font-size: 1.2rem;
+    }
+  }
+
+  ul, p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  ul {
+    padding-left: 2rem;
+  }
+
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  footer.section {
+    padding: 2rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  header {
+    .section {
+      padding: 1.5rem 1rem 0.5rem 1rem;
+    }
+
+    .overlay_home {
+      padding: 1.5rem 1rem 2rem 1rem;
+    }
   }
 
   #projects #jsbin {
@@ -843,14 +908,22 @@ footer {
 
   header nav {
     margin: 0;
+    margin-top: 0.5rem;
   }
 
   header .logo {
-    left: -2.3rem;
+    // left: -2.3rem;
+    display: block;
+    position: static;
+    margin-left: -2rem;
   }
 
   header .logo img {
     height: 35px;
+  }
+
+  #work_with_us p {
+    text-align: left;
   }
 }
 
@@ -860,16 +933,21 @@ footer {
   box-sizing: content-box;
   position: relative;
   height: 560px;
-  width: 741px;
+  height: 399px;
+  // 1:1.315
+  margin: 0 auto;
+  // width: 741px;
+  width: 529px;
   border: 1px solid #aaaaaa;
   cursor: crosshair;
 
   .game {
     background-image: url("../img/bg-grid.gif");
-    background-size: 140px 140px;
+    // background-size: 140px 140px;
     background-position: 0 0;
-    width: 100%;
-    height: 100%;
+    display: block;
+    // width: 100%;
+    // height: 100%;
   }
 }
 
@@ -877,24 +955,27 @@ footer {
   list-style: none;
   margin: 0;
   padding: 0 !important;
+  overflow: hidden;
 
   li {
     background: #ffffff;
-    width: 100%;
+    width: 40%;
     padding: 0;
-    margin: 0 0 2rem;
+    margin: 0 1rem 1rem 0;
+    float: left;
+    display: inline-block;
+    border: 1px solid #ccc;
+    opacity: 0.9;
 
-    &:last-child {
-      margin: 0;
+    &:hover {
+      opacity: 1;
+      border: 1px solid #999;
     }
 
     img {
       width: 100%;
       cursor: pointer;
-
-      &:hover {
-        opacity: 0.5;
-      }
+      display: block;
     }
   }
 }

@@ -4,15 +4,15 @@
       if booking_open
         h2 Book now!
         p Get in touch and arrange this workshop today!
-        a.button.button_green(href='#{booking_link}') Book now &rarr;
+        a.button.button_green(href='#{booking_link}') Book now
       else
         h2 Enquire Now!
         p Get in touch and arrange this workshop today!
-        a.button.button_green(href='/contact') Enquire now &rarr;
+        a.button.button_green(href='/contact') Enquire now
     else
       h2 Work With Us
       p Regardless of whether your project is big or small, if you want your website to feature the most sublime user experience possible then drop us a line to hire us.
-      a.button(href='/contact') Contact us &rarr;
+      a.button(href='/contact') Contact us
 footer.section
   .inner
     .copyright
@@ -20,6 +20,9 @@ footer.section
         strong &copy; 2014 Left Logic Ltd. All rights reserved.
       p Registered Company No. 05926047
     .contact
-      p <strong><a href="mailto:info@leftlogic.com">info@leftlogic.com</a></strong>&nbsp;&nbsp;|&nbsp;&nbsp;<strong>+44 (0) 1273 557744</strong>
+      p
+       strong: a(href="mailto:info@leftlogic.com") info@leftlogic.com
+       |
+       strong +44 (0) 1273 557744
     .clearfix
 script(src='/js/leftlogic.js')
