@@ -41,14 +41,14 @@
       {
         "name": "julie",
         "fullname": "Julie Sharp",
-        "title": "Events manager",
-        "about": "Writes JavaScript... and some stuff, wants to sound interesting, but fails. Other text should probably go here...",
+        "title": "Operations",
+        "about": "Wearer of many hats: runs the logistics for Full Frontal; manages Remy's diary and travel schedule; accountant; HR manager; office manager; mum!\n\nGet in touch if you need freelance event management from 2015 onwards.",
         "twitter": "julieanne"
       },
       {
         "name": "fabien",
         "fullname": "Fabien O'Carroll",
-        "title": "Founder & Developer",
+        "title": "Web Developer",
         "about": "Writes JavaScript... and some stuff, wants to sound interesting, but fails. Other text should probably go here...",
         "twitter": "allouis_",
         "github": "allouis",
@@ -57,7 +57,7 @@
       {
         "name": "giulia",
         "fullname": "Giulia Alfonsi",
-        "title": "Founder & Developer",
+        "title": "Web Developer",
         "about": "Writes JavaScript... and some stuff, wants to sound interesting, but fails. Other text should probably go here...",
         "twitter": "electric_g",
         "github": "electricg",
