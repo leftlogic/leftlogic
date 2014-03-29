@@ -33,8 +33,9 @@
         "name": "remy",
         "fullname": "Remy Sharp",
         "title": "Founder & Developer",
-        "about": "Writes JavaScript... and some stuff, wants to sound interesting, but fails. Other text should probably go here...",
+        "about": "Been writing JavaScript since the late 90s, and suffered from \"side project infinitum\" syndrome for twice as long.",
         "twitter": "rem",
+        "credit": "Photo by Jeremy Keith",
         "github": "remy",
         "blog": "http://remysharp.com"
       },
@@ -42,14 +43,15 @@
         "name": "julie",
         "fullname": "Julie Sharp",
         "title": "Operations",
-        "about": "Wearer of many hats: runs the logistics for Full Frontal; manages Remy's diary and travel schedule; accountant; HR manager; office manager; mum!\n\nGet in touch if you need freelance event management from 2015 onwards.",
+        "about": "Wearer of many hats: runs the logistics for Full Frontal; manages Remy's diary and travel schedule; accountant; HR manager; office manager; mum!",
+        "credit": "Photo by Geri Cody",
         "twitter": "julieanne"
       },
       {
         "name": "fabien",
         "fullname": "Fabien O'Carroll",
         "title": "Web Developer",
-        "about": "Writes JavaScript... and some stuff, wants to sound interesting, but fails. Other text should probably go here...",
+        "about": "Writing the magic behind JS Bin with the magic of javascript. Trying to use vim as an IDE. Learning something new each day. Also, I'm fabulous.",
         "twitter": "allouis_",
         "github": "allouis",
         "blog": "http://allou.is"
