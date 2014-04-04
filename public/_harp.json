@@ -8,26 +8,7 @@
       "Contact": "/contact"
     },
     "analytics": "UA-1656750-2",
-    "projects": [
-      {
-        "name": "jsbin",
-        "fullname": "JS Bin",
-        "about": "JS Bin is a form of paste bin, but with a twist. It allows you to also include the HTML and CSS to provide context to your pasted content. As such, it means you can actually run the JavaScript and pass this on to a colleague to help to debug.",
-        "link": "http://jsbin.com"
-      },
-      {
-        "name": "full_frontal",
-        "fullname": "Full Frontal",
-        "about": "JS Bin is a form of paste bin, but with a twist. It allows you to also include the HTML and CSS to provide context to your pasty. As such, it means you can actually run the JavaScript and pass this on to a colleague to help to debug.",
-        "link": "http://full-frontal.org"
-      },
-      {
-        "name": "nodemon",
-        "fullname": "nodemon",
-        "about": "nodemon will watch the files in the directory where nodemon was started, and if they change, it will automatically restart your node application. nodemon simply wraps your node application and keeps an eye on any files that have changed.",
-        "link": "http://nodemon.io"
-      }
-    ],
+    "projects": ["jsbin", "full_frontal", "nodemon"],
     "team": [
       {
         "name": "remy",

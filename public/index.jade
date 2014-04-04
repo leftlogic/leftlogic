@@ -4,4 +4,4 @@ block header
 block content
   #projects
     for project in projects
-      != partial("_partials/project", project)
+      != partial("_partials/project", { project: project })
