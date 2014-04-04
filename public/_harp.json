@@ -7,8 +7,28 @@
       "Training": "/training",
       "Contact": "/contact"
     },
+    ":promote": "promote-devtools",
     "analytics": "UA-1656750-2",
-    "projects": ["jsbin", "full_frontal", "nodemon"],
+    "projects": [
+      {
+        "name": "jsbin",
+        "fullname": "JS Bin",
+        "about": "JS Bin is a form of paste bin, but with a twist. It allows you to also include the HTML and CSS to provide context to your pasted content. As such, it means you can actually run the JavaScript and pass this on to a colleague to help to debug.",
+        "link": "http://jsbin.com"
+      },
+      {
+        "name": "full_frontal",
+        "fullname": "Full Frontal",
+        "about": "Full Frontal was founded in 2009 and is the UK's leading JavaScript conference. Selling out in as little as 11 minutes, is a conference for front end developers who want to learn more about the programming language of the web.",
+        "link": "http://full-frontal.org"
+      },
+      {
+        "name": "nodemon",
+        "fullname": "nodemon",
+        "about": "nodemon is one of the most popular utilities for node based development. It will watch the files in your development directory where, and if anything changes, nodemon will automatically restart your node application.",
+        "link": "http://nodemon.io"
+      }
+    ],
     "team": [
       {
         "name": "remy",
@@ -25,7 +45,7 @@
         "fullname": "Julie Sharp",
         "title": "Operations",
         "about": "Wearer of many hats: runs the logistics for Full Frontal; manages Remy's diary and travel schedule; accountant; HR manager; office manager; mum!",
-        "credit": "Photo by Geri Cody",
+        "credit": "Photo by Geri Coady",
         "twitter": "julieanne"
       },
       {
@@ -41,7 +61,7 @@
         "name": "giulia",
         "fullname": "Giulia Alfonsi",
         "title": "Web Developer",
-        "about": "Writes JavaScript... and some stuff, wants to sound interesting, but fails. Other text should probably go here...",
+        "about": "I'm the human version of Brian Griffin. And an Italian front-end dev working on JS Bin for Left Logic.",
         "twitter": "electric_g",
         "github": "electricg",
         "blog": "http://giugee.com"

@@ -3,10 +3,10 @@
     "title": "Training"
   },
   "debug": {
-    "title": "Debug, and know thy tools",
+    "title": "Mastering browser devtools",
     "booking_section": true,
-    "booking_open": true,
-    "booking_link": "https://leftlogic.stagehq.com/events/2795"
+    "booking_open": false,
+    "booking_link": null
   },
   "html": {
     "title": "Using HTML5 and JavaScript to build Web Apps",

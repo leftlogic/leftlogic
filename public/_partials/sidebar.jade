@@ -9,25 +9,14 @@ if booking_section
       p Get in touch and arrange this workshop today!
 
 if fourohfour_drawings
-  .sidebar_section
-    h6 Previous Drawings
-    p A selection of other 404 images people have drawn:
+  .sidebar_section(hidden)
+    h6 Our favourite 404s
+    p Have a selection of 404 images others have left
     ul#others
-      li
-        img(src="http://leftlogic.com/images/generated/approved/1328612572.png", alt="")
-      li
-        img(src="http://leftlogic.com/images/generated/approved/1360736588.png", alt="")
-      li
-        img(src="http://leftlogic.com/images/generated/approved/1338564453.png", alt="")
-      li
-        img(src="http://leftlogic.com/images/generated/approved/1360738464.png", alt="")
 
 if !fourohfour_drawings
-  .sidebar_section
-    h6 Upcoming Workshop
-    p 2nd April 2014:<br />
-      a(href='/training/debug') Debug, and know thy tools<br />
-    a.button(href='/training/debug') Book now!
+  if promote
+    != partial('_partials/' + promote)
 
   .sidebar_section
     h6 Newsletter Signup

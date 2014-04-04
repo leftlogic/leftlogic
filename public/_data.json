@@ -3,6 +3,9 @@
     "layout": "_layouts/home",
     "heading": "Specialists in JavaScript Development"
   },
+  "404-images": {
+    "layout": false
+  },
   "404": {
     "title": "Not Found",
     "layout": "_layouts/404",

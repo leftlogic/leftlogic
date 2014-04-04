@@ -1,5 +1,9 @@
-.section(id="#{ project }")
+.section(id="#{ name }")
   .inner
     .info
-      != partial("../_projects/" + project)
+      h2= fullname
+      p= about
+      a(href="#{ link }") View project &rarr;
+    a(href="#{ link }")
+      img(src="/img/projects/#{ name }_screenshot.jpg")
     .clearfix

@@ -11,22 +11,12 @@
   ## Workshops
 
 ul#training
-  li#debug
-    .background
-      a(href="/training/debug")
-        span Debug, and know thy tools
-  li#node
-    .background
-      a(href="/training/node")
-        span Node: knowledge smash &amp; grab in a day
-  li#mobile
-    .background
-      a(href="/training/mobile")
-        span Mobile Web Apps
-  li#html
-    .background
-      a(href="/training/html")
-        span Using HTML5 and JavaScript to build Web Apps
+  for data, slug in public.training._data
+    if (data.booking_section)
+      li(id="#{ slug }")
+        .background
+          a(href="/training/#{ slug }")
+            span= data.title
   .clearfix
 
 :markdown
