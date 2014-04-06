@@ -1,0 +1,29 @@
+{
+  "index": {
+    "title": "Training"
+  },
+  "debug": {
+    "title": "Mastering browser devtools",
+    "booking_section": true,
+    "booking_open": false,
+    "booking_link": null
+  },
+  "html": {
+    "title": "Using HTML5 and JavaScript to build Web Apps",
+    "booking_section": true,
+    "booking_open": false
+  },
+  "mobile": {
+    "title": "Mobile Web Apps",
+    "booking_section": true,
+    "booking_open": false
+  },
+  "node": {
+    "title": "Node: Knowledge Smash & Grab",
+    "booking_section": true,
+    "booking_open": false
+  },
+  "whynode": {
+    "title": "Why Your Boss Should Send You to the Node Workshop"
+  }
+}

@@ -1,0 +1,18 @@
+extends layout
+
+block header
+  .overlay.section
+    .inner
+      include ../_partials/header
+
+block content
+  .section
+    .inner
+      #content
+        != yield
+      #sidebar
+        include ../_partials/sidebar
+      .clearfix
+
+block footer
+  script(src="/js/404.js")

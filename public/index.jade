@@ -1,0 +1,7 @@
+block header
+  .heading
+    .heading_inner Our Projects
+block content
+  #projects
+    for project in projects
+      != partial("_partials/project", project)

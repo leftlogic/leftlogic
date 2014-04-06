@@ -1,0 +1,26 @@
+if booking_section
+  if booking_open
+    a(href='#{booking_link}').sidebar_section.sidebar_section_green
+      h6 Book Now!
+      p Get in touch and arrange this workshop today!
+  else
+    a(href='/contact').sidebar_section.sidebar_section_green
+      h6 Enquire Now!
+      p Get in touch and arrange this workshop today!
+
+if fourohfour_drawings
+  .sidebar_section(hidden)
+    h6 Our favourite 404s
+    p Have a selection of 404 images others have left
+    ul#others
+
+if !fourohfour_drawings
+  if promote
+    != partial('_partials/' + promote)
+
+  .sidebar_section
+    h6 Newsletter Signup
+    p If you want to be the first to hear of upcoming training and events, subscribe to our newsletter.
+    form(action='https://tinyletter.com/leftlogic', method='post')
+      input(type='email', name='email', id='email', placeholder='Email Address')
+      input.button(type='submit', value='Signup')

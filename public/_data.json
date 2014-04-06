@@ -1,0 +1,23 @@
+{
+  "index": {
+    "layout": "_layouts/home",
+    "heading": "Specialists in JavaScript Development"
+  },
+  "404-images": {
+    "layout": false
+  },
+  "404": {
+    "title": "Not Found",
+    "layout": "_layouts/404",
+    "fourohfour_drawings": true
+  },
+  "about": {
+    "title": "About"
+  },
+  "contact": {
+    "title": "Contact"
+  },
+  "hiring": {
+    "title": "Hiring"
+  }
+}
