@@ -7,6 +7,9 @@ html
     link(rel='icon', href='/img/favicon.png')
     link(rel='stylesheet', href='/css/normalize.css')
     link(rel='stylesheet', href='/css/style.css')
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <![endif]-->
     block head
       if environment == "production"
         script.
