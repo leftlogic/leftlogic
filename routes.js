@@ -21,6 +21,10 @@ module.exports = function (app) {
     });
   });
 
+  app.get('/projects/entity-lookup', function (req, res) {
+    return res.redirect('http://entity-lookup.leftlogic.com');
+  });
+
   // 404
   app.use(function (req, res, next) {
     if (!fourohfour) {
@@ -39,7 +43,6 @@ module.exports = function (app) {
       res.send(fourohfour);
       return;
     }
-
 
     // respond with json
     if (req.accepts('json')) {
