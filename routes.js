@@ -6,6 +6,10 @@ console.log(__dirname);
 var fourohfour = null;
 
 module.exports = function (app) {
+  app.get(['/projects/entity-lookup', '/lounge/articles/entity-lookup'], function (req, res) {
+    res.redirect('http://entity-lookup.leftlogic.com');
+  });
+
   app.post('/contact', function (req, res) {
     return sendgrid.send({
       from: req.body.email_address,
