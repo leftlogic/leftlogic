@@ -4,6 +4,11 @@
 
   #### At Left Logic we are constantly engaged in experimentation, pushing the code to improve stability and efficiency, as well creating completely new possibilities.
 
-#about
+#about.about
   for user in team
     != partial("_partials/about", user)
+
+#formerly.about
+  h2 Former Lefties
+  for user in formerly
+    != partial("_partials/formerly", user)

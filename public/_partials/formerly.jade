@@ -1,5 +1,5 @@
 li(id="#{ name }")
-  img.about_avatar(src="/img/avatars/#{ name }.jpg", title="#{ credit || 'Selfie!' }")
+  img.about_avatar(src="/img/avatars/#{ name }.jpg", title="#{ credit }")
   .about_content
     h2= fullname
     h4= title
@@ -10,4 +10,3 @@ li(id="#{ name }")
         a(href="http://github.com/#{ github }").icon-github= github
       if blog
         a.icon-blog(href="#{ blog }")= blog.replace(/^http:../, '')
-    p= about

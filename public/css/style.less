@@ -552,10 +552,27 @@ header {
 
 /* About */
 
-#about {
+#formerly {
+  h2 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.1rem;
+  }
+  .about_avatar {
+    height: 6.9rem;
+    width: 6.9rem;
+  }
+  .about_content {
+    margin-left: 10rem;
+  }
+}
+
+.about {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 2.8rem;
 
   li {
     position: relative;
@@ -816,12 +833,22 @@ footer {
 }
 
 @media screen and (max-width: 760px) {
-  #about li {
+  #formerly {
+    .about_content {
+      margin-left: 0;
+    }
+    .social a:before {
+      font-size: 2rem;
+      margin-right: 0.5rem;
+      width: 25px;
+    }
+  }
+  .about li {
     .about_avatar {
       float: left;
       position: static;
-      height: 6rem;
-      width: 6rem;
+      height: 8rem;
+      width: 8rem;
       top: 0;
       margin-bottom: 1rem;
     }
@@ -830,7 +857,7 @@ footer {
       margin-left: 0;
 
       h2, h4, .social {
-        margin-left: 8rem;
+        margin-left: 10rem;
         line-height: 2rem;
       }
 
@@ -864,7 +891,7 @@ footer {
     line-height: 1.4;
   }
 
-  #about li .about_content .social a {
+  .about li .about_content .social a {
     display: block;
     font-weight: 200;
     margin-right: 1rem;

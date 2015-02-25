@@ -49,6 +49,17 @@
         "twitter": "julieanne"
       },
       {
+        "name": "david",
+        "fullname": "David Gauld",
+        "title": "Web Developer",
+        "about": "Part-time JavaScript developer and tinkerer. Computer Science undergraduate. Lego builder. Drummer.",
+        "twitter": "dcgauld",
+        "github": "dcgauld",
+        "blog": "http://dcgauld.com"
+      }
+    ],
+    "formerly": [
+      {
         "name": "fabien",
         "fullname": "Fabien O'Carroll",
         "title": "Web Developer",
@@ -65,15 +76,6 @@
         "twitter": "electric_g",
         "github": "electricg",
         "blog": "http://giugee.com"
-      },
-      {
-        "name": "david",
-        "fullname": "David Gauld",
-        "title": "Web Developer",
-        "about": "Part-time JavaScript developer and tinkerer. Computer Science undergraduate. Lego builder. Drummer.",
-        "twitter": "dcgauld",
-        "github": "dcgauld",
-        "blog": "http://dcgauld.com"
       }
     ]
   }

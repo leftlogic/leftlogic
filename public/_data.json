@@ -15,7 +15,11 @@
     "title": "About"
   },
   "contact": {
-    "title": "Contact"
+    "title": "Contact",
+    "aside": "services"
+  },
+  "thanks": {
+    "title": "Thanks"
   },
   "hiring": {
     "title": "Hiring"

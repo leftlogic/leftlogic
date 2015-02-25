@@ -21,7 +21,7 @@ module.exports = function (app) {
         console.error(err);
         return console.log(message);
       }
-      return res.redirect('/contact/thanks');
+      return res.redirect('/thanks');
     });
   });
 

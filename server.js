@@ -51,6 +51,7 @@ app.configure('production', function () {
 
 // for development, use the dynamic version of harp
 app.configure('development', function () {
+  console.log('running in dev');
   app.configure(function () {
     app.use(express.static(__dirname + '/public'));
     app.use(harp.mount(__dirname + '/public'));
