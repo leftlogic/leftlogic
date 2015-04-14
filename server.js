@@ -6,8 +6,12 @@ var routes = require('./routes');
 var app = express();
 var port = process.env.PORT || 9000;
 var staticPath = __dirname + '/www';
+var bodyParser = require('body-parser');
 
-app.configure('production', function () {
+app.use(bodyParser.urlencoded({ extended: false }));
+routes(app);
+
+if (process.env.NODE_ENV === 'production') {
   // find all the .html files in this compiled version so that visitors can
   // link to /foo/bar and we'll know that there's a .html that they actually
   // wanted to request.
@@ -47,22 +51,12 @@ app.configure('production', function () {
     next();
   });
   app.use(express.static(staticPath));
-});
-
-// for development, use the dynamic version of harp
-app.configure('development', function () {
+} else {
+  // for development, use the dynamic version of harp
   console.log('running in dev');
-  app.configure(function () {
-    app.use(express.static(__dirname + '/public'));
-    app.use(harp.mount(__dirname + '/public'));
-  });
-});
-
-app.configure(function () {
-  app.use(express.bodyParser());
-  app.use(app.router);
-  routes(app);
-});
+  app.use(express.static(__dirname + '/public'));
+  app.use(harp.mount(__dirname + '/public'));
+}
 
 app.listen(port, function () {
   console.log('Left Logic is up and running on http://localhost:' + port);

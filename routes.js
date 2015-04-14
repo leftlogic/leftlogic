@@ -10,7 +10,7 @@ module.exports = function (app) {
     res.redirect('http://entity-lookup.leftlogic.com');
   });
 
-  app.post('/contact', function (req, res) {
+  app.post('/contact', function (req, res, next) {
     return sendgrid.send({
       from: req.body.email_address,
       to: 'info@leftlogic.com',
@@ -19,7 +19,7 @@ module.exports = function (app) {
     }, function (err, message) {
       if (err) {
         console.error(err);
-        return console.log(message);
+        return next(err);
       }
       return res.redirect('/thanks');
     });

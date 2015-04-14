@@ -19,9 +19,10 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "harp": "*",
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3",
     "glob": "~3.2.9",
-    "express": "~3.4.8",
+    "harp": "*",
     "sendgrid": "~1.0.2"
   }
 }
