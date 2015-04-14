@@ -15,7 +15,7 @@ function contact(req, res, next) {
     subject: 'Contact via leftlogic.com from ' + req.body.full_name,
     text: req.body.message
   }, function (err, message) {
-    console.log('sent email from ' + req.body.email_address);
+    console.log('sent email from ' + req.body.email_address, message);
     if (err) {
       console.error(err);
       return next(err);
