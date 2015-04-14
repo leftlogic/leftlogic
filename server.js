@@ -9,7 +9,11 @@ var staticPath = __dirname + '/www';
 var bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: false }));
-routes(app);
+
+app.post('/contact', routes.contact);
+app.get(['/projects/entity-lookup', '/lounge/articles/entity-lookup'], function (req, res) {
+  res.redirect('http://entity-lookup.leftlogic.com');
+});
 
 if (process.env.NODE_ENV === 'production') {
   // find all the .html files in this compiled version so that visitors can
@@ -31,7 +35,7 @@ if (process.env.NODE_ENV === 'production') {
 
     glob('**/*.html', {
       cwd: staticPath,
-      dot: false
+      dot: false,
     }, function (er, files) {
       htmlFiles = files.map(function (file) {
         return '/' + file;
@@ -57,6 +61,8 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(__dirname + '/public'));
   app.use(harp.mount(__dirname + '/public'));
 }
+
+app.use(routes.error);
 
 app.listen(port, function () {
   console.log('Left Logic is up and running on http://localhost:' + port);
