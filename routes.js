@@ -11,7 +11,6 @@ module.exports.contact = contact;
 function contact(req, res, next) {
   return sendgrid.send({
     replyTo: req.body.email_address,
-    from: 'info@leftlogic.com',
     to: 'info@leftlogic.com',
     subject: 'Contact via leftlogic.com from ' + req.body.full_name,
     text: req.body.message
