@@ -10,7 +10,9 @@ var bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.post('/contact', routes.contact);
+app.get('/contact', function (req, res) {
+  res.redirect('mailto:info@leftlogic.com?Subject=Contact from leftlogic.com');
+});
 app.get(['/projects/entity-lookup', '/lounge/articles/entity-lookup'], function (req, res) {
   res.redirect('http://entity-lookup.leftlogic.com');
 });
