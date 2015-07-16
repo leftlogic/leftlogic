@@ -7,7 +7,7 @@
       "Training": "/training",
       "Contact": "/contact"
     },
-    ":promote": "promote-devtools",
+    "promote": "promote-devtools",
     "analytics": "UA-1656750-2",
     "projects": [
       {
@@ -47,15 +47,6 @@
         "about": "Wearer of many hats: runs the logistics for Full Frontal; manages Remy's diary and travel schedule; accountant; HR manager; office manager; mum!",
         "credit": "Photo by Geri Coady",
         "twitter": "julieanne"
-      },
-      {
-        "name": "david",
-        "fullname": "David Gauld",
-        "title": "Web Developer",
-        "about": "Part-time JavaScript developer and tinkerer. Computer Science undergraduate. Lego builder. Drummer.",
-        "twitter": "dcgauld",
-        "github": "dcgauld",
-        "blog": "http://dcgauld.com"
       }
     ],
     "formerly": [
@@ -76,6 +67,24 @@
         "twitter": "electric_g",
         "github": "electricg",
         "blog": "http://giugee.com"
+      },
+      {
+        "name": "david",
+        "fullname": "David Gauld",
+        "title": "Web Developer",
+        "about": "Part-time JavaScript developer and tinkerer. Computer Science undergraduate. Lego builder. Drummer.",
+        "twitter": "dcgauld",
+        "github": "dcgauld",
+        "blog": "http://dcgauld.com"
+      },
+      {
+        "name": "tom",
+        "fullname": "Tom Ashword",
+        "title": "Web Developer",
+        "about": "",
+        "twitter": "phuunet",
+        "github": "phuu",
+        "blog": "http://phuu.net"
       }
     ]
   }
