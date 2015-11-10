@@ -1,3 +1,5 @@
+console.log('hello world');
+
 (function (window, document, undefined) {
   'use strict';
   var play = document.getElementById('play');
