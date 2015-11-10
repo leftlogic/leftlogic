@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>vat parer</title>
+  <style>
+  * {
+    /*font-size: 1.3rem;*/
+    font-family: sans-serif;
+  }
+    textarea, label {
+      display: block;
+    }
+
+    label {
+      margin: 20px;
+    }
+
+    label input {
+      clear: both;
+    }
+
+    button {
+      padding: 8px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 400px;
+    }
+
+    #load {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      transform: scale(3) translateX(-20px) translateY(10px);
+    }
+  </style>
+</head>
+<body>
+<script src="/js/papa.js"></script>
+<label>Start of range: <input type="date" id="start" value="2015-08-10"></label>
+<label>End (defaults to now): <input type="date" id="end"></label>
+<label>Upload a stripe export: <input type="file" id="file"></label>
+<input type="button" value="Load" id="load">
+<textarea id="result"></textarea>
+<script>
+/* global Papa */
+var $ = document.querySelector.bind(document);
+var output = $('#result');
+var fileInput = $('#file');
+
+var dates = {
+  start: '2015-08-10 00:00',
+};
+
+$('#load').onclick = load;
+
+function load() {
+  dates.start = $('#start').value + ' 00:00';
+  dates.end = ($('#end').value || new Date().toJSON().split('T')[0]) + ' 00:00';
+  Papa.parse(fileInput.files[0], {
+    header: true,
+    complete: function(results) {
+      Promise.resolve(results.data)
+        .then(filterDate)
+        .then(filterFailed)
+        // .slice(0, 5)
+        .then(headings)
+        .then(total)
+        .then(out)
+        .then(download);
+    }
+  });
+}
+
+function download() {
+  var encodedUri = encodeURI('data:text/csv;charset=utf-8,' + output.value);
+  var link = document.createElement('a');
+  link.setAttribute('href', encodedUri);
+  link.setAttribute('download', 'payments.csv');
+
+  link.click();
+}
+
+function headings(res) {
+  return res.map(d => {
+    return {
+      created: d['Created (UTC)'],
+      amount: d.Amount,
+      fee: d.Fee,
+      status: d.Status,
+      customerId: d['Customer ID'],
+      cardIssueCountry: d['Card Issue Country'],
+      statementDescriptor: d['Statement Descriptor']
+    };
+  });
+}
+
+function out(res) {
+  output.value = 'created, amount, fee, status, customerId, cardIssueCountry, statementDescriptor\n';
+  output.value += res.reverse().map(r => {
+    return Object.keys(r).map(_ => r[_]).join(', ');
+  }).join('\n');
+  // output.value = text;
+  return res;
+}
+
+function total(res) {
+  console.log(res.length);
+  return res;
+}
+
+function filterDate(res) {
+  return res.filter(d => d['Created (UTC)'] > dates.start);
+}
+
+function filterFailed(res) {
+  return res.filter(d => d.Status !== 'Failed');
+}
+
+</script>
+</body>
+</html>

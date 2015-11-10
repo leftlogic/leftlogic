@@ -14,6 +14,10 @@
   "about": {
     "title": "About"
   },
+  "stripe-vat": {
+    "title": "Stripe VAT tool",
+    "layout": false
+  },
   "contact": {
     "title": "Contact",
     "aside": "services"
