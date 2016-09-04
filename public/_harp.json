@@ -18,9 +18,9 @@
       },
       {
         "name": "full_frontal",
-        "fullname": "Full Frontal",
-        "about": "Full Frontal was founded in 2009 and is the UK's leading JavaScript conference. Selling out in as little as 11 minutes, is a conference for front end developers who want to learn more about the programming language of the web.",
-        "link": "http://full-frontal.org"
+        "fullname": "ffconf",
+        "about": "ffconf was founded in 2009 and is the UK's leading JavaScript conference. Selling out in as little as 11 minutes, is a conference for front end developers who want to learn more about the programming language of the web.",
+        "link": "https://ffconf.org"
       },
       {
         "name": "nodemon",
@@ -44,7 +44,7 @@
         "name": "julie",
         "fullname": "Julie Sharp",
         "title": "Operations",
-        "about": "Wearer of many hats: runs the logistics for Full Frontal; manages Remy's diary and travel schedule; accountant; HR manager; office manager; mum!",
+        "about": "Wearer of many hats: runs the logistics for ffconf; manages Remy's diary and travel schedule; accountant; HR manager; office manager; mum!",
         "credit": "Photo by Geri Coady",
         "twitter": "julieanne"
       }
