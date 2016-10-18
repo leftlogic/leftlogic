@@ -1,6 +1,6 @@
 {
   "name": "leftlogic",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The Left Logic website.",
   "main": "server.js",
   "private": true,
