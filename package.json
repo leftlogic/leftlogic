@@ -11,6 +11,7 @@
   "engines": {
     "node": "5.x.x"
   },
+  "now": { "alias": "leftlogic.com" },
   "repository": {
     "type": "git",
     "url": "git://github.com/leftlogic/leftlogic.git"
