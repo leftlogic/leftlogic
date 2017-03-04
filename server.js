@@ -60,7 +60,7 @@ if (process.env.NODE_ENV === 'production') {
 } else {
   // for development, use the dynamic version of harp
   console.log('running in dev');
-  app.use(express.static(__dirname + '/public'));
+  app.use(express.static(__dirname + '/public', { etag: false }));
   app.use(harp.mount(__dirname + '/public'));
 }
 
