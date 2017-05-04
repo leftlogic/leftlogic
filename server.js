@@ -10,9 +10,9 @@ var bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/contact', function (req, res) {
-  res.redirect('mailto:info@leftlogic.com?Subject=Contact from leftlogic.com');
-});
+// app.get('/contact', function (req, res) {
+//   res.redirect('mailto:info@leftlogic.com?Subject=Contact from leftlogic.com');
+// });
 app.get(['/projects/entity-lookup', '/lounge/articles/entity-lookup'], function (req, res) {
   res.redirect('http://entity-lookup.leftlogic.com');
 });
@@ -56,11 +56,11 @@ if (process.env.NODE_ENV === 'production') {
     }
     next();
   });
-  app.use(express.static(staticPath));
+  app.use(express.static(staticPath, { etag: false, maxAge: 86400000, }));
 } else {
   // for development, use the dynamic version of harp
   console.log('running in dev');
-  app.use(express.static(__dirname + '/public', { etag: false }));
+  app.use(express.static(__dirname + '/public', { etag: false, maxAge: 86400000, }));
   app.use(harp.mount(__dirname + '/public'));
 }
 

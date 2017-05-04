@@ -6,7 +6,7 @@
       "Home": "/",
       "About": "/about",
       "Training": "/training",
-      "Contact": "/contact"
+      "Contact": "mailto:info@leftlogic.com"
     },
     "promote": "promote-devtools",
     "analytics": "UA-1656750-2",

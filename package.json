@@ -5,13 +5,17 @@
   "main": "server.js",
   "private": true,
   "scripts": {
+    "prebuild": "PORT=7331 node . & echo $! > .pid; sleep 3",
+    "build": "snap http://localhost:7331 -o www; kill $(cat .pid); rm .pid",
     "start": "node server.js",
     "test": "cd public; ../node_modules/.bin/harp compile; cd ../"
   },
   "engines": {
     "node": "5.x.x"
   },
-  "now": { "alias": "leftlogic.com" },
+  "now": {
+    "alias": "leftlogic.com"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/leftlogic/leftlogic.git"
@@ -25,5 +29,8 @@
     "glob": "^7.0.6",
     "harp": "^0.20.3",
     "sendgrid": "^4.0.2"
+  },
+  "devDependencies": {
+    "@remy/snap": "^1.0.2"
   }
 }
