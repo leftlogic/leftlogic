@@ -1,10 +1,10 @@
 /* Variables */
 
-@background: #ffffff;
-@orange: #f6862c;
-@green: #008f69;
-@overlay_orange_transparent: rgba(246, 134, 44, 0.88);
-@content_width: 68.75rem;
+$background: #ffffff;
+$orange: #f6862c;
+$green: #008f69;
+$overlay_orange_transparent: rgba(246, 134, 44, 0.88);
+$content_width: 68.75rem;
 
 /* Fonts */
 
@@ -64,7 +64,7 @@
 }
 
 body {
-  background: @background;
+  background: $background;
   font: 16px/1.8 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -72,11 +72,11 @@ body {
 
 a {
   text-decoration: none;
-  color: @orange;
+  color: $orange;
   border-bottom: 1px solid transparent;
 
   &:hover {
-    border-bottom: 1px solid @orange;
+    border-bottom: 1px solid $orange;
   }
 }
 
@@ -205,7 +205,7 @@ label {
   display: inline-block;
   line-height: 1rem;
   padding: 0.9rem 1.4rem 0.8rem;
-  background: @orange;
+  background: $orange;
   color: #ffffff;
   border-radius: 3.2rem;
   border: none;
@@ -222,7 +222,7 @@ label {
 }
 
 .button_green {
-  background: @green;
+  background: $green;
   color: #ffffff;
 }
 
@@ -256,7 +256,7 @@ label {
 /* Structure */
 
 .inner {
-  max-width: @content_width;
+  max-width: $content_width;
   margin: 0 auto;
 }
 
@@ -283,15 +283,15 @@ label {
     }
 
     a {
-      color: @green;
+      color: $green;
 
       &:hover {
-        border-bottom-color: @green;
+        border-bottom-color: $green;
       }
     }
 
     .button {
-      background: @green;
+      background: $green;
       color: #ffffff;
 
       &:hover {
@@ -368,12 +368,12 @@ header {
   background-size: cover;
 
   .overlay {
-    background: @overlay_orange_transparent;
+    background: $overlay_orange_transparent;
   }
 
   .overlay_home {
     padding: 3rem 1rem;
-    background: @overlay_orange_transparent;
+    background: $overlay_orange_transparent;
 
     #heading {
       padding: 6rem 0 4rem 0 !important;
@@ -446,7 +446,7 @@ header {
 
     .button {
       background: #ffffff;
-      color: @orange;
+      color: $orange;
     }
   }
 }
@@ -630,7 +630,7 @@ header {
 
           &:before {
             font-size: 1.4rem;
-            color: @orange;
+            color: $orange;
             position: relative;
             top: 5px;
             margin-right: 0.4rem;
@@ -676,7 +676,7 @@ header {
         display: block;
         height: 100%;
         width: 100%;
-        background: @overlay_orange_transparent;
+        background: $overlay_orange_transparent;
         color: #ffffff;
         border: none;
         position: relative;
