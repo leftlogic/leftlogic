@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Mastering browser devtools",
+    "booking_section": true,
+    "booking_open": true,
+    "booking_link": "https://ffconf.org",
+    "booking_details":
+      "Brighton 9-Nov: £445+VAT.\nIncludes a free pass to the highly sought after ffconf web developer event",
+    "slug": "debug"
+  },
+  {
+    "title": "Using HTML5 and JavaScript to build Web Apps",
+    "booking_section": true,
+    "booking_open": false,
+    "slug": "html"
+  },
+  {
+    "title": "Mobile Web Apps",
+    "booking_section": true,
+    "booking_open": false,
+    "slug": "mobile"
+  },
+  {
+    "title": "Node: Knowledge Smash & Grab",
+    "booking_section": true,
+    "booking_open": false,
+    "slug": "node"
+  }
+]

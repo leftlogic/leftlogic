@@ -12,7 +12,7 @@ There's also some custom 404 handling and a custom handler for the contact form.
 
 The code pushed to master also goes via [travis-ci](https://travis-ci.org/leftlogic/leftlogic) and if it passes the tests (which is: does this compile successfully to static HTML), then automatically deploy to the Heroku instance.
 
-[Get in touch](http://leftlogic.com/contact) if you'd like us to build something like this for you, or using Node.js.
+[Get in touch](mailto:info@leftlogic.com) if you'd like us to build something like this for you, or using Node.js.
 
 Otherwise, enjoy the source!
 

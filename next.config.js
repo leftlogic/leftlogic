@@ -1,0 +1,16 @@
+// next.config.js
+module.exports = {
+  exportPathMap: function() {
+    return {
+      '/': { page: '/' },
+      '/about': { page: '/about' },
+      '/training': { page: '/training' },
+      '/training/debug': { page: '/training/debug' },
+      '/training/mobile': { page: '/training/mobile' },
+      '/training/node': { page: '/training/node' },
+      '/training/html': { page: '/training/html' },
+      '/training/whynode': { page: '/training/whynode' },
+      '/404': { page: '/404' },
+    };
+  },
+};
