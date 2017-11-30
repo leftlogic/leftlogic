@@ -6,9 +6,10 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next build && next export",
     "build-css": "node-sass-chokidar ./styles/ -o ./static/css/",
-    "watch": "npm run build-css && node-sass-chokidar ./styles/ -o ./static/css/ --watch --recursive",
+    "watch":
+      "npm run build-css && node-sass-chokidar ./styles/ -o ./static/css/ --watch --recursive",
     "start": "next start"
   },
   "engines": {

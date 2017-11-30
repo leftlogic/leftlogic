@@ -4,10 +4,13 @@ module.exports = {
     return {
       '/': { page: '/' },
       '/about': { page: '/about' },
-      '/readme.md': { page: '/readme' },
-      '/p/hello-nextjs': { page: '/post', query: { title: 'hello-nextjs' } },
-      '/p/learn-nextjs': { page: '/post', query: { title: 'learn-nextjs' } },
-      '/p/deploy-nextjs': { page: '/post', query: { title: 'deploy-nextjs' } }
-    }
-  }
-}
+      '/training': { page: '/training' },
+      '/training/debug': { page: '/training/debug' },
+      '/training/mobile': { page: '/training/mobile' },
+      '/training/node': { page: '/training/node' },
+      '/training/html': { page: '/training/html' },
+      '/training/whynode': { page: '/training/whynode' },
+      '/404': { page: '/404' },
+    };
+  },
+};
