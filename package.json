@@ -1,8 +1,7 @@
 {
   "name": "leftlogic",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "leftlogic.com website",
-  "main": "server.js",
   "private": true,
   "scripts": {
     "dev": "next",
