@@ -9,10 +9,10 @@
     "slug": "debug"
   },
   {
-    "title": "Using HTML5 and JavaScript to build Web Apps",
+    "title": "Modern Universal React dev with Next.js",
     "booking_section": true,
-    "booking_open": false,
-    "slug": "html"
+    "booking_open": true,
+    "slug": "react"
   },
   {
     "title": "Mobile Web Apps",

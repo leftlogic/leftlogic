@@ -5,11 +5,12 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
+    "build": "npm run build-css && next build && next export",
     "build-css": "node-sass-chokidar ./styles/ -o ./static/css/",
     "watch":
       "npm run build-css && node-sass-chokidar ./styles/ -o ./static/css/ --watch --recursive",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "npm run build && s3_website push"
   },
   "engines": {
     "node": "8.x.x"

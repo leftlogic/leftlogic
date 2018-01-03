@@ -493,6 +493,8 @@ header {
     background: url("../img/workshops/node.png"); }
   #training #mobile .background {
     background: url("../img/workshops/mobile.png"); }
+  #training #react .background {
+    background: url("../img/workshops/react.png"); }
   #training #html .background {
     background: url("../img/workshops/html.png"); }
 
