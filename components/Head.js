@@ -8,6 +8,7 @@ export default ({ title }) => (
       name="viewport"
       content="width=device-width initial-scale=1 maximum-scale=1 user-scalable=0"
     />
+    <meta name="from" content={process.env.FROM} />
     <link rel="icon" href="/static/img/favicon.png" />
     <link rel="stylesheet" href="/static/css/normalize.css" />
     <link rel="stylesheet" href="/static/css/style.css" />
