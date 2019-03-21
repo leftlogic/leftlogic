@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import Layout from '../components/Layout';
 
 export default () => {
+  const [email, setEmail] = useState('');
   return (
     <Layout title="Contact Left Logic" sidebars={['Newsletter', 'Terminal']}>
       <h1>Contact</h1>
@@ -19,6 +21,7 @@ export default () => {
           name="_subject"
           value="Contact from leftlogic.com"
         />
+        <input type="hidden" name="_replyto" value={email} />
 
         <input type="hidden" name="_format" value="plain" />
         <p>All enquires are read and remain private.</p>
@@ -33,6 +36,8 @@ export default () => {
             name="email"
             id="form_email"
             type="email"
+            value={email}
+            onChange={event => setEmail(event.target.value)}
           />
         </div>
         <div class="fields">
