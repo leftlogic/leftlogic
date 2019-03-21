@@ -3,9 +3,15 @@ import ActiveLink from './ActiveLink';
 
 const menu = {
   Home: '/',
-  About: '/about',
   Training: '/training',
-  Contact: 'mailto:info@leftlogic.com',
+  // 'Event Management': '/event-management',
+  About: '/about',
+  Contact: '/contact',
+  // Contact: 'mailto:info@leftlogic.com',
+};
+
+const alt = {
+  'Event Management': 'Event Mgt',
 };
 
 export default ({ heading = false }) => (
@@ -22,7 +28,16 @@ export default ({ heading = false }) => (
             {Object.entries(menu).map(([title, href]) => (
               <li key={title}>
                 <ActiveLink activeClassName="selected" href={href}>
-                  <a>{title}</a>
+                  <a>
+                    {alt[title] ? (
+                      <>
+                        <span className="narrow">{alt[title]}</span>
+                        <span className="wide">{title}</span>
+                      </>
+                    ) : (
+                      title
+                    )}
+                  </a>
                 </ActiveLink>
               </li>
             ))}

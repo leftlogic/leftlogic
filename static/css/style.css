@@ -148,6 +148,9 @@ label {
 .input_text {
   max-width: 30rem; }
 
+.fields {
+  margin: 20px 0; }
+
 /* Buttons */
 .button {
   display: inline-block;
@@ -523,6 +526,9 @@ footer {
         margin-right: 0;
         margin-left: 15px; }
 
+header nav .narrow {
+  display: none; }
+
 /* Media queries */
 @media screen and (max-width: 75.75rem) {
   #sidebar {
@@ -573,6 +579,10 @@ footer {
     margin: 1rem 0 0; }
     header nav li:first-child {
       padding-left: 0; }
+    header nav .wide {
+      display: none; }
+    header nav .narrow {
+      display: unset; }
   header #heading {
     display: none; }
   #projects #jsbin:after {
@@ -628,11 +638,10 @@ footer {
       font-size: 2.5rem; }
   header nav ul li {
     line-height: 15px;
-    font-size: 1.2rem; }
+    font-size: 1rem; }
     header nav ul li a:hover,
     header nav ul li a.selected {
-      line-height: 30px;
-      font-size: 1.2rem; }
+      line-height: 30px; }
   ul,
   p {
     font-size: 1.3rem;

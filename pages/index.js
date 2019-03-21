@@ -24,20 +24,10 @@ export default () => {
         <div className="heading_inner">Our Projects</div>
       </div>
       <div id="projects">
-        {projects.map(project => <Project key={project.name} {...project} />)}
+        {projects.map(project => (
+          <Project key={project.name} {...project} />
+        ))}
       </div>
     </Layout>
   );
 };
-
-// extends layout
-
-// block header
-//   .overlay_home.section
-//     .inner
-//       include ../_partials/header
-//       #heading
-//         h1 #{heading}
-
-// block content
-//   != yield

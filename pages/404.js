@@ -15,16 +15,12 @@ export default class Error extends React.Component {
   constructor(props) {
     super(props);
 
+    this.images = allImages.sort(() => Math.random() < 0.5).slice(0, 10);
     this.state = {
       drawing: false,
       left: 0,
       top: 0,
     };
-  }
-
-  static getInitialProps() {
-    const images = allImages.sort(() => Math.random() < 0.5).slice(0, 10);
-    return { images };
   }
 
   handleMouseMove = event => {
@@ -99,7 +95,7 @@ export default class Error extends React.Component {
       <Layout
         title="Uh oh, four oh four"
         sidebars={[
-          Other404s({ images: this.props.images, onClick: this.handleClick }),
+          Other404s({ images: this.images, onClick: this.handleClick }),
         ]}
       >
         <h1>4 Oh! 4 - Not Found</h1>

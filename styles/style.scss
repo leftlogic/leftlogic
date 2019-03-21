@@ -199,6 +199,10 @@ label {
   max-width: 30rem;
 }
 
+.fields {
+  margin: 20px 0;
+}
+
 /* Buttons */
 
 .button {
@@ -768,6 +772,13 @@ footer {
   }
 }
 
+header nav {
+  .narrow {
+    display: none;
+  }
+}
+
+
 /* Media queries */
 
 @media screen and (max-width: 75.75rem) {
@@ -845,6 +856,14 @@ footer {
 
       li:first-child {
         padding-left: 0;
+      }
+
+      .wide {
+        display: none;
+      }
+
+      .narrow {
+        display: unset;
       }
     }
 
@@ -937,12 +956,12 @@ footer {
 
   header nav ul li {
     line-height: 15px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     a:hover,
     a.selected {
       line-height: 30px;
-      font-size: 1.2rem;
+      // font-size: 1.2rem;
     }
   }
 
