@@ -5,7 +5,7 @@ This is all the source code for http://leftlogic.com
 The project is built React and Next.js for server side rendering, and for
 production, the project is exported to an entirely static build.
 
-The static build is deployed to AWS' S3 and CloudFront with an additional custom
+The static build is deployed to Netlify with an additional custom
 404 response pointing to
 [/404](https://github.com/leftlogic/leftlogic/blob/73e1bd0b53781d8d12f4ffb18258ef104dc8d37f/pages/404.js).
 
