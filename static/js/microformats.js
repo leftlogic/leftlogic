@@ -52,7 +52,7 @@ function MicroformatsBookmarklet() {
   var photoguid = 0;
   var photocomplete = [];
   var nl = '%0D%0A'; // %0D%0A = nl! yay!
-  var server = 'https://leftlogic.com/';
+  var server = 'https://leftlogic.com';
   var msie = /*@cc_on!@*/ 0;
 
   var shim = server + '/images/shim.gif';
@@ -88,7 +88,7 @@ function MicroformatsBookmarklet() {
         'div></' +
         'div>'
     );
-    if (!$j.browser.safari) $j('#MF_box').hide();
+    // if (!$j.browser.safari) $j('#MF_box').hide();
     $j('body').append('<div id="MF_overlay"></div>');
 
     try {
