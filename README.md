@@ -1,6 +1,6 @@
 # Left Logic v3
 
-This is all the source code for http://leftlogic.com
+This is all the source code for https://leftlogic.com
 
 The project is built React and Next.js for server side rendering, and for
 production, the project is exported to an entirely static build.
