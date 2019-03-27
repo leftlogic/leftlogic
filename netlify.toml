@@ -1,4 +1,15 @@
 [[redirects]]
+  from = "/images/*"
+  to = "/static/img/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/js/*"
+  to = "/static/js/:splat"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/404/"
   status = 404
+
