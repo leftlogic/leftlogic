@@ -5,7 +5,7 @@ export default () => (
       If you want to be the first to hear of upcoming training and events,
       subscribe to our newsletter.
     </p>
-    <a href="https://ffconf.com/news" className="button">
+    <a href="https://ffconf.org/news" className="button">
       Signup
     </a>
   </div>
