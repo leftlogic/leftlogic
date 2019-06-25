@@ -1,0 +1,63 @@
+import Layout from '../../components/Layout';
+
+<Layout>
+
+  <style jsx>{`h2 { font-weight: normal; }`}</style>
+
+# Browser extension privacy Statement
+
+_Last updated: 25 July 2019_
+
+## Data Collected and Cookies
+
+For the record, no cookies are created in any of our browser extensions. No data is collected on browsing history or browsing activity. Nor are tracking scripts used in any of the extensions unless otherwise clearly stated.
+
+Details on the specific extensions privacy can be found below.
+
+## Snapbird
+
+**In plain english:** This plugin will secure send and store your Twitter account token to allow you to search your direct messages and access advanced search features in Snapbird that are not typically available on Twitter.
+
+**In detail:** The Snapbird extension handles your sensitive account token to allow you to search direct messages. Your token is securely transferred using SSL and HTTPS connections to Snapbird. Snapbird stores your token in a secured database that is not publicly accessible. This token is stored against your pre-authenticated Snapbird sign in which is also only accessible to you. Once this handshake is complete, the Snapbird extension is idle and can be uninstalled entirely.
+
+## m-tweet
+
+**In plain english:** m-tweet redirects all requests to twitter.com to mobile.twitter.com for a better browsing experience. No other actions occur.
+
+**In detail:** a few lines of JavaScript are injected into every twitter.com page that checks the URL and redirects if appropriate.
+
+## No More Scroll Jacking
+
+**In plain english:** No More Scroll Jacking listens to scroll and keypress activity. This is only used to determine whether you are holding a meta key (shift, control, alt, command) and then used to prevent scroll jacking.
+
+**In detail:** JavaScript is injected at the start of every page that will add event listeners are attached for keypress events to toggle whether scroll jacking should be prevented. Additional event handlers for `scroll`, `mousewheel` and `wheel` are attached, and if a meta key is pressed then the scroll events are cancelled allowing the browser to handle these natively.
+
+## The Squint Test
+
+**In plain english:** The Squint Test only provides a popup that will blur the contents of the page.
+
+**In detail:** No content is injected to any pages, only when you open the popup extension and apply the blur, DOM properties are modified on the fly to adjust the amount of blur. None of these changes are permanent.
+
+## GDPR Privacy and questions
+
+### Will Your Information Be Shared With Anyone
+
+In Short: We only share information with your consent, to comply with laws, to protect your rights, or to fulfil business obligations.
+
+### How Long Do We Keep Your Information
+
+In Short: We keep your information for as long as necessary to fulfil the purposes outlined in this privacy policy unless otherwise required by law.
+
+### What Are Your Privacy Rights
+
+In Short: You may review, change, or terminate your account at any time. Please contact [info@leftlogic.com](mailto:info@leftlogic.com?subject=GDPR+request).
+
+### How Can You Contact Us About This Policy
+
+If you have questions or comments about this policy, email Our Privacy Officer at [info@leftlogic.com](mailto:info@leftlogic.com?subject=GDPR+request).
+
+If you are a resident in the European Economic Area, the "data controller" of your personal information is Left Logic. Left Logic, has appointed Remy Sharp to be its representative in the EEA. You can contact them directly regarding the processing of your information by Left Logic, by email at [info@leftlogic.com](mailto:info@leftlogic.com?subject=GDPR+request).
+
+If you have any further questions or comments about us or our policies, [email us](/contact).
+
+</Layout>

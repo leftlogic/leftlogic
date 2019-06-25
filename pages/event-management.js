@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Quote from '../components/Quote';
 import Layout from '../components/Layout';
 

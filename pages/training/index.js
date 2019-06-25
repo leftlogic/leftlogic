@@ -24,7 +24,7 @@ export default () => (
     <h2>Workshops</h2>
     <ul id="training">
       {training.map(({ slug, title }) => (
-        <li id={slug}>
+        <li key={slug} id={slug}>
           <div className="background">
             <Link href={`/training/${slug}`}>
               <a>
@@ -37,7 +37,13 @@ export default () => (
     </ul>
     <div className="clearfix" />
     <h2>Comments from workshop delegates</h2>
-    <Quote line="I thought content level was pitched just right. Very relaxed and friendly atmosphere. A great day." cite="George Hedges, Sussex Downs College" />
-    <Quote line="Remy is a rare type - a developer who understand designers and has a passion for how things look. He presented some complex but elegant jQuery concepts in a straightforward way." cite="Andy Birchwood"></Quote>
+    <Quote
+      line="I thought content level was pitched just right. Very relaxed and friendly atmosphere. A great day."
+      cite="George Hedges, Sussex Downs College"
+    />
+    <Quote
+      line="Remy is a rare type - a developer who understand designers and has a passion for how things look. He presented some complex but elegant jQuery concepts in a straightforward way."
+      cite="Andy Birchwood"
+    />
   </Layout>
 );

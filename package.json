@@ -24,11 +24,13 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "next": "^7.0.3",
+    "next": "^8.1.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
   "devDependencies": {
+    "@mdx-js/loader": "^1.0.21",
+    "@next/mdx": "^8.1.0",
     "@remy/eslint": "^1.3.0",
     "node-sass-chokidar": "1.3.4"
   },

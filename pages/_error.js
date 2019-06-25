@@ -3,7 +3,8 @@ import Error from './404';
 
 export default class RootError extends React.Component {
   static getInitialProps(ctx) {
-    return Error.getInitialProps(ctx);
+    if (Error.getInitialProps) return Error.getInitialProps(ctx);
+    return {};
   }
 
   render() {

@@ -9,8 +9,7 @@ export default () => {
       <form
         method="post"
         action="https://formspree.io/info@leftlogic.com"
-        class="form"
-      >
+        className="form">
         <input
           type="hidden"
           name="_next"
@@ -25,12 +24,12 @@ export default () => {
 
         <input type="hidden" name="_format" value="plain" />
         <p>All enquires are read and remain private.</p>
-        <div class="fields">
-          <label for="form_name">Name</label>
+        <div className="fields">
+          <label htmlFor="form_name">Name</label>
           <input name="name" id="form_name" type="text" />
         </div>
-        <div class="fields">
-          <label for="form_email">Email*</label>
+        <div className="fields">
+          <label htmlFor="form_email">Email*</label>
           <input
             required="required"
             name="email"
@@ -40,8 +39,8 @@ export default () => {
             onChange={event => setEmail(event.target.value)}
           />
         </div>
-        <div class="fields">
-          <label for="form_message">Message*</label>
+        <div className="fields">
+          <label htmlFor="form_message">Message*</label>
           <textarea
             required="required"
             minLength="20"
@@ -50,8 +49,8 @@ export default () => {
             id="form_message"
           />
         </div>
-        <div class="fields">
-          <button type="submit" class="button">
+        <div className="fields">
+          <button type="submit" className="button">
             Send feedback
           </button>
         </div>
