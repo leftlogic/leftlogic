@@ -19,7 +19,10 @@ export default () => (
     </p>
     <p>
       Left Logic also offers a tailored consultancy service.{' '}
-      <a href="mailto:info@leftlogic.com">Contact us for more information</a>.
+      <Link href="/contact?message=Training enquiry">
+        <a>Contact us for more information</a>
+      </Link>
+      .
     </p>
     <h2>Workshops</h2>
     <ul id="training">

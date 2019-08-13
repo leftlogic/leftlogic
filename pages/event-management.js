@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Quote from '../components/Quote';
 import Layout from '../components/Layout';
 
@@ -10,15 +11,15 @@ export default () => (
       people rather than hiring agencies to develop for you.
     </h4>
     <p>
-      Julie has been running events professionally for 15 years for a large
-      range of clients, from corporate events, charities and independent events.
-      Her roles has included sponsor liaison, stage management, supplier
-      negotiation and much more.
+      Julie Sharp runs Left Logic's event managements and has been running
+      events professionally for 15 years for a large range of clients, from
+      corporate events, charities and independent events. Her roles has included
+      sponsor liaison, stage management, supplier negotiation and much more.
     </p>
     <p>
-      <a href="mailto:info@leftlogic.com?subject=Events+management">
-        Get in touch today for help with your event
-      </a>
+      <Link href="/contact?message=Events+management">
+        <a>Get in touch today for help with your event</a>
+      </Link>
     </p>
     <h2>Services</h2>
 

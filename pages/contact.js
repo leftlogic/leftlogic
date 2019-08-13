@@ -1,15 +1,17 @@
 import { useState } from 'react';
 import Layout from '../components/Layout';
 
-export default () => {
+const Contact = ({ message: defaultMessage = '' }) => {
   const [email, setEmail] = useState('');
+  const [message, setMessage] = useState(defaultMessage);
   return (
     <Layout title="Contact Left Logic" sidebars={['Newsletter', 'Terminal']}>
       <h1>Contact</h1>
       <form
         method="post"
         action="https://formspree.io/info@leftlogic.com"
-        className="form">
+        className="form"
+      >
         <input
           type="hidden"
           name="_next"
@@ -47,6 +49,8 @@ export default () => {
             rows="7"
             name="message"
             id="form_message"
+            value={message}
+            onChange={event => setMessage(event.target.value)}
           />
         </div>
         <div className="fields">
@@ -58,3 +62,9 @@ export default () => {
     </Layout>
   );
 };
+
+Contact.getInitialProps = ({ query }) => {
+  return query;
+};
+
+export default Contact;

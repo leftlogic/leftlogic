@@ -6,12 +6,11 @@ const menu = {
   Training: '/training',
   // 'Event Management': '/event-management',
   About: '/about',
-  Contact: '/contact',
-  // Contact: 'mailto:info@leftlogic.com',
+  Contact: '/contact'
 };
 
 const alt = {
-  'Event Management': 'Event Mgt',
+  'Event Management': 'Event Mgt'
 };
 
 export default ({ heading = false }) => (

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default () => (
   <div id="work_with_us" className="section">
     <div className="inner">
@@ -7,9 +9,9 @@ export default () => (
         functionality using JavaScript in a browser or the server, drop us a
         line to hire us.
       </p>
-      <a href="mailto:info@leftlogic.com" className="button">
-        Contact us
-      </a>
+      <Link href="/contact">
+        <a className="button">Contact us</a>
+      </Link>
     </div>
   </div>
 );

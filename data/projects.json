@@ -3,10 +3,10 @@
     "name": "jsbin",
     "fullname": "JS Bin",
     "about": "JS Bin is a form of paste bin, but with a twist. It allows you to also include the HTML and CSS to provide context to your pasted content. As such, it means you can actually run the JavaScript and pass this on to a colleague to help to debug.",
-    "link": "http://jsbin.com"
+    "link": "https://jsbin.com"
   },
   {
-    "name": "full_frontal",
+    "name": "ffconf",
     "fullname": "ffconf",
     "about": "ffconf was founded in 2009 and is the UK's leading JavaScript conference. Selling out in as little as 11 minutes, is a conference for front end developers who want to learn more about the programming language of the web.",
     "link": "https://ffconf.org"
@@ -15,6 +15,6 @@
     "name": "nodemon",
     "fullname": "nodemon",
     "about": "nodemon is one of the most popular utilities for node based development. It will watch the files in your development directory where, and if anything changes, nodemon will automatically restart your node application.",
-    "link": "http://nodemon.io"
+    "link": "https://github.com/remy/nodemon"
   }
 ]

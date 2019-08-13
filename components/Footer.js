@@ -15,16 +15,16 @@ export default () => (
       </div>
       <div className="contact">
         <p>
-          <strong>
-            <a href="mailto:info@leftlogic.com">info@leftlogic.com</a>
-          </strong>
-          <strong>+44 (0) 1273 557744</strong>
+          <Link href="/contact">
+            <a>Email us</a>
+          </Link>
+          &nbsp;&bull;&nbsp;
           <Link href="/privacy">
             <a>Privacy statement</a>
           </Link>
         </p>
         <p>
-          <small>Call times: 9.30am - 5.30pm UK timezone</small>
+          <small>Response times: 9.30am - 5.30pm UK timezone</small>
         </p>
       </div>
       <div className="clearfix" />
