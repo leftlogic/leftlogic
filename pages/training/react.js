@@ -17,7 +17,7 @@ export default () => (
     <p>
       You will be expected to be comfortable with JavaScript, and be familiar
       with, or at least comfortable with the JSX concepts (putting XML inside
-      your JavaScript). We'll also be using Node 8 as we'll make use of
+      your JavaScript). We'll also be using latest Node as we'll make use of
       async/await.
     </p>
 
@@ -64,6 +64,9 @@ export default () => (
         <strong>Connecting: Database backed pages</strong>: Beyond the code:
         dynamic data and securing pages.
       </li>
+      <li>
+        <strong>Authentication: strategies & techniques</strong>: Using the
+        latest Next architectures, common, reusable auth logic.
       <li>
         <strong>Testing, building & deploying</strong>: Tests & fixtures with
         Jest, gotchas, and deploy strategies.
