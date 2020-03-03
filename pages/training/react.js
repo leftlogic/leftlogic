@@ -67,6 +67,7 @@ export default () => (
       <li>
         <strong>Authentication: strategies & techniques</strong>: Using the
         latest Next architectures, common, reusable auth logic.
+      </li>
       <li>
         <strong>Testing, building & deploying</strong>: Tests & fixtures with
         Jest, gotchas, and deploy strategies.
