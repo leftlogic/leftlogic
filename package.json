@@ -24,7 +24,7 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "next": "^8.1.0",
+    "next": "^13.0.3",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
